@@ -20,6 +20,9 @@
     "xo": "^0.18.2"
   },
   "xo": {
-    "space": 2
+    "space": 2,
+    "rules": {
+      "max-params": 0
+    }
   }
 }
