@@ -19,6 +19,9 @@
     "note",
     "notebook"
   ],
+  "bin": {
+    "tb": "cli.js"
+  },
   "scripts": {
     "test": "xo"
   },
