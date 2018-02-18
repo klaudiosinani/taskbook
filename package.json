@@ -1,9 +1,10 @@
 {
-  "name": "matcha",
+  "name": "taskbook",
+  "productName": "Taskbook",
   "version": "0.0.0",
-  "description": "🍵 Minimalistic task management app for the terminal",
+  "description": "📓 Bullet journal app for the terminal",
   "main": "index.js",
-  "repository": "https://github.com/klauscfhq/matcha",
+  "repository": "https://github.com/klauscfhq/taskbook",
   "author": "Klaus Sinani <klauscfhq@protonmail.com>",
   "license": "MIT",
   "scripts": {
