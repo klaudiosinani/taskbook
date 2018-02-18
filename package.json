@@ -7,6 +7,18 @@
   "repository": "https://github.com/klauscfhq/taskbook",
   "author": "Klaus Sinani <klauscfhq@protonmail.com>",
   "license": "MIT",
+  "keywords": [
+    "cli",
+    "task",
+    "management",
+    "terminal",
+    "todoapp",
+    "todo",
+    "minimalistic",
+    "bullet",
+    "note",
+    "notebook"
+  ],
   "scripts": {
     "test": "xo"
   },
