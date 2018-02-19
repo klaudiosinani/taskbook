@@ -23,7 +23,8 @@
     "tb": "cli.js"
   },
   "scripts": {
-    "test": "xo"
+    "test": "xo",
+    "clean": "node ./bin/clean.js"
   },
   "dependencies": {
     "chalk": "^2.3.1",
