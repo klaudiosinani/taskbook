@@ -2,43 +2,38 @@
   "name": "taskbook",
   "productName": "Taskbook",
   "version": "0.0.0",
-  "description": "📓 Bullet journal app for the terminal",
+  "description": "📓 Task & notes in their natural command-line habitat",
   "main": "index.js",
-  "repository": "https://github.com/klauscfhq/taskbook",
+  "repository": "klauscfhq/taskbook",
   "author": "Klaus Sinani <klauscfhq@protonmail.com>",
   "license": "MIT",
   "keywords": [
-    "cli",
     "task",
-    "management",
-    "terminal",
-    "todoapp",
-    "todo",
-    "minimalistic",
-    "bullet",
     "note",
-    "notebook"
+    "todo",
+    "notebook",
+    "command",
+    "line",
+    "console",
+    "cli",
+    "app"
   ],
   "bin": {
     "tb": "cli.js"
   },
   "scripts": {
-    "test": "xo",
-    "clean": "node ./bin/clean.js"
+    "test": "xo"
   },
   "dependencies": {
-    "chalk": "^2.3.1",
     "fs-extra": "^5.0.0",
     "jsonfile": "^4.0.0",
     "meow": "^4.0.0",
-    "moment": "^2.20.1",
-    "rimraf": "^2.6.2",
-    "xo": "^0.18.2"
+    "signale": "*"
+  },
+  "devDependencies": {
+    "xo": "*"
   },
   "xo": {
-    "space": 2,
-    "rules": {
-      "max-params": 0
-    }
+    "space": 2
   }
 }
