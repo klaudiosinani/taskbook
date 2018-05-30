@@ -3,5 +3,5 @@
 </h1>
 
 <h4 align="center">
-  📓 Bullet journal app for the terminal
+  📓 Task & notes in their natural command-line habitat
 </h4>
