@@ -5,12 +5,17 @@
   "description": "📓 Tasks & notes in their natural command-line habitat",
   "main": "index.js",
   "repository": "klauscfhq/taskbook",
+  "license": "MIT",
   "author": {
     "name": "Klaus Sinani",
     "email": "klauscfhq@protonmail.com",
     "url": "https://klauscfhq.github.io"
   },
-  "license": "MIT",
+  "files": [
+    "lib",
+    "index.js",
+    "cli.js"
+  ],
   "keywords": [
     "task",
     "note",
