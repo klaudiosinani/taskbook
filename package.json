@@ -34,9 +34,8 @@
     "test": "xo"
   },
   "dependencies": {
-    "fs-extra": "^5.0.0",
-    "jsonfile": "^4.0.0",
-    "meow": "^4.0.0",
+    "chalk": "^2.4.1",
+    "meow": "^5.0.0",
     "signale": "*"
   },
   "devDependencies": {
