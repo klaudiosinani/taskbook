@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-  📓 Tasks & notes in their natural command-line habitat
+  📓 Tasks & notes for the command-line habitat
 </h4>
 
 <p align="center">
