@@ -2,7 +2,7 @@
   "name": "taskbook",
   "productName": "Taskbook",
   "version": "0.0.0",
-  "description": "📓 Tasks & notes in their natural command-line habitat",
+  "description": "📓 Tasks & notes for the command-line habitat",
   "main": "index.js",
   "repository": "klauscfhq/taskbook",
   "license": "MIT",
