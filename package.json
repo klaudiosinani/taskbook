@@ -36,7 +36,8 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "meow": "^5.0.0",
-    "signale": "*"
+    "signale": "*",
+    "update-notifier": "^2.5.0"
   },
   "devDependencies": {
     "xo": "*"
