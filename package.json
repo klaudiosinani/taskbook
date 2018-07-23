@@ -42,6 +42,9 @@
   "devDependencies": {
     "xo": "*"
   },
+  "signale": {
+    "displayLabel": false
+  },
   "xo": {
     "space": 2
   }
