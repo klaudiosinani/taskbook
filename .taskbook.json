@@ -1,4 +1,7 @@
 {
-  "alwaysDisplayStats": true,
-  "displayCompleteTasks": true
+  "taskbookDirectory": "",
+  "configuration": {
+    "displayStats": true,
+    "displayCompleteTasks": true
+  }
 }
