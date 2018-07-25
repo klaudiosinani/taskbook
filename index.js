@@ -2,29 +2,6 @@
 'use strict';
 const taskbook = require('./lib/taskbook');
 
-const helpMessage = `
-  Usage
-    $ taskbook, t [<options> ...]
-
-    Options
-      --task, -t       Create a task
-      --note, -n       Create a note
-      --remove, -r     Remove an item
-      --check, -c      Check/uncheck a task
-      --star, -s       Star/unstar an item
-      --date, -d       Display items by date
-
-    Examples
-      $ taskbook
-      $ taskbook --help
-      $ taskbook --task Buy some milk
-      $ taskbook --note i^2 + 1 = 0
-      $ taskbook --check 5
-      $ taskbook --remove 2
-      $ taskbook --star 5
-      $ taskbook --date
-`;
-
 const taskbookCLI = (input, flags) => {
   if (flags.task) {
     return taskbook.createTask(input);
@@ -35,35 +12,37 @@ const taskbookCLI = (input, flags) => {
   }
 
   if (flags.remove) {
-    return taskbook.remove(input);
+    return taskbook.removeItems(input);
   }
 
   if (flags.check) {
-    return taskbook.check(input);
+    return taskbook.checkTasks(input);
   }
 
   if (flags.star) {
-    return taskbook.star(input);
+    return taskbook.starItems(input);
   }
 
   if (flags.priority) {
-    return taskbook.setPriority(input);
+    return taskbook.updatePriority(input);
   }
 
   if (flags.date) {
-    return taskbook.displayByDate();
+    taskbook.displayByDate();
+    return taskbook.displayStats();
   }
 
   if (flags.find) {
-    return taskbook.find(input);
+    return taskbook.findItems(input);
   }
 
   if (flags.list) {
-    return taskbook.listByAttribute(input);
+    taskbook.listByAttributes(input);
+    return taskbook.displayStats();
   }
 
   taskbook.displayByLabel();
   return taskbook.displayStats();
 };
 
-module.exports = {taskbookCLI, helpMessage};
+module.exports = taskbookCLI;
