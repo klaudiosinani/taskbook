@@ -41,7 +41,7 @@ const taskbookCLI = (input, flags) => {
     return taskbook.displayStats();
   }
 
-  taskbook.displayByLabel();
+  taskbook.displayByBoard();
   return taskbook.displayStats();
 };
 
