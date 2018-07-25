@@ -2,12 +2,11 @@
 'use strict';
 const meow = require('meow');
 const updateNotifier = require('update-notifier');
+const help = require('./lib/help');
 const pkg = require('./package.json');
-const index = require('.');
+const taskbook = require('.');
 
-const {taskbookCLI, helpMessage} = index;
-
-const cli = meow(helpMessage, {
+const cli = meow(help, {
   flags: {
     task: {
       type: 'boolean',
@@ -50,4 +49,4 @@ const cli = meow(helpMessage, {
 
 updateNotifier({pkg}).notify();
 
-taskbookCLI(cli.input, cli.flags);
+taskbook(cli.input, cli.flags);
