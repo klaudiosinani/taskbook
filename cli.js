@@ -8,6 +8,14 @@ const taskbook = require('.');
 
 const cli = meow(help, {
   flags: {
+    archive: {
+      type: 'boolean',
+      alias: 'a'
+    },
+    restore: {
+      type: 'boolean',
+      alias: 'r'
+    },
     task: {
       type: 'boolean',
       alias: 't'
@@ -16,9 +24,9 @@ const cli = meow(help, {
       type: 'boolean',
       alias: 'n'
     },
-    remove: {
+    delete: {
       type: 'boolean',
-      alias: 'r'
+      alias: 'd'
     },
     check: {
       type: 'boolean',
@@ -28,9 +36,9 @@ const cli = meow(help, {
       type: 'boolean',
       alias: 's'
     },
-    date: {
+    timeline: {
       type: 'boolean',
-      alias: 'd'
+      alias: 'i'
     },
     priority: {
       type: 'boolean',
@@ -43,6 +51,14 @@ const cli = meow(help, {
     list: {
       type: 'boolean',
       alias: 'l'
+    },
+    edit: {
+      type: 'boolean',
+      alias: 'e'
+    },
+    move: {
+      type: 'boolean',
+      alias: 'm'
     }
   }
 });
