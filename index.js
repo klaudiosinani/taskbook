@@ -3,16 +3,24 @@
 const taskbook = require('./lib/taskbook');
 
 const taskbookCLI = (input, flags) => {
+  if (flags.archive) {
+    return taskbook.displayArchive();
+  }
+
   if (flags.task) {
     return taskbook.createTask(input);
+  }
+
+  if (flags.restore) {
+    return taskbook.restoreItems(input);
   }
 
   if (flags.note) {
     return taskbook.createNote(input);
   }
 
-  if (flags.remove) {
-    return taskbook.removeItems(input);
+  if (flags.delete) {
+    return taskbook.deleteItems(input);
   }
 
   if (flags.check) {
@@ -27,7 +35,7 @@ const taskbookCLI = (input, flags) => {
     return taskbook.updatePriority(input);
   }
 
-  if (flags.date) {
+  if (flags.timeline) {
     taskbook.displayByDate();
     return taskbook.displayStats();
   }
@@ -39,6 +47,14 @@ const taskbookCLI = (input, flags) => {
   if (flags.list) {
     taskbook.listByAttributes(input);
     return taskbook.displayStats();
+  }
+
+  if (flags.edit) {
+    return taskbook.editDescription(input);
+  }
+
+  if (flags.move) {
+    return taskbook.moveBoards(input);
   }
 
   taskbook.displayByBoard();
