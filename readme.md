@@ -37,6 +37,39 @@ npm install --global taskbook
 
 ## Usage
 
+```
+$ taskbook --help
+
+  Usage
+    $ taskbook, tb [<options|id> ...]
+
+    Options
+      no option        Display board view
+      --task, -t       Create a task
+      --note, -n       Create a note
+      --timeline, -i   Display timeline view
+      --delete, -d     Delete an item
+      --check, -c      Check/uncheck a task
+      --star, -s       Star/unstar an item
+      --restore, -r    Restore items from archive
+      --archive, -a    Display archived items
+      --list, -l       List items by attributes
+      --find, -f       Search for items
+      --edit, -t       Edit item description
+      --move, -m       Move item between boards
+      --priority, -p   Update priority of task
+
+    Examples
+      tb
+      tb --help
+      tb --task Buy some milk
+      tb --note i^2 + 1 = 0
+      tb --check 5
+      tb --delete 2
+      tb --star 5
+      tb --timeline
+```
+
 ## Development
 
 For more info on how to contribute to the project, please read the [contributing guidelines](https://github.com/klauscfhq/taskbook/blob/master/contributing.md).
