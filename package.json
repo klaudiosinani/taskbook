@@ -3,7 +3,6 @@
   "productName": "Taskbook",
   "version": "0.0.0",
   "description": "📓 Tasks, boards & notes for the command-line habitat",
-  "main": "index.js",
   "repository": "klauscfhq/taskbook",
   "license": "MIT",
   "author": {
@@ -11,10 +10,17 @@
     "email": "klauscfhq@protonmail.com",
     "url": "https://klauscfhq.github.io"
   },
+  "bin": {
+    "tb": "cli.js"
+  },
+  "engines": {
+    "node": ">=6"
+  },
   "files": [
     "lib",
+    "cli.js",
     "index.js",
-    "cli.js"
+    ".taskbook.json"
   ],
   "keywords": [
     "task",
@@ -28,9 +34,6 @@
     "cli",
     "app"
   ],
-  "bin": {
-    "tb": "cli.js"
-  },
   "scripts": {
     "test": "xo"
   },
