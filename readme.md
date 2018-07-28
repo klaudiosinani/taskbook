@@ -20,6 +20,20 @@ Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https:/
 
 ## Highlights
 
+- Organize tasks & notes to boards
+- Board & timeline views
+- Priority & favorite mechanisms
+- Search & filter items
+- Archive & restore deleted items
+- Lightweight & fast
+- Data written atomically to storage
+- Progress overview & usage statistics
+- Custom storage location
+- Simple & minimal usage syntax
+- Update notifications
+- Data saved in `JSON` file
+- Configurable through `~/.taskbook.json`
+
 ## Contents
 
 - [Description](#description)
