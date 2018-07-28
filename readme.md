@@ -57,33 +57,43 @@ npm install --global taskbook
 $ taskbook --help
 
   Usage
-    $ taskbook, tb [<options|id> ...]
+    $ taskbook, tb [<options> ...]
 
     Options
-      no option        Display board view
-      --task, -t       Create a task
-      --note, -n       Create a note
-      --timeline, -i   Display timeline view
-      --delete, -d     Delete an item
-      --check, -c      Check/uncheck a task
-      --star, -s       Star/unstar an item
-      --restore, -r    Restore items from archive
-      --archive, -a    Display archived items
-      --list, -l       List items by attributes
-      --find, -f       Search for items
-      --edit, -t       Edit item description
-      --move, -m       Move item between boards
-      --priority, -p   Update priority of task
+        none             Display board view
+      --task, -t         Create task
+      --note, -n         Create note
+      --timeline, -i     Display timeline view
+      --delete, -d       Delete item
+      --check, -c        Check/uncheck task
+      --star, -s         Star/unstar item
+      --list, -l         List items by attributes
+      --find, -f         Search for items
+      --edit, -t         Edit item description
+      --move, -m         Move item between boards
+      --priority, -p     Update priority of task
+      --archive, -a      Display archived items
+      --restore, -r      Restore items from archive
+      --help, -h         Display help message
+      --version, -v      Display installed version
 
     Examples
-      tb
-      tb --help
-      tb --task Buy some milk
-      tb --note i^2 + 1 = 0
-      tb --check 5
-      tb --delete 2
-      tb --star 5
-      tb --timeline
+      $ taskbook
+      $ tb --task Make some buttercream
+      $ tb --task @taskbook Improve documentation
+      $ tb --task @taskbook @github Review PR#42
+      $ tb --note @algo Merge-sort worse case O(nlogn)
+      $ tb --check 1 2
+      $ tb --delete 4
+      $ tb --star 2
+      $ tb --priority @3 2
+      $ tb --timeline
+      $ tb --edit @3 Merge PR#42
+      $ tb --move @1 cooking
+      $ tb --find documentation
+      $ tb --list pending taskbook
+      $ tb --archive
+      $ tb --restore 4
 ```
 
 ## Development
