@@ -7,6 +7,3 @@ node_js:
 before_install:
   - npm install --global npm@6.2.0
   - npm --version
-cache:
-  directories:
-    - node_modules
