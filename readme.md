@@ -14,6 +14,8 @@
 
 ## Description
 
+By utilizing a simple and minimal usage syntax, that requires a flat learning curve, taskbook enables you to effectively manage your tasks and notes across multiple boards from within your terminal.
+
 Visit the [contributing guidelines](https://github.com/klauscfhq/taskbook/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
 
 Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https://twitter.com/klauscfhq) to share your thoughts on the project.
@@ -31,8 +33,8 @@ Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https:/
 - Custom storage location
 - Simple & minimal usage syntax
 - Update notifications
-- Data saved in `JSON` file
 - Configurable through `~/.taskbook.json`
+- Data stored in JSON file at `~/.taskbook/storage`
 
 ## Contents
 
