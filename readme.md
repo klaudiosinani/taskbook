@@ -7,7 +7,7 @@
 </h4>
 
 <div align="center">
-  <img alt="Boards" width="55%" src="media/header-boards.png"/>
+  <img alt="Boards" width="60%" src="media/header-boards.png"/>
 </div>
 
 <p align="center">
@@ -41,7 +41,7 @@ Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https:/
 - Data stored in JSON file at `~/.taskbook/storage`
 
 <details>
-<summary>View `Hightlights` as a taskbook board.</summary>
+<summary>View highlights as a taskbook board.</summary>
 
 <div align="center">
   <img src="media/highlights.png" width="70%" />
