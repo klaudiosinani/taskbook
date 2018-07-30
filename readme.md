@@ -93,9 +93,9 @@ $ taskbook --help
     Examples
       $ taskbook
       $ tb --task Make some buttercream
-      $ tb --task @taskbook Improve documentation
-      $ tb --task @taskbook @github Review PR#42
-      $ tb --note @algo Merge-sort worse case O(nlogn)
+      $ tb --task @coding Improve documentation
+      $ tb --task @coding @reviews Review PR #42
+      $ tb --note @coding Mergesort worse-case O(nlogn)
       $ tb --check 1 2
       $ tb --delete 4
       $ tb --star 2
