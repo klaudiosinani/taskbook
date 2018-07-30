@@ -26,7 +26,7 @@ Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https:/
 
 ## Highlights
 
-<img alt="Timeline" align="right" width="54%" src="media/timeline.png"/>
+<img alt="Timeline" align="right" width="55%" src="media/timeline.png"/>
 
 <br/>
 
@@ -111,11 +111,12 @@ $ taskbook --help
 
 ## Configuration
 
-To configure taskbook navigate to the `~/.taskbook.json` file and modify any of the options to match your own preference. To reset to the default values, simply delete the config file from your home directory.
+To configure taskbook navigate to the `~/.taskbook.json` file and modify any of the options to match your own preference. To reset back to the default values, simply delete the config file from your home directory.
 
 The following illustrates all the available options with their respective default values.
 
-```
+```js
+// ~/.taskbook.json
 {
   "taskbookDirectory": "",
   "displayCompleteTasks": true,
@@ -123,14 +124,16 @@ The following illustrates all the available options with their respective defaul
 }
 ```
 
+### In Detail
+
 ##### `taskbookDirectory`
 
-- Type: `Filesystem Path`
-- Default: `~/.taskbook/`
+- Type: `String`
+- Default: `~`
 
 Full filesystem path where the storage will be initialized, i.e; `/home/username/the-cloud`
 
-If left undefined the default `~/.taskbook/` path will be used.
+If left undefined the home directory `~` will be used and taskbook will be set-up under `~/.taskbook/`.
 
 ##### `displayCompleteTasks`
 
