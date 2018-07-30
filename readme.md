@@ -101,7 +101,7 @@ $ taskbook --help
       $ tb --star 2
       $ tb --priority @3 2
       $ tb --timeline
-      $ tb --edit @3 Merge PR#42
+      $ tb --edit @3 Merge PR #42
       $ tb --move @1 cooking
       $ tb --find documentation
       $ tb --list pending taskbook
