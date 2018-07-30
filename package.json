@@ -19,8 +19,7 @@
   "files": [
     "lib",
     "cli.js",
-    "index.js",
-    ".taskbook.json"
+    "index.js"
   ],
   "keywords": [
     "task",
