@@ -26,10 +26,6 @@ Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https:/
 
 ## Highlights
 
-<img alt="Timeline" align="right" width="55%" src="media/timeline.png"/>
-
-<br/>
-
 - Organize tasks & notes to boards
 - Board & timeline views
 - Priority & favorite mechanisms
@@ -52,6 +48,7 @@ View highlights in a [taskbook board](https://raw.githubusercontent.com/klauscfh
 - [Highlights](#highlights)
 - [Install](#install)
 - [Usage](#usage)
+- [Views](#views)
 - [Configuration](#configuration)
 - [Development](#development)
 - [Related](#related)
@@ -108,6 +105,24 @@ $ taskbook --help
       $ tb --archive
       $ tb --restore 4
 ```
+
+## Views
+
+### Board View
+
+Invoking taskbook without any options will display of all saved items grouped into their respective boards.
+
+<div align="center">
+  <img alt="Boards" width="60%" src="media/header-boards.png"/>
+</div>
+
+### Timeline View
+
+In order to display all items in a timeline view, based on their creation date, the `--timeline`/`-i` option can be used.
+
+<div align="center">
+  <img alt="Timeline View" width="60%" src="media/timeline.png"/>
+</div>
 
 ## Configuration
 
