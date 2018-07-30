@@ -26,6 +26,10 @@ Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https:/
 
 ## Highlights
 
+<img alt="Timeline" align="right" width="53%" src="media/timeline.png"/>
+
+<br/>
+
 - Organize tasks & notes to boards
 - Board & timeline views
 - Priority & favorite mechanisms
@@ -40,14 +44,7 @@ Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https:/
 - Configurable through `~/.taskbook.json`
 - Data stored in JSON file at `~/.taskbook/storage`
 
-<details>
-<summary>View highlights as a taskbook board.</summary>
-
-<div align="center">
-  <img src="media/highlights.png" width="70%" />
-</div>
-
-</details>
+View highlights in a [taskbook board](https://raw.githubusercontent.com/klauscfhq/taskbook/master/media/highlights.png).
 
 ## Contents
 
