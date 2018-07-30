@@ -6,6 +6,10 @@
   📓 Tasks, boards & notes for the command-line habitat
 </h4>
 
+<div align="center">
+  <img alt="Boards" width="55%" src="media/header-boards.png"/>
+</div>
+
 <p align="center">
   <a href="https://travis-ci.com/klauscfhq/taskbook">
     <img alt="Build Status" src="https://travis-ci.com/klauscfhq/taskbook.svg?branch=master">
@@ -35,6 +39,15 @@ Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https:/
 - Update notifications
 - Configurable through `~/.taskbook.json`
 - Data stored in JSON file at `~/.taskbook/storage`
+
+<details>
+<summary>View `Hightlights` as a taskbook board.</summary>
+
+<div align="center">
+  <img src="media/highlights.png" width="70%" />
+</div>
+
+</details>
 
 ## Contents
 
