@@ -26,7 +26,7 @@ Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https:/
 
 ## Highlights
 
-<img alt="Timeline" align="right" width="53%" src="media/timeline.png"/>
+<img alt="Timeline" align="right" width="54%" src="media/timeline.png"/>
 
 <br/>
 
@@ -37,8 +37,8 @@ Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https:/
 - Archive & restore deleted items
 - Lightweight & fast
 - Data written atomically to storage
-- Progress overview & usage statistics
 - Custom storage location
+- Progress overview
 - Simple & minimal usage syntax
 - Update notifications
 - Configurable through `~/.taskbook.json`
@@ -52,6 +52,7 @@ View highlights in a [taskbook board](https://raw.githubusercontent.com/klauscfh
 - [Highlights](#highlights)
 - [Install](#install)
 - [Usage](#usage)
+- [Configuration](#configuration)
 - [Development](#development)
 - [Related](#related)
 - [Team](#team)
@@ -107,6 +108,43 @@ $ taskbook --help
       $ tb --archive
       $ tb --restore 4
 ```
+
+## Configuration
+
+To configure taskbook navigate to the `~/.taskbook.json` file and modify any of the options to match your own preference. To reset to the default values, simply delete the config file from your home directory.
+
+The following illustrates all the available options with their respective default values.
+
+```
+{
+  "taskbookDirectory": "",
+  "displayCompleteTasks": true,
+  "displayProgressOverview": true
+}
+```
+
+##### `taskbookDirectory`
+
+- Type: `Filesystem Path`
+- Default: `~/.taskbook/`
+
+Full filesystem path where the storage will be initialized, i.e; `/home/username/the-cloud`
+
+If left undefined the default `~/.taskbook/` path will be used.
+
+##### `displayCompleteTasks`
+
+- Type: `Boolean`
+- Default: `true`
+
+Display tasks that are marked as complete.
+
+##### `displayProgressOverview`
+
+- Type: `Boolean`
+- Default: `true`
+
+Display progress overview below the timeline and board views.
 
 ## Development
 
