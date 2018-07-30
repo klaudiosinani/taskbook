@@ -121,7 +121,7 @@ Invoking taskbook without any options will display of all saved items grouped in
 In order to display all items in a timeline view, based on their creation date, the `--timeline`/`-i` option can be used.
 
 <div align="center">
-  <img alt="Timeline View" width="60%" src="media/timeline.png"/>
+  <img alt="Timeline View" width="62%" src="media/timeline.png"/>
 </div>
 
 ## Configuration
@@ -130,8 +130,7 @@ To configure taskbook navigate to the `~/.taskbook.json` file and modify any of 
 
 The following illustrates all the available options with their respective default values.
 
-```js
-// ~/.taskbook.json
+```json
 {
   "taskbookDirectory": "",
   "displayCompleteTasks": true,
