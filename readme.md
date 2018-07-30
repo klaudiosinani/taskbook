@@ -64,10 +64,10 @@ npm install --global taskbook
 ## Usage
 
 ```
-$ taskbook --help
+$ tb --help
 
   Usage
-    $ taskbook, tb [<options> ...]
+    $ tb [<options> ...]
 
     Options
         none             Display board view
@@ -88,7 +88,7 @@ $ taskbook --help
       --version, -v      Display installed version
 
     Examples
-      $ taskbook
+      $ tb
       $ tb --task Make some buttercream
       $ tb --task @coding Improve documentation
       $ tb --task @coding @reviews Review PR #42
@@ -101,7 +101,7 @@ $ taskbook --help
       $ tb --edit @3 Merge PR #42
       $ tb --move @1 cooking
       $ tb --find documentation
-      $ tb --list pending taskbook
+      $ tb --list pending coding
       $ tb --archive
       $ tb --restore 4
 ```
