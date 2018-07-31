@@ -178,7 +178,7 @@ $ tb -t Improve documentation
 
 ### Create Note
 
-To create a new task use the `--note`/`-n` option with your note's body following right after. 
+To create a new note use the `--note`/`-n` option with your note's body following right after. 
 
 ```
 $ tb -n Mergesort worse-case O(nlogn)
@@ -186,7 +186,7 @@ $ tb -n Mergesort worse-case O(nlogn)
 
 ### Create Board
 
-Boards are automatically initialized when creating a new task or note. To create one or more boards, include their names, prefixed by the `@` symbol, in the description of the about-to-be created item. As a result all new boards will contain the newly created item. By default, items that do not contain any board names in their description are automatically added to the general purpose; `My Board`. Note that a item may belong to multiple boards.
+Boards are automatically initialized when creating a new task or note. To create one or more boards, include their names, prefixed by the `@` symbol, in the description of the about-to-be created item. As a result the newly created item will belong to all of the given boards. By default, items that do not contain any board names in their description are automatically added to the general purpose; `My Board`.
 
 ```
 $ tb -t @coding @docs Update contributing guidelines
@@ -202,7 +202,7 @@ $ tb -c 1 3
 
 ### Star Item
 
-To mark one or more items as favorite, use the `--star`/`-s` option followed by the ids of the target items. The functionality of this option is the same as the one of the, above described, `--check` option.
+To mark one or more items as favorite, use the `--star`/`-s` option followed by the ids of the target items. The functionality of this option is the same as the one of the above described `--check` option.
 
 ```
 $ tb -s 1 2 3
@@ -210,7 +210,7 @@ $ tb -s 1 2 3
 
 ### Display Boards
 
-Invoking taskbook without any options, will display all of saved items grouped into their respective boards.
+Invoking taskbook without any options will display all of saved items grouped into their respective boards.
 
 ```
 $ tb
@@ -226,7 +226,7 @@ $ tb -i
 
 ### Set Priority
 
-To set a priority level for a task while initializing it, include the `p:x` syntax in the task's description, where x can be an integer of value `1`, `2` or `3`. Note that all task's by default are created with a normal priority - `1`.
+To set a priority level for a task while initializing it, include the `p:x` syntax in the task's description, where x can be an integer of value `1`, `2` or `3`. Note that all tasks by default are created with a normal priority - `1`.
  
 - `1` - Normal priority 
 - `2` - Medium priority
@@ -236,7 +236,7 @@ To set a priority level for a task while initializing it, include the `p:x` synt
 $ tb -t @coding Fix issue `#42` p:3
 ```
 
-To update the priority level of a specific task after its creation, use the `-p`/`--priority` option along with the id the target-task, prefixed by the `@` symbol, and an integer of value `1`, `2` or `3`. Note that the order in which the target id and priority level are placed is not important.
+To update the priority level of a specific task after its creation, use the `--priority`/`-p` option along with the id the target task, prefixed by the `@` symbol, and an integer of value `1`, `2` or `3`. Note that the order in which the target id and priority level are placed is not significant.
 
 ```
 $ tb -p @1 2
@@ -244,7 +244,7 @@ $ tb -p @1 2
 
 ### Move Item
 
-To move an item to one or more boards, use the `--move`/`-m` option, followed by the target item's id, prefixed by the `@` symbol, and the name of the destination boards. The default `My board` can be accessed through the `myboard` keyword. The order in which the target id and board names are placed is not important.
+To move an item to one or more boards, use the `--move`/`-m` option, followed by the target item id, prefixed by the `@` symbol, and the name of the destination boards. The default `My board` can be accessed through the `myboard` keyword. The order in which the target id and board names are placed is not significant.
 
 ```
 $ tb -m @1 myboard reviews
@@ -260,7 +260,7 @@ $ tb -d 1 2
 
 ### Display Archive
 
-To display all archived items, use the `--archive`/`-a` option. Note that all archived items will be displayed in timeline view, based on their creation date.
+To display all archived items, use the `--archive`/`-a` option. Note that all archived items are displayed in timeline view, based on their creation date.
 
 ```
 $ tb -a
@@ -268,7 +268,7 @@ $ tb -a
 
 ### Restore Items
 
-To restore one or more items, use the `--restore`/`-r` option followed by the ids of the target items. Note that the ids of all archived items can be seen when running the `--archive`/`-a` option. Duplicate ids are automatically filtered out.
+To restore one or more items, use the `--restore`/`-r` option followed by the ids of the target items. Note that the ids of all archived items can be seen when invoking the `--archive`/`-a` option. Duplicate ids are automatically filtered out.
 
 ```
 $ tb -r 1 2
@@ -276,13 +276,13 @@ $ tb -r 1 2
 
 ### List Items
 
-To list a group of items where each item complies with a specif number of attributes, use the `--list`/`-l` option followed by the desired attributes. Board names along with item traits can be considered valid listing attributes. For example to list all items that belong to the default `coding` board and are pending tasks you could the following;
+To list a group of items where each item complies with a specif number of attributes, use the `--list`/`-l` option followed by the desired attributes. Board names along with item traits can be considered valid listing attributes. For example to list all items that belong to the default `myboard` and are pending tasks, the following could be used;
 
 ```
-$ tb -l coding pending
+$ tb -l myboard pending
 ```
 
-The by-default supported listing attributes, together with their respective aliases, are the following;
+The by default supported listing attributes, together with their respective aliases, are the following;
 
 - `myboard` - Items that belong to `My board`
 - `task`, `tasks`, `todo` - Items that are tasks.
