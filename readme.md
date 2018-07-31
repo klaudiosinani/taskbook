@@ -50,6 +50,7 @@ View highlights in a [taskbook board](https://raw.githubusercontent.com/klauscfh
 - [Usage](#usage)
 - [Views](#views)
 - [Configuration](#configuration)
+- [Flight Manual](#flight-manual)
 - [Development](#development)
 - [Related](#related)
 - [Team](#team)
@@ -110,7 +111,7 @@ $ tb --help
 
 ### Board View
 
-Invoking taskbook without any options will display of all saved items grouped into their respective boards.
+Invoking taskbook without any options will display all saved items grouped into their respective boards.
 
 <div align="center">
   <img alt="Boards" width="60%" src="media/header-boards.png"/>
