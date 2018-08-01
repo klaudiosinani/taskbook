@@ -8,6 +8,10 @@ const taskbook = require('.');
 
 const cli = meow(help, {
   flags: {
+    help: {
+      type: 'boolean',
+      alias: 'h'
+    },
     archive: {
       type: 'boolean',
       alias: 'a'
