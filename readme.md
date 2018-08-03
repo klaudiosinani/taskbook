@@ -85,6 +85,7 @@ $ tb --help
       --priority, -p     Update priority of task
       --archive, -a      Display archived items
       --restore, -r      Restore items from archive
+      --table, -T        Display tasks in table format
       --help, -h         Display help message
       --version, -v      Display installed version
 
