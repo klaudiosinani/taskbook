@@ -59,6 +59,10 @@ const cli = meow(help, {
     move: {
       type: 'boolean',
       alias: 'm'
+    },
+    clean: {
+      type: 'boolean',
+      alias: 'k'
     }
   }
 });
