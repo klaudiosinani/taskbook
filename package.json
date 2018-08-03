@@ -14,7 +14,7 @@
     "tb": "cli.js"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=7"
   },
   "files": [
     "lib",
