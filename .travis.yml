@@ -3,7 +3,7 @@ node_js:
   - 10
   - 9
   - 8
-  - 6
+  - 7
 before_install:
   - npm install --global npm@6.2.0
   - npm --version
