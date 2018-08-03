@@ -23,6 +23,10 @@ const taskbookCLI = (input, flags) => {
     return taskbook.deleteItems(input);
   }
 
+  if (flags.clean || flags.clear) {
+    return taskbook.deleteCheckedItems();
+  }
+
   if (flags.check) {
     return taskbook.checkTasks(input);
   }
