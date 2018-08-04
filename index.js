@@ -20,7 +20,7 @@ const taskbookCLI = (input, flags) => {
   }
 
   if (flags.delete) {
-    return taskbook.deleteItems(input);
+    return taskbook.deleteEntities(input);
   }
 
   if (flags.check) {

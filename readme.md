@@ -96,6 +96,7 @@ $ tb --help
       $ tb --note @coding Mergesort worse-case O(nlogn)
       $ tb --check 1 2
       $ tb --delete 4
+      $ tb --delete @coding
       $ tb --star 2
       $ tb --priority @3 2
       $ tb --timeline
@@ -171,7 +172,7 @@ In case you spotted an error or think that an example is not to clear enough and
 
 ### Create Task
 
-To create a new task use the `--task`/`-t` option with your task's description following right after. 
+To create a new task use the `--task`/`-t` option with your task's description following right after.
 
 ```
 $ tb -t Improve documentation
@@ -179,7 +180,7 @@ $ tb -t Improve documentation
 
 ### Create Note
 
-To create a new note use the `--note`/`-n` option with your note's body following right after. 
+To create a new note use the `--note`/`-n` option with your note's body following right after.
 
 ```
 $ tb -n Mergesort worse-case O(nlogn)
@@ -228,8 +229,8 @@ $ tb -i
 ### Set Priority
 
 To set a priority level for a task while initializing it, include the `p:x` syntax in the task's description, where x can be an integer of value `1`, `2` or `3`. Note that all tasks by default are created with a normal priority - `1`.
- 
-- `1` - Normal priority 
+
+- `1` - Normal priority
 - `2` - Medium priority
 - `3` - High priority
 
@@ -253,10 +254,11 @@ $ tb -m @1 myboard reviews
 
 ### Delete Item
 
-To delete one or more items, use the `--delete`/`-d` options followed by the ids of the target items. Note that deleted items are automatically archived, and can be inspected or restored at any moment. Duplicate ids are automatically filtered out.
+To delete one or more items, use the `--delete`/`-d` options followed by the ids of the target items or boards name prefixed by `@`. Note that deleted items are automatically archived, and can be inspected or restored at any moment. Duplicate ids are automatically filtered out.
 
 ```
 $ tb -d 1 2
+$ tb -d @coding
 ```
 
 ### Display Archive
@@ -294,7 +296,7 @@ The by default supported listing attributes, together with their respective alia
 
 ### Search Items
 
-To search for one of more items, use the `--find`/`-f` option, followed by your search terms. 
+To search for one of more items, use the `--find`/`-f` option, followed by your search terms.
 
 ```
 $ tb -f documentation
