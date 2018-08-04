@@ -62,7 +62,7 @@ const cli = meow(help, {
     },
     clean: {
       type: 'boolean',
-      alias: 'k'
+      alias: 'C'
     }
   }
 });
