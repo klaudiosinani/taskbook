@@ -61,8 +61,8 @@ const cli = meow(help, {
       alias: 'm'
     },
     after: {
-      type: 'string',
-    },
+      type: 'string'
+    }
   }
 });
 
