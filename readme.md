@@ -80,7 +80,7 @@ $ tb --help
       --star, -s         Star/unstar item
       --list, -l         List items by attributes
       --find, -f         Search for items
-      --edit, -t         Edit item description
+      --edit, -e         Edit item description
       --move, -m         Move item between boards
       --priority, -p     Update priority of task
       --archive, -a      Display archived items
