@@ -102,6 +102,8 @@ $ tb --help
       $ tb --timeline
       $ tb --edit @3 Merge PR #42
       $ tb --move @1 cooking
+      $ tb --table
+      $ tb --table code
       $ tb --find documentation
       $ tb --list pending coding
       $ tb --archive
