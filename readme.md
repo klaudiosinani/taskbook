@@ -58,6 +58,8 @@ View highlights in a [taskbook board](https://raw.githubusercontent.com/klauscfh
 
 ## Install
 
+Ensure you have [Node.js](https://nodejs.org/en) version >=6 installed.
+
 ```bash
 npm install --global taskbook
 ```
