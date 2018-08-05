@@ -67,6 +67,14 @@ const cli = meow(help, {
     move: {
       type: 'boolean',
       alias: 'm'
+    },
+    help: {
+      type: 'boolean',
+      alias: 'h'
+    },
+    version: {
+      type: 'boolean',
+      alias: 'v'
     }
   }
 });
