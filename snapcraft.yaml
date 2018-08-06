@@ -1,0 +1,22 @@
+name: taskbook
+version: git
+summary: Tasks, boards & notes for the command-line habitat
+description: |
+  By utilizing a simple and minimal usage syntax, that requires a flat learning curve, taskbook enables you to effectively manage your tasks and notes across multiple boards from within your terminal.
+
+grade: stable
+confinement: strict
+
+apps:
+  taskbook:
+    command: tb
+    plugs:
+      - home
+      - network
+      - network-control
+
+parts:
+  taskbook:
+    node-engine: 8.11.3
+    plugin: nodejs
+    source: .
