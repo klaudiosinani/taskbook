@@ -8,7 +8,7 @@
 </h4>
 
 <div align="center">
-  <img alt="Boards" width="60%" src="media/header-boards.png"/>
+  <img alt="Boards" width="60%" src="../media/header-boards.png"/>
 </div>
 
 <p align="center">
@@ -87,7 +87,7 @@ npm install --global taskbook
           --star, -s         Star/unstar 项目
           --list, -l         按属性列出项目
           --find, -f         搜索商品
-          --edit, -t         编辑项目描述
+          --edit, -e         编辑项目描述
           --move, -m         在板块之间移动物品
           --priority, -p     更新任务的优先级
           --archive, -a      显示已归档的项目
@@ -120,7 +120,7 @@ npm install --global taskbook
 在没有任何选项的情况下调用 taskbook ,将显示分组到各自板中的所有已保存项目. 
 
 <div align="center">
-  <img alt="Boards" width="60%" src="media/header-boards.png"/>
+  <img alt="Boards" width="60%" src="../media/header-boards.png"/>
 </div>
 
 ### 时间线视图
@@ -128,7 +128,7 @@ npm install --global taskbook
 为了显示时间线视图中的所有项目,根据其创建日期,`--timeline`/`-i`选项可以使用. 
 
 <div align="center">
-  <img alt="Timeline View" width="62%" src="media/timeline.png"/>
+  <img alt="Timeline View" width="62%" src="../media/timeline.png"/>
 </div>
 
 ## 配置
@@ -233,7 +233,7 @@ npm install --global taskbook
 
 ### 移动项目
 
-要将项目移动到一个或多个板块,请使用`--move`/`-m`选项,后跟`目标ID,id` 是以前缀为`@`符号和目标板块的名称. 默认值`My board`可以通过访问`myboard`关键词. 目标ID和电路板名称的放置顺序并不重要. 
+要将项目移动到一个或多个板块,请使用`--move`/`-m`选项,后跟`目标ID,id` 是以前缀为`@`符号和目标板块的名称. 默认值`My Board`可以通过访问`myboard`关键词. 目标ID和电路板名称的放置顺序并不重要. 
 
     $ tb -m @1 myboard reviews
 
@@ -263,12 +263,12 @@ npm install --global taskbook
 
 默认支持的列表属性及其各自的别名如下: 
 
--   `myboard`- 属于的项目`My board`
--   `task`,`tasks`,`todo`- 作为任务的项目. 
--   `note`,`notes`- 作为笔记的项目. 
--   `pending`,`unchecked`,`incomplete`- 待处理任务的项目. 
--   `done`,`checked`,`complete`- 完成任务的项目. 
--   `star`,`starred`- 已加星标的项目. 
+-   `myboard` - 属于的项目`My Board`
+-   `task`, `tasks`, `todo` - 作为任务的项目. 
+-   `note`, `notes` - 作为笔记的项目. 
+-   `pending`, `unchecked`, `incomplete` - 待处理任务的项目. 
+-   `done`, `checked`, `complete` - 完成任务的项目. 
+-   `star`, `starred` - 已加星标的项目. 
 
 ### 搜索项目
 
