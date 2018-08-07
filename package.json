@@ -11,7 +11,8 @@
     "url": "https://klauscfhq.github.io"
   },
   "bin": {
-    "tb": "cli.js"
+    "tb": "cli.js",
+    "taskbook": "cli.js"
   },
   "engines": {
     "node": ">=6"
