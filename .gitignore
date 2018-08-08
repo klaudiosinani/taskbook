@@ -14,5 +14,10 @@ yarn.lock
 *.swp
 *.swo
 
-# compiled
-dist
+# snap
+prime
+snapcraft
+parts
+stage
+snap
+*.snap
