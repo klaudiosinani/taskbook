@@ -94,6 +94,8 @@ $ tb --help
       $ tb
       $ tb --task Make some buttercream
       $ tb --task @coding Improve documentation
+      $ tb --task @coding Improve documentation\'s \"Create Task\" \& \"Create Note\" sections
+      $ tb --task @coding "Improve documentation's \"Create Task\" & \"Create Note\" sections"
       $ tb --task @coding @reviews Review PR #42
       $ tb --note @coding Mergesort worse-case O(nlogn)
       $ tb --check 1 2
@@ -177,6 +179,18 @@ To create a new task use the `--task`/`-t` option with your task's description f
 
 ```
 $ tb -t Improve documentation
+```
+
+The shell reserves a number of common characters as control characters, e.g., `\`, `'`, `"`, `&`. To use these characters in your description use the shell escape character `\` before the control character.
+
+```
+$tb -t Improve documentation\'s \"Create Task\" \& \"Create Note\" sections
+```
+
+Alternatively you may enclose the text to be escaped in double-quotes making sure to escape any contained double-quotes.
+
+```
+$tb -t "Improve documentation's \"Create Task\" & \"Create Note\" sections"
 ```
 
 ### Create Note
