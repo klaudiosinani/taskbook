@@ -67,6 +67,10 @@ const cli = meow(help, {
     move: {
       type: 'boolean',
       alias: 'm'
+    },
+    renameBoard: {
+      type: 'boolean',
+      alias: 'r'
     }
   }
 });
