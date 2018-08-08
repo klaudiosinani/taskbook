@@ -45,8 +45,8 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
+    "date-fns": "^1.29.0",
     "meow": "^5.0.0",
-    "moment": "^2.22.2",
     "signale": "^1.2.1",
     "update-notifier": "^2.5.0"
   },
