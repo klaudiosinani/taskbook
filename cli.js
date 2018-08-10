@@ -70,7 +70,7 @@ const cli = meow(help, {
     },
     renameBoard: {
       type: 'boolean',
-      alias: 'r'
+      alias: 'rb'
     }
   }
 });
