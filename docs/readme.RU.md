@@ -7,7 +7,7 @@
 </h4>
 
 <div align="center">
-  <img alt="Boards" width="60%" src="media/header-boards.png"/>
+  <img alt="Boards" width="60%" src="../media/header-boards.png"/>
 </div>
 
 <p align="center">
@@ -116,7 +116,7 @@ $ tb --help
 Запуск taskbook без каких-либо опций покажет все сохраненные записи, отгрупированные по их соответвующим разделам.
 
 <div align="center">
-  <img alt="Boards" width="60%" src="media/header-boards.png"/>
+  <img alt="Boards" width="60%" src="../media/header-boards.png"/>
 </div>
 
 ### Обзор хронологии
@@ -124,7 +124,7 @@ $ tb --help
 Для просмотра всех записей соответственно хронолонии по дате создания, может быть использована опция `--timeline`/`-i`.
 
 <div align="center">
-  <img alt="Timeline View" width="62%" src="media/timeline.png"/>
+  <img alt="Timeline View" width="62%" src="../media/timeline.png"/>
 </div>
 
 ## Конфигурация
