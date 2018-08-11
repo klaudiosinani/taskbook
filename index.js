@@ -8,7 +8,7 @@ const taskbookCLI = (input, flags) => {
   }
 
   if (flags.task) {
-    return taskbook.createTask(input);
+    return taskbook.createTasks(input);
   }
 
   if (flags.restore) {
@@ -16,7 +16,7 @@ const taskbookCLI = (input, flags) => {
   }
 
   if (flags.note) {
-    return taskbook.createNote(input);
+    return taskbook.createNotes(input);
   }
 
   if (flags.delete) {
