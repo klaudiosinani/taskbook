@@ -95,7 +95,9 @@ $ tb --help
       $ tb --task Make some buttercream
       $ tb --task @coding Improve documentation
       $ tb --task @coding @reviews Review PR #42
+      $ tb --task @shopping bananas::bread::brown sugar
       $ tb --note @coding Mergesort worse-case O(nlogn)
+      $ tb --note @styles red borders::blue underline::black text
       $ tb --check 1 2
       $ tb --delete 4
       $ tb --star 2
@@ -173,18 +175,20 @@ In case you spotted an error or think that an example is not to clear enough and
 
 ### Create Task
 
-To create a new task use the `--task`/`-t` option with your task's description following right after. 
+To create a new task use the `--task`/`-t` option with your task's description following right after. Create multiple tasks at once by using `::` as a delimiter between task descriptions. Multiple tasks are creating using the same boards and priority specified.
 
 ```
 $ tb -t Improve documentation
+$ tb -t Fix translations::Add validation::Write unit tests
 ```
 
 ### Create Note
 
-To create a new note use the `--note`/`-n` option with your note's body following right after. 
+To create a new note use the `--note`/`-n` option with your note's body following right after. Multiple notes can also be created at once by using `::` as a delimiter between note descriptions. Multiple notes are created using the same boards specified.
 
 ```
 $ tb -n Mergesort worse-case O(nlogn)
+$ tb -n Font size is 16px::Background color is f4f7fb::Margin size is 2rem
 ```
 
 ### Create Board
@@ -230,8 +234,8 @@ $ tb -i
 ### Set Priority
 
 To set a priority level for a task while initializing it, include the `p:x` syntax in the task's description, where x can be an integer of value `1`, `2` or `3`. Note that all tasks by default are created with a normal priority - `1`.
- 
-- `1` - Normal priority 
+
+- `1` - Normal priority
 - `2` - Medium priority
 - `3` - High priority
 
@@ -296,7 +300,7 @@ The by default supported listing attributes, together with their respective alia
 
 ### Search Items
 
-To search for one of more items, use the `--find`/`-f` option, followed by your search terms. 
+To search for one of more items, use the `--find`/`-f` option, followed by your search terms.
 
 ```
 $ tb -f documentation
