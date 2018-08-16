@@ -18,7 +18,7 @@
 
 ## Description
 
-By utilizing a simple and minimal usage syntax, that requires a flat learning curve, taskbook enables you to effectively manage your tasks and notes across multiple boards from within your terminal. All data are written atomically to the storage in order to prevent corruptions, and are never shared with anyone or anything. Deleted items are automatically archived and can be inspected or restored at any moment.
+By utilizing a simple and minimal usage syntax, that requires a flat learning curve, taskbook enables you to effectively manage your tasks and notes across multiple boards from within your terminal. All data are written atomically to the storage in order to prevent corruptions and are never shared with anyone or anything. Deleted items are automatically archived and can be inspected or restored at any moment.
 
 Read this document in: [简体中文](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.RU.md).
 
@@ -30,11 +30,11 @@ Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https:/
 
 - Organize tasks & notes to boards
 - Board & timeline views
-- Priority & favorite mechanisms
+- Priority & favourite mechanisms
 - Search & filter items
 - Archive & restore deleted items
 - Lightweight & fast
-- Data written atomically to storage
+- Data are written atomically to storage
 - Custom storage location
 - Progress overview
 - Simple & minimal usage syntax
