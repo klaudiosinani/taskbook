@@ -67,6 +67,10 @@ const cli = meow(help, {
     move: {
       type: 'boolean',
       alias: 'm'
+    },
+    table: {
+      type: 'boolean',
+      alias: 'T'
     }
   }
 });
