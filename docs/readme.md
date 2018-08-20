@@ -1,6 +1,6 @@
 ## Taskbook Translated Documentation
 
-- [简体中文 - Simplified Chinese](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.ZH.md) by [@chinanf-boy](https://github.com/chinanf-boy)
+- [简体中文 - Simplified Chinese](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.ZH.md) by [@chinanf-boy](https://github.com/chinanf-boy), [@rosuH](https://github.com/rosuH)
 
 - [Русский - Russian](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.RU.md) by [@zhadyrassyn](https://github.com/zhadyrassyn)
 
