@@ -3,7 +3,7 @@
 const taskbook = require('./lib/taskbook');
 
 if (!global.Intl) {
-    global.Intl = require('intl');
+  global.Intl = require('intl');
 }
 
 const taskbookCLI = (input, flags) => {
