@@ -45,7 +45,7 @@ const taskbookCLI = (input, flags) => {
   }
 
   if (flags.list) {
-    taskbook.listByAttributes(input);
+    taskbook.listByAttributes(input, flags.after);
     return taskbook.displayStats();
   }
 
@@ -55,6 +55,11 @@ const taskbookCLI = (input, flags) => {
 
   if (flags.move) {
     return taskbook.moveBoards(input);
+  }
+
+  if (flags.after) {
+    taskbook.listByAttributes([], flags.after);
+    return taskbook.displayStats();
   }
 
   taskbook.displayByBoard();

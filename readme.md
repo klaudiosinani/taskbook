@@ -89,6 +89,7 @@ $ tb --help
       --restore, -r      Restore items from archive
       --help, -h         Display help message
       --version, -v      Display installed version
+      --after            Filter items by special date
 
     Examples
       $ tb
