@@ -60,9 +60,8 @@ const cli = meow(help, {
       type: 'boolean',
       alias: 'm'
     },
-    clean: {
-      type: 'boolean',
-      alias: 'C'
+    clear: {
+      type: 'boolean'
     }
   }
 });
