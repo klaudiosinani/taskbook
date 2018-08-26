@@ -2,6 +2,10 @@
 'use strict';
 const taskbook = require('./lib/taskbook');
 
+if (!global.Intl) {
+  global.Intl = require('intl');
+}
+
 const taskbookCLI = (input, flags) => {
   if (flags.archive) {
     return taskbook.displayArchive();
