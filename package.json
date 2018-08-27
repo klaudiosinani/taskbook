@@ -2,7 +2,7 @@
   "name": "taskbook",
   "productName": "Taskbook",
   "version": "0.1.1",
-  "description": "📓 Tasks, boards & notes for the command-line habitat",
+  "description": "Tasks, boards & notes for the command-line habitat",
   "repository": "klauscfhq/taskbook",
   "license": "MIT",
   "author": {
@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
+    "has-unicode": "^2.0.1",
     "meow": "^5.0.0",
     "signale": "^1.2.1",
     "update-notifier": "^2.5.0"
