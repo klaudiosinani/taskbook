@@ -60,9 +60,13 @@ View highlights in a [taskbook board](https://raw.githubusercontent.com/klauscfh
 
 ## Install
 
+Ensure you have [Node.js](https://nodejs.org/en) version >=6 installed.
+
 ```bash
 npm install --global taskbook
 ```
+
+> Note: If you get and issue `throws error "type.badge.padEnd is not a function"` then upgrade node verison >= 8.
 
 ## Usage
 
