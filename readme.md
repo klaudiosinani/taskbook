@@ -80,6 +80,7 @@ $ tb --help
       --delete, -d       Delete item
       --check, -c        Check/uncheck task
       --star, -s         Star/unstar item
+      --clip, -g         Copy to clipboard
       --list, -l         List items by attributes
       --find, -f         Search for items
       --edit, -e         Edit item description
@@ -99,6 +100,7 @@ $ tb --help
       $ tb --check 1 2
       $ tb --delete 4
       $ tb --star 2
+      $ tb --clip 2
       $ tb --priority @3 2
       $ tb --timeline
       $ tb --edit @3 Merge PR #42
@@ -209,6 +211,14 @@ To mark one or more items as favorite, use the `--star`/`-s` option followed by 
 
 ```
 $ tb -s 1 2 3
+```
+
+### Copy to the clipboard
+
+Copy a task/note description to the system clipboard.
+
+```
+$ tb -g 2
 ```
 
 ### Display Boards
