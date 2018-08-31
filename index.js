@@ -35,6 +35,10 @@ const taskbookCLI = (input, flags) => {
     return taskbook.updatePriority(input);
   }
 
+  if (flags.clip) {
+    return taskbook.clipboard(input);
+  }
+
   if (flags.timeline) {
     taskbook.displayByDate();
     return taskbook.displayStats();
