@@ -46,7 +46,7 @@ const cli = meow(help, {
     },
     clip: {
       type: 'boolean',
-      alias: 'g',
+      alias: 'g'
     },
     timeline: {
       type: 'boolean',
