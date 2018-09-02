@@ -1,9 +1,8 @@
 language: node_js
 node_js:
   - 10
-  - 9
   - 8
   - 6
 before_install:
-  - npm install --global npm@6.2.0
+  - npm install --global npm@6.4.0
   - npm --version

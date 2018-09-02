@@ -37,9 +37,18 @@ Come over and say hi anytime you feel like on [Gitter](https://gitter.im/klauscf
 
 ### Translating Documentation
 
-- Ensure that the document is not already translated in your target language.
+#### Create a Translation
+
+- Check the [`index`](https://github.com/klauscfhq/taskbook/tree/master/docs/readme.md) file to ensure that the document is not already translated in your target language.
 - Add the name of the language to the document as an extension, e.g: `readme.JP.md`
+- Place the translated document inside the [`docs`](https://github.com/klauscfhq/taskbook/tree/master/docs) directory.
+- Add your github profile and the translated document to the [`index`](https://github.com/klauscfhq/taskbook/tree/master/docs/readme.md) file.
 - Create a Pull Request including the language in the title, e.g: `Readme: Japanese Translation`
+
+#### Improve a Translation
+
+- Include your github profile next to the translation you improved at the [`index`](https://github.com/klauscfhq/taskbook/tree/master/docs/readme.md) file.
+- Create a Pull Request that delivers the improvements and include the language in the title, e.g: `Readme: Improvements for the Japanese Translation`
 
 ### Submitting an issue
 
