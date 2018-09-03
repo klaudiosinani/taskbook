@@ -80,7 +80,7 @@ $ tb --help
       --delete, -d       Delete item
       --check, -c        Check/uncheck task
       --star, -s         Star/unstar item
-      --clip, -g         Copy to clipboard
+      --copy, -y         Copy item description
       --list, -l         List items by attributes
       --find, -f         Search for items
       --edit, -e         Edit item description
@@ -100,7 +100,7 @@ $ tb --help
       $ tb --check 1 2
       $ tb --delete 4
       $ tb --star 2
-      $ tb --clip 2
+      $ tb --copy 1 2 3
       $ tb --priority @3 2
       $ tb --timeline
       $ tb --edit @3 Merge PR #42
@@ -175,7 +175,7 @@ In case you spotted an error or think that an example is not to clear enough and
 
 ### Create Task
 
-To create a new task use the `--task`/`-t` option with your task's description following right after. 
+To create a new task use the `--task`/`-t` option with your task's description following right after.
 
 ```
 $ tb -t Improve documentation
@@ -183,7 +183,7 @@ $ tb -t Improve documentation
 
 ### Create Note
 
-To create a new note use the `--note`/`-n` option with your note's body following right after. 
+To create a new note use the `--note`/`-n` option with your note's body following right after.
 
 ```
 $ tb -n Mergesort worse-case O(nlogn)
@@ -213,12 +213,12 @@ To mark one or more items as favorite, use the `--star`/`-s` option followed by 
 $ tb -s 1 2 3
 ```
 
-### Copy to the clipboard
+### Copy Item Description
 
-Copy a task/note description to the system clipboard.
+To copy to the your system's clipboard the description of one or more items, use the `--copy/-y` option followed by the ids of the target items. Note that the option will also include the newline character as a separator to each pair of adjacent copied descriptions, thus resulting in a clear and readable stack of sentences on paste.
 
 ```
-$ tb -g 2
+$ tb -y 1 2 3
 ```
 
 ### Display Boards
@@ -240,8 +240,8 @@ $ tb -i
 ### Set Priority
 
 To set a priority level for a task while initializing it, include the `p:x` syntax in the task's description, where x can be an integer of value `1`, `2` or `3`. Note that all tasks by default are created with a normal priority - `1`.
- 
-- `1` - Normal priority 
+
+- `1` - Normal priority
 - `2` - Medium priority
 - `3` - High priority
 
@@ -306,7 +306,7 @@ The by default supported listing attributes, together with their respective alia
 
 ### Search Items
 
-To search for one of more items, use the `--find`/`-f` option, followed by your search terms. 
+To search for one of more items, use the `--find`/`-f` option, followed by your search terms.
 
 ```
 $ tb -f documentation
