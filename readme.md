@@ -197,7 +197,7 @@ Boards are automatically initialized when creating a new task or note. To create
 $ tb -t @coding @docs Update contributing guidelines
 ```
 
-### Check task
+### Check Task
 
 To mark a task as complete/incomplete, use the `--check`/`-c` option followed by the ids of the target tasks. Note that the option will update to its opposite the `complete` status of the given tasks, thus checking a complete task will render it as pending and a pending task as complete. Duplicate ids are automatically filtered out.
 
@@ -215,7 +215,7 @@ $ tb -s 1 2 3
 
 ### Copy Item Description
 
-To copy to the your system's clipboard the description of one or more items, use the `--copy/-y` option followed by the ids of the target items. Note that the option will also include the newline character as a separator to each pair of adjacent copied descriptions, thus resulting in a clear and readable stack of sentences on paste.
+To copy to your system's clipboard the description of one or more items, use the `--copy`/`-y` option followed by the ids of the target items. Note that the option will also include the newline character as a separator to each pair of adjacent copied descriptions, thus resulting in a clear and readable stack of sentences on paste.
 
 ```
 $ tb -y 1 2 3
