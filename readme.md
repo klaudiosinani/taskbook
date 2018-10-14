@@ -86,6 +86,7 @@ $ tb --help
     Options
         none             Display board view
       --archive, -a      Display archived items
+      --begin, -b        Start/stop task
       --check, -c        Check/uncheck task
       --clear            Delete all checked items
       --copy, -y         Copy item description
@@ -106,6 +107,7 @@ $ tb --help
     Examples
       $ tb
       $ tb --archive
+      $ tb --begin 2 3
       $ tb --check 1 2
       $ tb --clear
       $ tb --copy 1 2 3
@@ -218,6 +220,14 @@ To mark a task as complete/incomplete, use the `--check`/`-c` option followed by
 $ tb -c 1 3
 ```
 
+### Begin Task
+
+To mark a task as started/stopped, use the `--begin`/`-b` option followed by the ids of the target tasks. The functionality of this option is the same as the one of the above described `--check` option.
+
+```
+$ tb -b 2 3
+```
+
 ### Star Item
 
 To mark one or more items as favorite, use the `--star`/`-s` option followed by the ids of the target items. The functionality of this option is the same as the one of the above described `--check` option.
@@ -322,6 +332,7 @@ The by default supported listing attributes, together with their respective alia
 - `task`, `tasks`, `todo` - Items that are tasks.
 - `note`, `notes` - Items that are notes.
 - `pending`, `unchecked`, `incomplete` - Items that are pending tasks.
+- `progress`, `started`, `begun` - Items that are in-progress tasks.
 - `done`, `checked`, `complete` - Items that complete tasks.
 - `star`, `starred` - Items that are starred.
 
