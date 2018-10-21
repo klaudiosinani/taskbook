@@ -99,6 +99,7 @@ $ tb --help
       --priority, -p     Update priority of task
       --archive, -a      Display archived items
       --restore, -r      Restore items from archive
+      --clear            Delete all checked items
       --help, -h         Display help message
       --version, -v      Display installed version
 
@@ -120,6 +121,7 @@ $ tb --help
       $ tb --list pending coding
       $ tb --archive
       $ tb --restore 4
+      $ tb --clear
 ```
 
 ## Views
@@ -280,6 +282,14 @@ To delete one or more items, use the `--delete`/`-d` options followed by the ids
 
 ```
 $ tb -d 1 2
+```
+
+### Delete Checked Tasks
+
+To delete/clear all complete tasks at once across all boards, use the `--clear` option. Note that all deleted tasks are automatically archived, and can be inspected or restored at any moment. In order to discourage any possible accidental usage, the `--clear` option has no available shorter alias.
+
+```
+$ tb --clear
 ```
 
 ### Display Archive
