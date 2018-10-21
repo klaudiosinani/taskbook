@@ -148,7 +148,7 @@ The following illustrates all the available options with their respective defaul
 
 ```json
 {
-  "taskbookDirectory": "",
+  "taskbookDirectory": "~",
   "displayCompleteTasks": true,
   "displayProgressOverview": true
 }
@@ -161,7 +161,7 @@ The following illustrates all the available options with their respective defaul
 - Type: `String`
 - Default: `~`
 
-Full filesystem path where the storage will be initialized, i.e; `/home/username/the-cloud`
+Filesystem path where the storage will be initialized, i.e: `/home/username/the-cloud` or `~/the-cloud`
 
 If left undefined the home directory `~` will be used and taskbook will be set-up under `~/.taskbook/`.
 

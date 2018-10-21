@@ -35,7 +35,7 @@
   ],
   "configuration": {
     "default": {
-      "taskbookDirectory": "",
+      "taskbookDirectory": "~",
       "displayCompleteTasks": true,
       "displayProgressOverview": true
     }
