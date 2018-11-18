@@ -11,8 +11,8 @@
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.com/klauscfhq/taskbook">
-    <img alt="Build Status" src="https://travis-ci.com/klauscfhq/taskbook.svg?branch=master">
+  <a href="https://travis-ci.com/klaussinani/taskbook">
+    <img alt="Build Status" src="https://travis-ci.com/klaussinani/taskbook.svg?branch=master">
   </a>
 </p>
 
@@ -20,11 +20,11 @@
 
 Используя простой и минимальный синтаксис, taskbook позволяет эффективно управлять задачами и заметками через несколько разделов в терминале. Все данные атомарно записываются в хранилище для предотвращения повреждений и ни с чем и ни с кем не распространяется. Удаленные записи автоматически сохраняются в архиве и могут быть просмотрены, либо восстановлены в любой момент. 
 
-Можете прочитать этот документ на [简体中文](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.ZH.md).
+Можете прочитать этот документ на [简体中文](https://github.com/klaussinani/taskbook/blob/master/docs/readme.ZH.md).
 
-Зайдите на [contributing guidelines](https://github.com/klauscfhq/taskbook/blob/master/contributing.md#translating-documentation) для того, чтобы больше узнать о том, как перевести этот документ на другие языки.
+Зайдите на [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) для того, чтобы больше узнать о том, как перевести этот документ на другие языки.
 
-Присоединяйтесь к [Gitter](https://gitter.im/klauscfhq/taskbook), или [Twitter](https://twitter.com/klauscfhq), чтобы поделиться своим мнением об этом проекте.
+Присоединяйтесь к [Gitter](https://gitter.im/klaussinani/taskbook), или [Twitter](https://twitter.com/klaussinani), чтобы поделиться своим мнением об этом проекте.
 
 ## Особенности
 
@@ -42,7 +42,7 @@
 - Конфигурируемый через `~/.taskbook.json`
 - Данные хранятся в формате JSON в `~/.taskbook/storage`
 
-Просмторите особенности в [разделе taskbook](https://raw.githubusercontent.com/klauscfhq/taskbook/master/media/highlights.png).
+Просмторите особенности в [разделе taskbook](https://raw.githubusercontent.com/klaussinani/taskbook/master/media/highlights.png).
 
 ## Содержание
 
@@ -169,7 +169,7 @@ $ tb --help
 ## Руководство по полетам
 
 Ниже приведено небольшое руководство с примерами по использованию taskbook.
-В случаи, если вы обнаружили ошибку или считаете, что пример недостаточно понятен и может быть обьяснено лучше, не стесняйтесь заводить [issue](https://github.com/klauscfhq/taskbook/issues/new/choose), либо [pull request](https://github.com/klauscfhq/taskbook/compare).
+В случаи, если вы обнаружили ошибку или считаете, что пример недостаточно понятен и может быть обьяснено лучше, не стесняйтесь заводить [issue](https://github.com/klaussinani/taskbook/issues/new/choose), либо [pull request](https://github.com/klaussinani/taskbook/compare).
 
 ### Создать задачу
 
@@ -304,7 +304,7 @@ $ tb -f документация
 
 ## Разработка
 
-Для большей информации о том, как можно способствовать этому проекту, пожалуйста, прочитайте [contributing guidelines](https://github.com/klauscfhq/taskbook/blob/master/contributing.md).
+Для большей информации о том, как можно способствовать этому проекту, пожалуйста, прочитайте [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md).
 
 - Форкните данную репозиторию и склонируйте на вашу машину
 - Перейдите на ваш склонированный проект: `cd taskbook`
@@ -314,12 +314,12 @@ $ tb -f документация
 ## Относится
 
 - [chalk](https://github.com/chalk/chalk) - Стилизация строк в терминале
-- [signale](https://github.com/klauscfhq/signale) - Автономный консольный логгер
+- [signale](https://github.com/klaussinani/signale) - Автономный консольный логгер
 
 ## Команда
 
-- Klaus Sinani [(@klauscfhq)](https://github.com/klauscfhq)
+- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
 
 ## Лицензия
 
-[MIT](https://github.com/klauscfhq/taskbook/blob/master/license.md)
+[MIT](https://github.com/klaussinani/taskbook/blob/master/license.md)
