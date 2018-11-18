@@ -2,7 +2,7 @@
 
 Thank you for taking the time to contribute to Taskbook!
 
-For more info on how to contribute to the project, please read the [contributing guidelines](https://github.com/klauscfhq/taskbook/blob/master/contributing.md).
+For more info on how to contribute to the project, please read the [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md).
 
 We are always excited about pull requests!
 
