@@ -12,7 +12,7 @@ Typo corrections, error fixes, better explanations, more examples etc. Open an i
 
 ### Improve issues
 
-Sometimes reported issues lack information, are not reproducible, or are even plain invalid. Help us out to make them easier to resolve. Handling issues takes a lot of time that we could rather spend on fixing bugs and adding features.
+Sometimes reported issues lack information, are not reproducible, or are even plain invalid. Help us out to make them easier to resolve. Handling issues takes a lot of time that we would rather spend on fixing bugs and adding features.
 
 ### Give feedback on issues
 
@@ -55,7 +55,7 @@ Come over and say hi anytime you feel like on [Gitter](https://gitter.im/klaussi
 - Search the issue tracker before opening an issue
 - Ensure you're using the latest version of Taskbook
 - Use a descriptive title
-- Include as much information as possible;
+- Include as much information as possible:
   - Steps to reproduce the issue
   - Error message
   - Taskbook version

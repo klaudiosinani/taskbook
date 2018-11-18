@@ -212,7 +212,7 @@ $ tb -t @coding @docs Update contributing guidelines
 
 ### Check Task
 
-To mark a task as complete/incomplete, use the `--check`/`-c` option followed by the ids of the target tasks. Note that the option will update to its opposite the `complete` status of the given tasks, thus checking a complete task will render it as pending and a pending task as complete. Duplicate ids are automatically filtered out.
+To mark a task as complete/incomplete, use the `--check`/`-c` option followed by the ids of the target tasks. Note that this option will update the `complete` status of the given tasks to their opposite values. Checking a complete task will render it as pending and a pending task as complete. Duplicate ids are automatically filtered out.
 
 ```
 $ tb -c 1 3
@@ -220,7 +220,7 @@ $ tb -c 1 3
 
 ### Star Item
 
-To mark one or more items as favorite, use the `--star`/`-s` option followed by the ids of the target items. The functionality of this option is the same as the one of the above described `--check` option.
+To mark one or more items as favorite, use the `--star`/`-s` option followed by the ids of the target items. The functionality of this option is the same as the `--check` option described above.
 
 ```
 $ tb -s 1 2 3
@@ -236,7 +236,7 @@ $ tb -y 1 2 3
 
 ### Display Boards
 
-Invoking taskbook without any options will display all of saved items grouped into their respective boards.
+Invoking taskbook without any options will display all of your saved items grouped into their respective boards.
 
 ```
 $ tb
@@ -310,7 +310,7 @@ $ tb -r 1 2
 
 ### List Items
 
-To list a group of items where each item complies with a specif number of attributes, use the `--list`/`-l` option followed by the desired attributes. Board names along with item traits can be considered valid listing attributes. For example to list all items that belong to the default `myboard` and are pending tasks, the following could be used;
+To list a group of items that match specific attributes, use the `--list`/`-l` option followed by the desired attributes. Board names along with item traits can be considered valid listing attributes. For example to list all items that belong to the default `myboard` and are pending tasks, the following could be used:
 
 ```
 $ tb -l myboard pending
