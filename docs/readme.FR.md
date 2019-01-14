@@ -7,7 +7,7 @@
 </h4>
 
 <div align="center">
-  <img alt="Boards" width="60%" src="media/header-boards.png"/>
+  <img alt="Boards" width="60%" src="../media/header-boards.png"/>
 </div>
 
 <p align="center">
@@ -131,7 +131,7 @@ $ tb --help
 Appeler taskbook sans option affichera toutes les tâches et notes sauvegardées dans leurs tableaux respectifs.
 
 <div align="center">
-  <img alt="Boards" width="60%" src="media/header-boards.png"/>
+  <img alt="Boards" width="60%" src="../media/header-boards.png"/>
 </div>
 
 ### Vue Frise Chronologique
@@ -139,7 +139,7 @@ Appeler taskbook sans option affichera toutes les tâches et notes sauvegardées
 Afin d'afficher toutes les tâches et notes dans la vue Frise Chronologique, en se basant sur leurs date de création, utilisez l'option `--timeline`/`-i`.
 
 <div align="center">
-  <img alt="Timeline View" width="62%" src="media/timeline.png"/>
+  <img alt="Timeline View" width="62%" src="../media/timeline.png"/>
 </div>
 
 ## Configuration
