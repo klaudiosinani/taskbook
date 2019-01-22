@@ -11,8 +11,8 @@
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.com/klauscfhq/taskbook">
-    <img alt="Build Status" src="https://travis-ci.com/klauscfhq/taskbook.svg?branch=master">
+  <a href="https://travis-ci.com/klaussinani/taskbook">
+    <img alt="Build Status" src="https://travis-ci.com/klaussinani/taskbook.svg?branch=master">
   </a>
 </p>
 
@@ -20,11 +20,11 @@
 
 By utilizing a simple and minimal usage syntax, that requires a flat learning curve, taskbook enables you to effectively manage your tasks and notes across multiple boards from within your terminal. All data are written atomically to the storage in order to prevent corruptions, and are never shared with anyone or anything. Deleted items are automatically archived and can be inspected or restored at any moment.
 
-Read this document in: [简体中文](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.RU.md).
+Read this document in: [简体中文](https://github.com/klaussinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaussinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaussinani/taskbook/blob/master/docs/readme.FR.md).
 
-Visit the [contributing guidelines](https://github.com/klauscfhq/taskbook/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
+Visit the [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
 
-Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https://twitter.com/klauscfhq) to share your thoughts on the project.
+Come over to [Gitter](https://gitter.im/klaussinani/taskbook) or [Twitter](https://twitter.com/klaussinani) to share your thoughts on the project.
 
 ## Highlights
 
@@ -42,7 +42,7 @@ Come over to [Gitter](https://gitter.im/klauscfhq/taskbook) or [Twitter](https:/
 - Configurable through `~/.taskbook.json`
 - Data stored in JSON file at `~/.taskbook/storage`
 
-View highlights in a [taskbook board](https://raw.githubusercontent.com/klauscfhq/taskbook/master/media/highlights.png).
+View highlights in a [taskbook board](https://raw.githubusercontent.com/klaussinani/taskbook/master/media/highlights.png).
 
 ## Contents
 
@@ -184,7 +184,7 @@ Display progress overview below the timeline and board views.
 ## Flight Manual
 
 The following is a minor walkthrough containing a set of examples on how to use taskbook.
-In case you spotted an error or think that an example is not to clear enough and should be further improved, please feel free to open an [issue](https://github.com/klauscfhq/taskbook/issues/new/choose) or [pull request](https://github.com/klauscfhq/taskbook/compare).
+In case you spotted an error or think that an example is not to clear enough and should be further improved, please feel free to open an [issue](https://github.com/klaussinani/taskbook/issues/new/choose) or [pull request](https://github.com/klaussinani/taskbook/compare).
 
 ### Create Task
 
@@ -310,7 +310,7 @@ $ tb -r 1 2
 
 ### List Items
 
-To list a group of items where each item complies with a specif number of attributes, use the `--list`/`-l` option followed by the desired attributes. Board names along with item traits can be considered valid listing attributes. For example to list all items that belong to the default `myboard` and are pending tasks, the following could be used;
+To list a group of items where each item complies with a specific set of attributes, use the `--list`/`-l` option followed by the desired attributes. Board names along with item traits can be considered valid listing attributes. For example to list all items that belong to the default `myboard` and are pending tasks, the following could be used;
 
 ```
 $ tb -l myboard pending
@@ -335,7 +335,7 @@ $ tb -f documentation
 
 ## Development
 
-For more info on how to contribute to the project, please read the [contributing guidelines](https://github.com/klauscfhq/taskbook/blob/master/contributing.md).
+For more info on how to contribute to the project, please read the [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md).
 
 - Fork the repository and clone it to your machine
 - Navigate to your local fork: `cd taskbook`
@@ -345,12 +345,12 @@ For more info on how to contribute to the project, please read the [contributing
 ## Related
 
 - [chalk](https://github.com/chalk/chalk) - Terminal string styling done right
-- [signale](https://github.com/klauscfhq/signale) - Hackable console logger
+- [signale](https://github.com/klaussinani/signale) - Hackable console logger
 
 ## Team
 
-- Klaus Sinani [(@klauscfhq)](https://github.com/klauscfhq)
+- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
 
 ## License
 
-[MIT](https://github.com/klauscfhq/taskbook/blob/master/license.md)
+[MIT](https://github.com/klaussinani/taskbook/blob/master/license.md)
