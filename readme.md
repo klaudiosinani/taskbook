@@ -111,6 +111,7 @@ $ tb --help
       $ tb --note @coding Mergesort worse-case O(nlogn)
       $ tb --check 1 2
       $ tb --delete 4
+      $ tb --delete @coding
       $ tb --star 2
       $ tb --copy 1 2 3
       $ tb --priority @3 2
@@ -278,10 +279,11 @@ $ tb -m @1 myboard reviews
 
 ### Delete Item
 
-To delete one or more items, use the `--delete`/`-d` options followed by the ids of the target items. Note that deleted items are automatically archived, and can be inspected or restored at any moment. Duplicate ids are automatically filtered out.
+To delete one or more items, use the `--delete`/`-d` options followed by the ids of the target items or boards name prefixed by `@`. Note that deleted items are automatically archived, and can be inspected or restored at any moment. Duplicate ids are automatically filtered out.
 
 ```
 $ tb -d 1 2
+$ tb -d @coding
 ```
 
 ### Delete Checked Tasks
