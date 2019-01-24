@@ -20,10 +20,11 @@ apps:
       - home
       - network
       - network-control
+      - x11
 
 parts:
   taskbook:
     plugin: nodejs
-    node-engine: 8.11.3
+    node-engine: 10.15.0
     node-package-manager: yarn
     source: .
