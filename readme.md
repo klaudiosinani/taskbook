@@ -86,7 +86,7 @@ $ tb --help
     Options
         none             Display board view
       --archive, -a      Display archived items
-      --begin, -b        Start/stop task
+      --begin, -b        Start/pause task
       --check, -c        Check/uncheck task
       --clear            Delete all checked items
       --copy, -y         Copy item description
@@ -222,7 +222,7 @@ $ tb -c 1 3
 
 ### Begin Task
 
-To mark a task as started/stopped, use the `--begin`/`-b` option followed by the ids of the target tasks. The functionality of this option is the same as the one of the above described `--check` option.
+To mark a task as started/paused, use the `--begin`/`-b` option followed by the ids of the target tasks. The functionality of this option is the same as the one of the above described `--check` option.
 
 ```
 $ tb -b 2 3
