@@ -27,6 +27,10 @@ const taskbookCLI = (input, flags) => {
     return taskbook.checkTasks(input);
   }
 
+  if (flags.begin) {
+    return taskbook.beginTasks(input);
+  }
+
   if (flags.star) {
     return taskbook.starItems(input);
   }

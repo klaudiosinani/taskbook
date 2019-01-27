@@ -40,6 +40,10 @@ const cli = meow(help, {
       type: 'boolean',
       alias: 'c'
     },
+    begin: {
+      type: 'boolean',
+      alias: 'b'
+    },
     star: {
       type: 'boolean',
       alias: 's'
