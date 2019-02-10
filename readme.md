@@ -355,8 +355,8 @@ For more info on how to contribute to the project, please read the [contributing
 
 ## Related
 
-- [chalk](https://github.com/chalk/chalk) - Terminal string styling done right
 - [signale](https://github.com/klaussinani/signale) - Hackable console logger
+- [qoa](https://github.com/klaussinani/qoa) - Minimal interactive command-line prompts
 
 ## Team
 
