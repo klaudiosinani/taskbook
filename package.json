@@ -17,7 +17,7 @@
     "node": ">=6"
   },
   "files": [
-    "lib",
+    "src",
     "cli.js",
     "index.js"
   ],
