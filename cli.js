@@ -2,7 +2,7 @@
 'use strict';
 const meow = require('meow');
 const updateNotifier = require('update-notifier');
-const help = require('./lib/help');
+const help = require('./src/help');
 const pkg = require('./package.json');
 const taskbook = require('.');
 
