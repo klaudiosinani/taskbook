@@ -1,5 +1,6 @@
 name: taskbook
-version: git
+version: '0.0.0'
+version-script: git describe --always | cut -c 2-
 summary: Tasks, boards & notes for the command-line habitat
 description: |
   By utilizing a simple and minimal usage syntax, that requires a flat learning curve,
