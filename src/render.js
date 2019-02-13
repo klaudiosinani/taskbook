@@ -177,7 +177,7 @@ class Render {
 
     const status = [
       `${green(complete)} ${grey('done')}`,
-      `${blue(inProgress)} ${grey('in progress')}`,
+      `${blue(inProgress)} ${grey('in-progress')}`,
       `${magenta(pending)} ${grey('pending')}`,
       `${blue(notes)} ${grey(notes === 1 ? 'note' : 'notes')}`
     ];
