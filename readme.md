@@ -357,6 +357,7 @@ For more info on how to contribute to the project, please read the [contributing
 
 - [signale](https://github.com/klaussinani/signale) - Hackable console logger
 - [qoa](https://github.com/klaussinani/qoa) - Minimal interactive command-line prompts
+- [hyperocean](https://github.com/klaussinani/hyperocean) - Deep oceanic blue Hyper terminal theme
 
 ## Team
 
