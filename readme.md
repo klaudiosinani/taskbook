@@ -60,6 +60,12 @@ View highlights in a [taskbook board](https://raw.githubusercontent.com/klaussin
 
 ## Install
 
+### Yarn
+
+```bash
+yarn global add taskbook
+```
+
 ### NPM
 
 ```bash
