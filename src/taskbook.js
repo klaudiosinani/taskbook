@@ -133,7 +133,7 @@ class Taskbook {
       return notes++;
     });
 
-    const total = complete + pending;
+    const total = complete + pending + inProgress;
     const percent = (total === 0) ? 0 : Math.floor(complete * 100 / total);
 
     return {percent, complete, inProgress, pending, notes};
