@@ -201,6 +201,16 @@ class Taskbook {
     return data;
   }
 
+  _filterPriority(data, attr) {
+    const priority = parseInt(attr.replace(/p:/g, ''), 10);
+    Object.keys(data).forEach(id => {
+      if (data[id].priority !== priority) {
+        delete data[id];
+      }
+    });
+    return data;
+  }
+
   _filterByAttributes(attr, data = this._data) {
     if (Object.keys(data).length === 0) {
       return data;
@@ -240,6 +250,12 @@ class Taskbook {
         case 'note':
         case 'notes':
           data = this._filterNote(data);
+          break;
+
+        case 'p:1':
+        case 'p:2':
+        case 'p:3':
+          data = this._filterPriority(data, x);
           break;
 
         default:
