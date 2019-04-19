@@ -66,52 +66,73 @@
 
 ## 安装
 
+### Yarn
+
+```bash
+yarn global add taskbook
+```
+
+### NPM
+
 ```bash
 npm install --global taskbook
+```
+
+### Snapcraft
+
+```bash
+snap install taskbook
+snap alias taskbook tb # set alias
 ```
 
 ## 用法
 
     $ tb --help
 
-      Usage
+      用法
         $ tb [<options> ...]
 
         Options
             none             显示板块视图
-          --task, -t         创建任务
-          --note, -n         创建笔记
-          --timeline, -i     显示时间线视图
-          --delete, -d       删除条目
-          --check, -c        选中/取消选中任务
-          --star, -s         Star/unstar 条目
-          --list, -l         按属性列出条目
-          --find, -f         搜索条目
-          --edit, -e         编辑条目描述
-          --move, -m         在板块之间移动条目
-          --priority, -p     更新任务的优先级
           --archive, -a      显示已归档的条目
-          --restore, -r      从存档还原条目
+          --begin, -b        开始/暂停 任务
+          --check, -c        完成/暂停 任务
+          --clear            删除所有已完成任务
+          --copy, -y         复制条目描述
+          --delete, -d       删除条目
+          --edit, -e         编辑条目描述
+          --find, -f         搜索条目
           --help, -h         显示帮助信息
+          --list, -l         按属性列出条目
+          --move, -m         在板块之间移动条目
+          --note, -n         创建笔记
+          --priority, -p     更新任务的优先级
+          --restore, -r      从存档还原条目
+          --star, -s         收藏/取消收藏 条目         
+          --task, -t         创建任务
+          --timeline, -i     显示时间线视图
           --version, -v      显示已安装的版本
 
-        Examples
+        示例
           $ tb
-          $ tb --task Make some buttercream
-          $ tb --task @coding Improve documentation
-          $ tb --task @coding @reviews Review PR #42
-          $ tb --note @coding Mergesort worse-case O(nlogn)
+          $ tb --archive
+          $ tb --begin 2 3
           $ tb --check 1 2
+          $ tb --clear
+          $ tb --copy 1 2 3
           $ tb --delete 4
-          $ tb --star 2
-          $ tb --priority @3 2
-          $ tb --timeline
           $ tb --edit @3 Merge PR #42
-          $ tb --move @1 cooking
           $ tb --find documentation
           $ tb --list pending coding
-          $ tb --archive
+          $ tb --move @1 cooking
+          $ tb --note @coding Mergesort worse-case O(nlogn)
+          $ tb --priority @3 2
           $ tb --restore 4
+          $ tb --star 2
+          $ tb --task @coding @reviews Review PR #42
+          $ tb --task @coding Improve documentation
+          $ tb --task Make some buttercream
+          $ tb --timeline
 
 ## 查看
 
@@ -152,7 +173,7 @@ npm install --global taskbook
 -   类型: `String`
 -   默认: `~`
 
-初始化存储完成文件的系统路径，比如：`/home/username/the-cloud`。
+初始化存储完成文件的系统路径，比如：`/home/username/the-cloud`或者`~/the-cloud`。
 
 如果未配置本选项，将默认设置为`~/.taskbook/`。
 
@@ -201,12 +222,20 @@ npm install --global taskbook
 重复的ID会自动过滤掉。
 
     $ tb -c 1 3
+    
+### 开始任务
+
+要将任务标记为『开始/暂停』，请使用`--begin`/`-b`选项后跟目标任务的 ID。该选项的功能对条目状态转换与`--check`选项功能相同。
 
 ### 收藏条目（Star）
 
 要将一个或多个条目标记为收藏，请使用`--star`/`-s`选项后加上目标项的 ID。该选项的功能对条目状态转换与`--check`选项功能相同。
 
     $ tb -s 1 2 3
+
+### 复制条目描述
+
+要复制一个或多个条目描述到你的系统剪贴板，请使用`--copy`/`-y`选项后加上目标项的 ID。请注意，该选项会使用回车符作为每个描述的分隔符，从而在剪贴板生成清晰可读的格式。
 
 ### 显示板块
 
@@ -250,6 +279,11 @@ npm install --global taskbook
 已删除的条目会自动存档，并且可以随时完成或还原。重复的 ID 会被自动过滤掉。
 
     $ tb -d 1 2
+    
+### 删除已完成任务
+
+要删除所有已完成任务，请使用`--clear`选项。请注意，所有被删除的任务会被自动保存，并且可以在任意时间点查看或还原。为了防止任何可能的意外情况，`--clear`选项没有别名。
+  
 
 ### 显示存档
 
@@ -276,6 +310,7 @@ npm install --global taskbook
 -   `task`, `tasks`, `todo` - 作为任务的条目
 -   `note`, `notes` - 作为笔记的条目
 -   `pending`, `unchecked`, `incomplete` - 待处理的任务条目
+-   `progress`, `started`, `begun` - 已开始的任务条目
 -   `done`, `checked`, `complete` - 已完成的任务条目
 -   `star`, `starred` - 已加星标的条目
 
@@ -296,13 +331,15 @@ npm install --global taskbook
 
 ## 相关
 
--   [chalk](https://github.com/chalk/chalk)- Terminal string styling done right
--   [signale](https://github.com/klaussinani/signale)-   Hackable console logger
+- [signale](https://github.com/klaussinani/signale) - Hackable console logger
+- [qoa](https://github.com/klaussinani/qoa) - Minimal interactive command-line prompts
+- [hyperocean](https://github.com/klaussinani/hyperocean) - Deep oceanic blue Hyper terminal theme
 
-## 团队
+## Team
 
--   Klaus Sinani[ (@klaussinani) ](https://github.com/klaussinani)
+- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
+- Mario Sinani [(@mario-sinani)](https://github.com/mario-sinani)
 
-## 授权协议
+## License
 
 [MIT](https://github.com/klaussinani/taskbook/blob/master/license.md)
