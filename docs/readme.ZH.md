@@ -335,11 +335,11 @@ snap alias taskbook tb # set alias
 - [qoa](https://github.com/klaussinani/qoa) - Minimal interactive command-line prompts
 - [hyperocean](https://github.com/klaussinani/hyperocean) - Deep oceanic blue Hyper terminal theme
 
-## Team
+## 团队
 
 - Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
 - Mario Sinani [(@mario-sinani)](https://github.com/mario-sinani)
 
-## License
+## 授权协议
 
 [MIT](https://github.com/klaussinani/taskbook/blob/master/license.md)
