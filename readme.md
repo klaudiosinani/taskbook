@@ -368,7 +368,7 @@ For more info on how to contribute to the project, please read the [contributing
 ## Team
 
 - Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
-- Mario Sinani [(@mario-sinani)](https://github.com/mario-sinani)
+- Mario Sinani [(@mariosinani)](https://github.com/mariosinani)
 
 ## License
 
