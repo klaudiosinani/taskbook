@@ -2,7 +2,7 @@
   "name": "taskbook",
   "productName": "Taskbook",
   "version": "0.3.0",
-  "description": "📓 Tasks, boards & notes for the command-line habitat",
+  "description": "Tasks, boards & notes for the command-line habitat",
   "repository": "klaussinani/taskbook",
   "license": "MIT",
   "author": {
