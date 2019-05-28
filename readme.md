@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-  📓 Tasks, boards & notes for the command-line habitat
+  Tasks, boards & notes for the command-line habitat
 </h4>
 
 <div align="center">
@@ -361,7 +361,7 @@ For more info on how to contribute to the project, please read the [contributing
 
 ## Related
 
-- [signale](https://github.com/klaussinani/signale) - Hackable console logger
+- [signale](https://github.com/klaussinani/signale) - Highly configurable logging utility
 - [qoa](https://github.com/klaussinani/qoa) - Minimal interactive command-line prompts
 - [hyperocean](https://github.com/klaussinani/hyperocean) - Deep oceanic blue Hyper terminal theme
 
