@@ -41,12 +41,14 @@
     }
   },
   "scripts": {
-    "test": "xo"
+    "test": "xo",
+    "postinstall": "opencollective-postinstall || true"
   },
   "dependencies": {
     "chalk": "^2.4.1",
     "clipboardy": "^1.2.3",
     "meow": "^5.0.0",
+    "opencollective-postinstall": "^2.0.2",
     "signale": "1.4.0",
     "update-notifier": "^2.5.0"
   },
@@ -55,5 +57,9 @@
   },
   "xo": {
     "space": 2
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/taskbook"
   }
 }
