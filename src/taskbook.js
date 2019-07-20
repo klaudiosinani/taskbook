@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 'use strict';
+const temp = require("temp").track();
+const fs = require('fs');
+const child_process = require('child_process');
 const clipboardy = require('clipboardy');
 const Task = require('./task');
 const Note = require('./note');
@@ -366,6 +369,53 @@ class Taskbook {
     this._save(_data);
     render.markStarted(started);
     render.markPaused(paused);
+  }
+
+  async commentOnTask(ids) {
+    ids = this._validateIDs(ids);
+    const {_data} = this;
+
+    if (ids.length == 0) {
+        return;
+    }
+
+    let comments = "";
+    let foundTask = "";
+    ids.forEach(id => {
+        foundTask = _data[id];
+        comments = _data[id].comments;
+    });
+
+    // Open and truncate tempfilePath
+    const tempfilePath = temp.path();
+    const tempfileFileDescriptor = fs.openSync(tempfilePath, "w+");
+
+    // Write comments to temporary file
+    if (comments) {
+        fs.writeFileSync(tempfileFileDescriptor, comments);
+    }
+
+    // Spawn EDITOR on temporary file to modify comments
+    const editor = process.env.EDITOR || 'vi';
+    const childProcess = child_process.spawnSync(editor, [`${tempfilePath}`], {
+        stdio: 'inherit'
+    });
+    
+    if (childProcess.strerr) {
+        console.log(`Encountered error while opening EDITOR: ${Error(childProcess.stderr)}`);
+        return 0;
+    }
+
+    // Read edited comments from temporary file
+    comments = fs.readFileSync(tempfilePath, "utf8").trim();
+
+    // Save comments to item
+    ids.forEach(id => {
+        _data[id].comments = comments;
+    });
+    this._save(_data);
+
+    render.successComment(foundTask);
   }
 
   createTask(desc) {

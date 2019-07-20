@@ -72,6 +72,17 @@ class Render {
     return prefix.join(' ');
   }
 
+  _buildCommentsMessage(item) {
+    const indent = [' '.repeat(8 - String(item._id).length)];
+
+    let comments = item.comments
+          .split('\n')
+          .map((line, index) => `${indent.join('')}${line}`)
+          .join('\n')
+
+    return green(comments);
+  }
+
   _buildMessage(item) {
     const message = [];
 
@@ -103,14 +114,22 @@ class Render {
     const age = this._getAge(item._timestamp);
     const star = this._getStar(item);
 
-    const prefix = this._buildPrefix(item);
-    const message = this._buildMessage(item);
-    const suffix = (age.length === 0) ? star : `${age} ${star}`;
+    let prefix = this._buildPrefix(item);
+    let message = this._buildMessage(item);
+    let suffix = (age.length === 0) ? star : `${age} ${star}`;
 
-    const msgObj = {prefix, message, suffix};
+    let msgObj = {prefix, message, suffix};
 
     if (_isTask) {
-      return isComplete ? success(msgObj) : inProgress ? wait(msgObj) : pending(msgObj);
+      isComplete ? success(msgObj) : inProgress ? wait(msgObj) : pending(msgObj);
+
+      if (item.comments) {
+          message = this._buildCommentsMessage(item);
+          msgObj = {prefix:"", message, suffix:""};
+          log(msgObj);
+      }
+
+      return 0;
     }
 
     return note(msgObj);
@@ -294,6 +313,12 @@ class Render {
     const prefix = '\n';
     const message = 'No id was given as input';
     error({prefix, message});
+  }
+
+  successComment({_id, _isTask}) {
+    const [prefix, suffix] = ['\n', grey(_id)];
+    const message = `Commented on ${_isTask ? 'task:' : 'note:'}`;
+    success({prefix, message, suffix});
   }
 
   successCreate({_id, _isTask}) {
