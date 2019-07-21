@@ -123,16 +123,17 @@ class Render {
     if (_isTask) {
       isComplete ? success(msgObj) : inProgress ? wait(msgObj) : pending(msgObj);
 
-      if (item.comments) {
-          message = this._buildCommentsMessage(item);
-          msgObj = {prefix:"", message, suffix:""};
-          log(msgObj);
-      }
-
-      return 0;
+    } else {
+      note(msgObj);
     }
 
-    return note(msgObj);
+    if (item.comments) {
+      message = this._buildCommentsMessage(item);
+      msgObj = {prefix:"", message, suffix:""};
+      log(msgObj);
+    }
+
+    return 0;
   }
 
   _displayItemByDate(item) {

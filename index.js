@@ -20,7 +20,7 @@ const taskbookCLI = (input, flags) => {
   }
 
   if (flags.comment) {
-    return taskbook.commentOnTask(input);
+    return taskbook.commentOnItem(input);
   }
 
   if (flags.delete) {

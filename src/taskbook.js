@@ -371,7 +371,7 @@ class Taskbook {
     render.markPaused(paused);
   }
 
-  async commentOnTask(ids) {
+  async commentOnItem(ids) {
     ids = this._validateIDs(ids);
     const {_data} = this;
 
@@ -380,17 +380,17 @@ class Taskbook {
     }
 
     let comments = "";
-    let foundTask = "";
+    let foundItem = "";
     ids.forEach(id => {
-        foundTask = _data[id];
+        foundItem = _data[id];
         comments = _data[id].comments;
     });
 
-    // Open and truncate tempfilePath
+    // Open and truncate a temporary file
     const tempfilePath = temp.path();
     const tempfileFileDescriptor = fs.openSync(tempfilePath, "w+");
 
-    // Write comments to temporary file
+    // Write comments to a temporary file
     if (comments) {
         fs.writeFileSync(tempfileFileDescriptor, comments);
     }
@@ -415,7 +415,7 @@ class Taskbook {
     });
     this._save(_data);
 
-    render.successComment(foundTask);
+    render.successComment(foundItem);
   }
 
   createTask(desc) {
