@@ -15,6 +15,14 @@ class Render {
     return config.get();
   }
 
+  get dailyScratchDesc() {
+    return "daily_scratch";
+  }
+
+  get notesBoard() {
+    return "@Notes";
+  }
+
   _colorBoards(boards) {
     return boards.map(x => grey(x)).join(' ');
   }
@@ -122,7 +130,6 @@ class Render {
 
     if (_isTask) {
       isComplete ? success(msgObj) : inProgress ? wait(msgObj) : pending(msgObj);
-
     } else {
       note(msgObj);
     }
@@ -141,17 +148,25 @@ class Render {
     const boards = item.boards.filter(x => x !== 'My Board');
     const star = this._getStar(item);
 
-    const prefix = this._buildPrefix(item);
-    const message = this._buildMessage(item);
-    const suffix = `${this._colorBoards(boards)} ${star}`;
+    let prefix = this._buildPrefix(item);
+    let message = this._buildMessage(item);
+    let suffix = `${this._colorBoards(boards)} ${star}`;
 
-    const msgObj = {prefix, message, suffix};
+    let msgObj = {prefix, message, suffix};
 
     if (_isTask) {
-      return isComplete ? success(msgObj) : inProgress ? wait(msgObj) : pending(msgObj);
+      isComplete ? success(msgObj) : inProgress ? wait(msgObj) : pending(msgObj);
+    } else {
+      note(msgObj);
     }
 
-    return note(msgObj);
+    if (item.comments) {
+      message = this._buildCommentsMessage(item);
+      msgObj = {prefix:"", message, suffix:""};
+      log(msgObj);
+    }
+
+    return 0;
   }
 
   displayByBoard(data) {
@@ -258,6 +273,14 @@ class Render {
     success({prefix, message, suffix});
   }
 
+  markStartOfDay() {
+    success({
+      prefix:"\n", 
+      message:`Started ${new Date().toLocaleDateString()}`,
+      suffix:""
+    });
+  }
+
   markStarted(ids) {
     if (ids.length === 0) {
       return;
@@ -316,9 +339,23 @@ class Render {
     error({prefix, message});
   }
 
-  successComment({_id, _isTask}) {
-    const [prefix, suffix] = ['\n', grey(_id)];
-    const message = `Commented on ${_isTask ? 'task:' : 'note:'}`;
+  successComment({_id, _isTask, description}) {
+    let prefix = "";
+    let suffix = "";
+    let message = "Commented on ";
+
+    if (description === this.dailyScratchDesc) {
+      prefix = "\n";
+      message += "scratch pad";
+      suffix = "";
+    } else if (_isTask) {
+      message += "task:";
+      [prefix, suffix] = ['\n', grey(_id)];
+    } else if (!_isTask) {
+      message += "note:";
+      [prefix, suffix] = ['\n', grey(_id)];
+    }
+
     success({prefix, message, suffix});
   }
 

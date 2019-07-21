@@ -353,6 +353,42 @@ class Taskbook {
     render.markIncomplete(unchecked);
   }
 
+  startDay() {
+    const {_data} = this;
+
+    this._getIDs().forEach(id => {
+      if (
+        // Checked tasks
+        (_data[id]._isTask && _data[id].isComplete) ||
+        // Daily scratch pad
+        (!_data[id]._isTask && _data[id].description === render.dailyScratchDesc) 
+      ) {
+        this._saveItemToArchive(_data[id]);
+        delete _data[id];
+      }
+    });
+    this._save(_data);
+
+    this.createDailyScratchNote();
+
+    render.markStartOfDay();
+  }
+
+  createDailyScratchNote() {
+    const {_data} = this;
+    const newNoteId = this._generateID();
+    const note = new Note(
+      { id:newNoteId,
+        description:render.dailyScratchDesc,
+        boards:[render.notesBoard]}
+    );
+
+    _data[newNoteId] = note;
+    this._save(_data);
+
+    return newNoteId;
+  }
+
   beginTasks(ids) {
     ids = this._validateIDs(ids);
     const {_data} = this;
@@ -369,6 +405,23 @@ class Taskbook {
     this._save(_data);
     render.markStarted(started);
     render.markPaused(paused);
+  }
+
+  editDailyScratch() {
+    const {_data} = this;
+
+    let dailyScratchId = -1;
+    this._getIDs().forEach(id => {
+      if (_data[id].description === render.dailyScratchDesc) {
+        dailyScratchId = id;
+      }
+    });
+
+    if (dailyScratchId === -1) {
+      dailyScratchId = this.createDailyScratchNote();
+    }
+
+    this.commentOnItem([dailyScratchId]);
   }
 
   async commentOnItem(ids) {

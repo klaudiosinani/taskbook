@@ -12,6 +12,14 @@ const cli = meow(help, {
       type: 'boolean',
       alias: 'h'
     },
+    start: {
+      type: 'boolean',
+      alias: 'start'
+    },
+    scratch: {
+      type: 'boolean',
+      alias: 'scratch'
+    },
     version: {
       type: 'boolean',
       alias: 'v'

@@ -350,6 +350,35 @@ To search for one of more items, use the `--find`/`-f` option, followed by your 
 $ tb -f documentation
 ```
 
+### Start a New Day
+
+Command:
+
+```
+$ tb --start
+```
+
+This command does the following:
+
+- Archive all checked cards
+- Archive a note titled `daily_scratch`
+- Make a new note titled `daily_scratch` in a board called `@Notes`
+
+The idea here is that, at the beginning of a new day, one would run the above command, which would clear all checked tasks and prepare a new "daily scratch pad", which can be edited, at any time, using the `--scratch` switch (see below)
+
+
+### Editing the Daily Scratch Pad
+
+Command:
+
+```
+$ tb --scratch
+```
+
+Open an editor on the `daily_scratch` note.
+If it doesn't exist, create one with the above title in a board called `@Notes`
+
+
 ## Development
 
 For more info on how to contribute to the project, please read the [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md).

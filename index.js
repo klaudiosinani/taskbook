@@ -11,6 +11,14 @@ const taskbookCLI = (input, flags) => {
     return taskbook.createTask(input);
   }
 
+  if (flags.start) {
+    return taskbook.startDay();
+  }
+
+  if (flags.scratch) {
+    return taskbook.editDailyScratch();
+  }
+
   if (flags.restore) {
     return taskbook.restoreItems(input);
   }

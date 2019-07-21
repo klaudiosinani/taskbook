@@ -6,6 +6,8 @@ module.exports = `
 
     Options
         none             Display board view
+      --start            Start the day
+      --scratch          Edit daily scratch pad
       --archive, -a      Display archived items
       --begin, -b        Start/pause task
       --check, -c        Check/uncheck task
