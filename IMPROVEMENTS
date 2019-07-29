@@ -1,0 +1,10 @@
+- `--last` command
+    - Apply changes to the last created item
+- `--tbc` command
+    - To be continued
+    - Acts like a check, as in a new day would remove it
+- --check and --comment commands take a single line as input to be added as a comment with a prefix of `DONE: ` on the later
+- Fetch possible story link from Trello and attach it here, prepend the title with the keyword in case
+- ASK FOR CONFIRMATION BEFORE RUNNING --start
+- Have a way to have "tasks" send an email reminder
+- Sort --archive descendingly
