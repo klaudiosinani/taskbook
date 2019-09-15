@@ -160,7 +160,8 @@ The following illustrates all the available options with their respective defaul
 {
   "taskbookDirectory": "~",
   "displayCompleteTasks": true,
-  "displayProgressOverview": true
+  "displayProgressOverview": true,
+  "tagDelimiter": "@"
 }
 ```
 
@@ -188,6 +189,15 @@ Display tasks that are marked as complete.
 - Default: `true`
 
 Display progress overview below the timeline and board views.
+
+##### `tagDelimiter`
+
+- Type: `String`
+- Default: `@`
+
+Specify the delimiter used in tag commands such as `@board` and `@id`.
+
+Note: PowerShell users will need to override this with another character.
 
 ## Flight Manual
 
