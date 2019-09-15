@@ -5,7 +5,7 @@ const Task = require('./task');
 const Note = require('./note');
 const Storage = require('./storage');
 const render = require('./render');
-const config = require('./config')
+const config = require('./config');
 
 class Taskbook {
   constructor() {
