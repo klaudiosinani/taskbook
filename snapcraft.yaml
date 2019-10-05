@@ -13,6 +13,7 @@ confinement: strict
 architectures:
   - amd64
   - i386
+  - armhf
 
 apps:
   taskbook:
