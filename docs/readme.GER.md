@@ -367,12 +367,15 @@ Mehr Informationen im Bezug auf Beiträge zum Projekt finden sich in den [contri
 
 ## Related
 
-- [chalk](https://github.com/chalk/chalk) - Terminal string styling done right
-- [signale](https://github.com/klauscfhq/signale) - Hackable console logger
+- [signale](https://github.com/klaussinani/signale) - Highly configurable logging utility
+- [qoa](https://github.com/klaussinani/qoa) - Minimal interactive command-line prompts
+- [hyperocean](https://github.com/klaussinani/hyperocean) - Deep oceanic blue Hyper terminal theme
 
 ## Team
 
-- Klaus Sinani [(@klauscfhq)](https://github.com/klauscfhq)
+- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
+- Mario Sinani [(@mariosinani)](https://github.com/mariosinani)
+
 
 ## License
 
