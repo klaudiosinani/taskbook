@@ -6,6 +6,8 @@
 
 - [Français - French](https://github.com/klaussinani/taskbook/blob/master/docs/readme.FR.md) by [@Maltemo](https://github.com/Maltemo)
 
+- [GERMAN](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.GER.md) by [@villabunterkunt](https://github.com/villabunterkunt)
+
 ## Contributing
 
 Visit the [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) to learn more on how to get involved in the translating process.
