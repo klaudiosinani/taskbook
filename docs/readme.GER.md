@@ -144,7 +144,7 @@ $ tb --help
 Wenn man taskbook ohne Optionen aufruft, dann werden alle gespeicherten Elemente gruppiert in den zugeordneten Boards angezeigt.
 
 <div align="center">
-  <img alt="Boards" width="60%" src="../media/header-boards.png"/>
+  <img alt="Boards" width="60%" src='../media/header-boards.png' />
 </div>
 
 ### Zeitleisten Ansicht
