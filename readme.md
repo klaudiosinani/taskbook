@@ -22,7 +22,7 @@ By utilizing a simple and minimal usage syntax, that requires a flat learning cu
 
 Read this document in: [简体中文](https://github.com/klaussinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaussinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaussinani/taskbook/blob/master/docs/readme.FR.md).
 
-You can now support the development process by donating on [Open Collective](https://opencollective.com/klaussinani).
+You can now support the development process through [GitHub Sponsors](https://github.com/sponsors/klaussinani).
 
 Visit the [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
 
