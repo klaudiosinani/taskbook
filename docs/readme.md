@@ -8,6 +8,8 @@
 
 - [GERMAN](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.GER.md) by [@villabunterkunt](https://github.com/villabunterkunt)
 
+- [Portuguese](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.PT-BR.md) by [@luanrv](https://github.com/luanrv)
+
 ## Contributing
 
 Visit the [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) to learn more on how to get involved in the translating process.
