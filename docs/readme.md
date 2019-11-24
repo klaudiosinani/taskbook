@@ -8,6 +8,8 @@
 
 - [GERMAN](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.GER.md) by [@villabunterkunt](https://github.com/villabunterkunt)
 
+- [Portuguese](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.PT-BR.md) by [@luanrv](https://github.com/luanrv)
+
 - [日本語](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.JP.md) by [@pyohei](https://github.com/pyohei)
 
 ## Contributing
