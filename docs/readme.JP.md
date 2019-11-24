@@ -55,7 +55,7 @@ Taskbookはシンプルで最小限の使い方で、簡単・効率的にター
 - [操作方法](#操作方法)
 - [開発](#開発)
 - [関連プロジェクト](#関連プロジェクト)
-- [開発チーム](#チーム)
+- [開発チーム](#開発チーム)
 - [ライセンス](#ライセンス)
 
 ## インストール
@@ -139,7 +139,7 @@ $ tb --help
 オプションなしでtaskbookを起動すると、保存している全てのアイテムをそれぞれのボードに表示します。  
 
 <div align="center">
-  <img alt="Boards" width="60%" src="media/header-boards.png"/>
+  <img alt="Boards" width="60%" src="../media/header-boards.png"/>
 </div>
 
 ### タイムライン
@@ -147,7 +147,7 @@ $ tb --help
 全てのアイテムをタイムラインに表示するためには、`--timeline`/`-i` オプションを利用することで作成日順に表示されます。   
 
 <div align="center">
-  <img alt="Timeline View" width="62%" src="media/timeline.png"/>
+  <img alt="Timeline View" width="62%" src="../media/timeline.png"/>
 </div>
 
 ## 設定
