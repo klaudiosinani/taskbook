@@ -10,6 +10,8 @@
 
 - [Portuguese](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.PT-BR.md) by [@luanrv](https://github.com/luanrv)
 
+- [日本語](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.JP.md) by [@pyohei](https://github.com/pyohei)
+
 ## Contributing
 
 Visit the [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) to learn more on how to get involved in the translating process.
