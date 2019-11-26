@@ -12,6 +12,8 @@
 
 - [日本語](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.JP.md) by [@pyohei](https://github.com/pyohei)
 
+- [한국어 - Korean](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.KR.md) by [@Junebuug](https://github.com/Junebuug)
+
 ## Contributing
 
 Visit the [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) to learn more on how to get involved in the translating process.
