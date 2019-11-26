@@ -7,7 +7,7 @@
 </h4>
 
 <div align="center">
-  <img alt="Boards" width="60%" src="media/header-boards.png"/>
+  <img alt="Boards" width="60%" src="../media/header-boards.png"/>
 </div>
 
 <p align="center">
@@ -142,7 +142,7 @@ $ tb --help
 아무 옵션도 주지 않고 taskbook을 작동 시키면, 각 board로 그룹된 아이템들이 보여집니다. 
 
 <div align="center">
-  <img alt="Boards" width="60%" src="media/header-boards.png"/>
+  <img alt="Boards" width="60%" src="../media/header-boards.png"/>
 </div>
 
 ### 타임라인 뷰 
@@ -150,7 +150,7 @@ $ tb --help
 타임라인 뷰로 모든 아이템들을 보려면 (생성시간 기준), `--timeline`/`-i` 옵션을 사용하면 됩니다.
 
 <div align="center">
-  <img alt="Timeline View" width="62%" src="media/timeline.png"/>
+  <img alt="Timeline View" width="62%" src="../media/timeline.png"/>
 </div>
 
 ## 설정 
