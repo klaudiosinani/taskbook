@@ -96,22 +96,22 @@ $ tb --help
     Options
         none             Anzeigen der board Ansicht
       --archive, -a      archivierte Elemente anzeigen
-	  --begin, -b        einen Task starten/pausieren
-	  --check, -c        einen Task anhaken/abhaken
-	  --clear            alle markierten Elemente löschen
-	  --copy, -y         Beschreibung kopieren
-	  --delete, -d       Element löschen
+      --begin, -b        einen Task starten/pausieren
+      --check, -c        einen Task anhaken/abhaken
+      --clear            alle markierten Elemente löschen
+      --copy, -y         Beschreibung kopieren
+      --delete, -d       Element löschen
       --edit, -e         Beschreibung des Elements anpassen
       --find, -f         nach Elementen suchen
       --note, -n         Notiz erstellen
       --help, -h         Hilfe-Nachricht anzeigen
-      --list, -l         Elemente nach Attributen auflisten	  
+      --list, -l         Elemente nach Attributen auflisten
       --move, -m         Element zwischen Boards verschieben
-	  --note, -n         Notiz erstellen
+      --note, -n         Notiz erstellen
       --priority, -p     die Priorität neu setzen
       --restore, -r      archivierte Elemente wiederherstellen
       --star, -s         ein Sternchen bei einem Element setzen/entfernen
-	  --task, -t         Task erstellen
+      --task, -t         Task erstellen
       --timeline, -i     Zeitübersicht anzeigen
       --version, -v      Version anzeigen
 
