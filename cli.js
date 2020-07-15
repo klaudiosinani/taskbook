@@ -60,6 +60,10 @@ const cli = meow(help, {
       type: 'boolean',
       alias: 'p'
     },
+    swap: {
+      type: 'boolean',
+      alias: 'w'
+    },
     find: {
       type: 'boolean',
       alias: 'f'

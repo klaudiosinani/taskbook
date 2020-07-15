@@ -529,6 +529,32 @@ class Taskbook {
     render.markUnstarred(unstarred);
   }
 
+  swapItems(ids) {
+    ids = this._validateIDs(ids);
+   
+    if (ids.length > 2 ) {
+      render.invalidIDsNumber();
+      process.exit(1);
+    }
+
+    if (ids.length < 2) {
+      render.notEnoughIDsNumber();
+      process.exit(1);
+    }
+
+    const {_data} = this;
+
+    _data[ids[0]]._id = ids[1];
+    _data[ids[1]]._id = ids[0];
+
+    var tmp = _data[ids[0]];
+    _data[ids[0]] = _data[ids[1]];
+    _data[ids[1]] = tmp;
+
+    this._save(_data);
+    render.swapSuccess(ids);
+  }
+
   updatePriority(input) {
     const level = input.find(x => ['1', '2', '3'].indexOf(x) > -1);
 

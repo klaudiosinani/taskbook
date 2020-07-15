@@ -21,6 +21,7 @@ module.exports = `
       --priority, -p     Update priority of task
       --restore, -r      Restore items from archive
       --star, -s         Star/unstar item
+      --swap, -w         Swap items
       --task, -t         Create task
       --timeline, -i     Display timeline view
       --version, -v      Display installed version
@@ -41,6 +42,7 @@ module.exports = `
       $ tb --priority @3 2
       $ tb --restore 4
       $ tb --star 2
+      $ tb --swap 2 1
       $ tb --task @coding @reviews Review PR #42
       $ tb --task @coding Improve documentation
       $ tb --task Make some buttercream

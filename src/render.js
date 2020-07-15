@@ -212,6 +212,12 @@ class Render {
     error({prefix, message});
   }
 
+  notEnoughIDsNumber() {
+    const prefix = '\n';
+    const message = 'Not enough ids were given as input';
+    error({prefix, message});
+  }
+
   invalidPriority() {
     const prefix = '\n';
     const message = 'Priority can only be 1, 2 or 3';
@@ -275,6 +281,16 @@ class Render {
 
     const [prefix, suffix] = ['\n', grey(ids.join(', '))];
     const message = `Unstarred ${ids.length > 1 ? 'items' : 'item'}:`;
+    success({prefix, message, suffix});
+  }
+
+  swapSuccess(ids) {
+    if (ids.length != 2) {
+      return;
+    }
+
+    const [prefix, suffix] = ['\n', grey(ids.join(', '))];
+    const message = `Swapped items:`;
     success({prefix, message, suffix});
   }
 
