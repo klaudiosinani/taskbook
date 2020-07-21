@@ -214,12 +214,15 @@ class Taskbook {
           break;
 
         case 'done':
+        case 'check':
         case 'checked':
         case 'complete':
           data = this._filterComplete(data);
           break;
 
         case 'progress':
+        case 'start':
+        case 'doing':
         case 'started':
         case 'begun':
           data = this._filterInProgress(data);
