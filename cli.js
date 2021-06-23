@@ -56,6 +56,10 @@ const cli = meow(help, {
       type: 'boolean',
       alias: 'i'
     },
+    checked: {
+      type: 'boolean',
+      alias: 'k'
+    },
     priority: {
       type: 'boolean',
       alias: 'p'
