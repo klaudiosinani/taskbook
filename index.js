@@ -48,6 +48,11 @@ const taskbookCLI = (input, flags) => {
     return taskbook.displayStats();
   }
 
+  if (flags.checked) {
+    taskbook.displayByCheckedDate();
+    return taskbook.displayStats();
+  }
+
   if (flags.find) {
     return taskbook.findItems(input);
   }

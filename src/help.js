@@ -23,6 +23,7 @@ module.exports = `
       --star, -s         Star/unstar item
       --task, -t         Create task
       --timeline, -i     Display timeline view
+      --checked, -k      Display timeline view based on checked date
       --version, -v      Display installed version
 
     Examples

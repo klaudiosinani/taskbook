@@ -5,6 +5,7 @@ class Task extends Item {
   constructor(options = {}) {
     super(options);
     this._isTask = true;
+    this._completedDate = options._completedDate || null;
     this.isComplete = options.isComplete || false;
     this.inProgress = options.inProgress || false;
     this.isStarred = options.isStarred || false;

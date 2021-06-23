@@ -86,6 +86,18 @@ class Taskbook {
     return dates;
   }
 
+  _getCompletedDates(data = this._data) {
+    const dates = [];
+
+    for (const id of Object.keys(data)) {
+      if (!dates.include(data[id]._completedDate)) {
+        dates.push(data[id]._completedDate);
+      }
+    }
+
+    return dates;
+  }
+
   _getIDs(data = this._data) {
     return Object.keys(data).map(id => parseInt(id, 10));
   }
@@ -292,6 +304,27 @@ class Taskbook {
     return grouped;
   }
 
+  _groupByCompletedDate(data = this._data, dates = this._getCompletedDates()) {
+    const grouped = {};
+
+    for (const id of Object.keys(data)) {
+      if (data[id].isComplete && data[id]._completedDate) {
+        for (const date of dates) {
+          if (data[id]._completedDate === date) {
+            if (Array.isArray(grouped[date])) {
+              return grouped[date].push(data[id]);
+            }
+
+            grouped[date] = [data[id]];
+            return grouped[date];
+          }
+        }
+      }
+    }
+
+    return grouped;
+  }
+
   _saveItemToArchive(item) {
     const {_archive} = this;
     const archiveID = this._generateID(_archive);
@@ -341,7 +374,13 @@ class Taskbook {
       if (_data[id]._isTask) {
         _data[id].inProgress = false;
         _data[id].isComplete = !_data[id].isComplete;
-        return _data[id].isComplete ? checked.push(id) : unchecked.push(id);
+        if (_data[id].isComplete) {
+          _data[id]._completedDate = new Date().toDateString();
+          checked.push(id);
+        } else {
+          _data[id]._completedDate = null;
+          unchecked.push(id);
+        }
       }
     });
 
@@ -400,6 +439,10 @@ class Taskbook {
 
   displayByDate() {
     render.displayByDate(this._groupByDate());
+  }
+
+  displayByCheckedDate() {
+    render.displayByDate(this._groupByCompletedDate());
   }
 
   displayStats() {
@@ -543,7 +586,7 @@ class Taskbook {
       render.missingID();
       process.exit(1);
     }
-
+ 
     if (targets.length > 1) {
       render.invalidIDsNumber();
       process.exit(1);
