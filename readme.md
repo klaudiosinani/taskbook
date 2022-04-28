@@ -97,7 +97,7 @@ $ tb --help
       --archive, -a      Display archived items
       --begin, -b        Start/pause task
       --check, -c        Check/uncheck task
-      --clear            Delete all checked items
+      --clear            Delete all checked items        
       --copy, -y         Copy item description
       --delete, -d       Delete item
       --edit, -e         Edit item description
@@ -112,6 +112,7 @@ $ tb --help
       --task, -t         Create task
       --timeline, -i     Display timeline view
       --version, -v      Display installed version
+      --purge            Purge the archive and reset the ids
 
     Examples
       $ tb
@@ -119,6 +120,7 @@ $ tb --help
       $ tb --begin 2 3
       $ tb --check 1 2
       $ tb --clear
+      $ tb --purge
       $ tb --copy 1 2 3
       $ tb --delete 4
       $ tb --edit @3 Merge PR #42
