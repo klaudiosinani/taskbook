@@ -97,7 +97,7 @@ $ tb --help
       --archive, -a      Display archived items
       --begin, -b        Start/pause task
       --check, -c        Check/uncheck task
-      --clear            Delete all checked items        
+      --clear            Delete all checked items
       --copy, -y         Copy item description
       --delete, -d       Delete item
       --edit, -e         Edit item description

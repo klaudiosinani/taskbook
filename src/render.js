@@ -315,7 +315,6 @@ class Render {
   }
 
   successPurged(count) {
-    //const [prefix, suffix] = ['\n', grey(ids.join(', '))];
     const prefix = '\n';
     const suffix = count > 1 ? 'items' : 'item';
     const message = `Purged ${count}`;
