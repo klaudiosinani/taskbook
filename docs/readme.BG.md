@@ -7,7 +7,7 @@
 </h4>
 
 <div align="center">
-  <img alt="Boards" width="60%" src="media/header-boards.png"/>
+  <img alt="Boards" width="60%" src="../media/header-boards.png"/>
 </div>
 
 <p align="center">
@@ -142,7 +142,7 @@ $ tb --help
 Извикването на taskbook без каквито и да е аргументи ще покаже всички съхранени елементи, групирани в техните респективни табла.
 
 <div align="center">
-  <img alt="Boards" width="60%" src="media/header-boards.png"/>
+  <img alt="Boards" width="60%" src="../media/header-boards.png"/>
 </div>
 
 ### Изглед Времева линия
@@ -150,7 +150,7 @@ $ tb --help
 За да покажете всички елементи във времеви изглед, базирано на тяхната дата на създаване, `--timeline`/`-i` трябва да бъде използван.
 
 <div align="center">
-  <img alt="Timeline View" width="62%" src="media/timeline.png"/>
+  <img alt="Timeline View" width="62%" src="../media/timeline.png"/>
 </div>
 
 ## Конфигурация
