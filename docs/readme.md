@@ -14,6 +14,10 @@
 
 - [한국어 - Korean](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.KR.md) by [@Junebuug](https://github.com/Junebuug)
 
+- [Spanish](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.ES.md) by [@spaceinvadev](https://github.com/spaceinvadev)
+
+- [Bulgarian](https://github.com/klaussinani/taskbook/blob/master/docs/readme.BG.md) by [@librafrog](https://github.com/librafrog)
+
 ## Contributing
 
 Visit the [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) to learn more on how to get involved in the translating process.
@@ -21,4 +25,3 @@ Visit the [contributing guidelines](https://github.com/klaussinani/taskbook/blob
 ## Thanks
 
 Tons of thank you to the amazing people that help out with the creation and maintenance of the translations! Your contributions make Taskbook available to everyone around the world! ❤️
-
