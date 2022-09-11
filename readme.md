@@ -112,6 +112,7 @@ $ tb --help
       --task, -t         Create task
       --timeline, -i     Display timeline view
       --version, -v      Display installed version
+      --purge            Purge the archive and reset the ids
 
     Examples
       $ tb
@@ -119,6 +120,7 @@ $ tb --help
       $ tb --begin 2 3
       $ tb --check 1 2
       $ tb --clear
+      $ tb --purge
       $ tb --copy 1 2 3
       $ tb --delete 4
       $ tb --edit @3 Merge PR #42
