@@ -214,12 +214,15 @@ class Taskbook {
           break;
 
         case 'done':
+        case 'check':
         case 'checked':
         case 'complete':
           data = this._filterComplete(data);
           break;
 
         case 'progress':
+        case 'start':
+        case 'doing':
         case 'started':
         case 'begun':
           data = this._filterInProgress(data);
@@ -527,6 +530,32 @@ class Taskbook {
     this._save(_data);
     render.markStarred(starred);
     render.markUnstarred(unstarred);
+  }
+
+  swapItems(ids) {
+    ids = this._validateIDs(ids);
+   
+    if (ids.length > 2 ) {
+      render.invalidIDsNumber();
+      process.exit(1);
+    }
+
+    if (ids.length < 2) {
+      render.notEnoughIDsNumber();
+      process.exit(1);
+    }
+
+    const {_data} = this;
+
+    _data[ids[0]]._id = ids[1];
+    _data[ids[1]]._id = ids[0];
+
+    var tmp = _data[ids[0]];
+    _data[ids[0]] = _data[ids[1]];
+    _data[ids[1]] = tmp;
+
+    this._save(_data);
+    render.swapSuccess(ids);
   }
 
   updatePriority(input) {

@@ -39,6 +39,10 @@ const taskbookCLI = (input, flags) => {
     return taskbook.updatePriority(input);
   }
 
+  if (flags.swap) {
+    return taskbook.swapItems(input);
+  }
+
   if (flags.copy) {
     return taskbook.copyToClipboard(input);
   }
