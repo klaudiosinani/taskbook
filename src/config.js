@@ -5,12 +5,13 @@ const path = require('path');
 const pkg = require('../package.json');
 
 const {join} = path;
+const {env} = process;
 const {default: defaultConfig} = pkg.configuration;
 
 class Config {
   constructor() {
-    this._configFile = join(os.homedir(), '.taskbook.json');
-
+    let config_home = join(env.XDG_CONFIG_HOME || join(os.homedir(), '.config'));
+    this._configFile = join(join(config_home, 'taskbook'), 'taskbook.json')
     this._ensureConfigFile();
   }
 
