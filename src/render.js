@@ -6,7 +6,7 @@ const config = require('./config');
 signale.config({displayLabel: false});
 
 const {await: wait, error, log, note, pending, success} = signale;
-const {blue, green, grey, magenta, red, underline, yellow} = chalk;
+const {blue, green, magenta, red, underline, yellow} = chalk;
 
 const priorities = {2: 'yellow', 3: 'red'};
 
@@ -16,7 +16,7 @@ class Render {
   }
 
   _colorBoards(boards) {
-    return boards.map(x => grey(x)).join(' ');
+    return boards.map(x => this.greyRender(x)).join(' ');
   }
 
   _isBoardComplete(items) {
@@ -27,12 +27,12 @@ class Render {
   _getAge(birthday) {
     const daytime = 24 * 60 * 60 * 1000;
     const age = Math.round(Math.abs((birthday - Date.now()) / daytime));
-    return (age === 0) ? '' : grey(`${age}d`);
+    return (age === 0) ? '' : this.greyRender(`${age}d`);
   }
 
   _getCorrelation(items) {
     const {tasks, complete} = this._getItemStats(items);
-    return grey(`[${complete}/${tasks}]`);
+    return this.greyRender(`[${complete}/${tasks}]`);
   }
 
   _getItemStats(items) {
@@ -57,7 +57,7 @@ class Render {
   }
 
   _buildTitle(key, items) {
-    const title = (key === new Date().toDateString()) ? `${underline(key)} ${grey('[Today]')}` : underline(key);
+    const title = (key === new Date().toDateString()) ? `${underline(key)} ${this.greyRender('[Today]')}` : underline(key);
     const correlation = this._getCorrelation(items);
     return {title, correlation};
   }
@@ -67,7 +67,7 @@ class Render {
 
     const {_id} = item;
     prefix.push(' '.repeat(4 - String(_id).length));
-    prefix.push(grey(`${_id}.`));
+    prefix.push(this.greyRender(`${_id}.`));
 
     return prefix.join(' ');
   }
@@ -81,7 +81,7 @@ class Render {
     if (!isComplete && priority > 1) {
       message.push(underline[priorities[priority]](description));
     } else {
-      message.push(isComplete ? grey(description) : description);
+      message.push(isComplete ? this.greyRender(description) : description);
     }
 
     if (!isComplete && priority > 1) {
@@ -134,6 +134,12 @@ class Render {
     return note(msgObj);
   }
 
+  greyRender(text) {
+    const func = chalk[this._configuration.greyColorOverride] || chalk.grey;
+
+    return func(text);
+  }
+
   displayByBoard(data) {
     Object.keys(data).forEach(board => {
       if (this._isBoardComplete(data[board]) && !this._configuration.displayCompleteTasks) {
@@ -176,10 +182,10 @@ class Render {
     percent = percent >= 75 ? green(`${percent}%`) : percent >= 50 ? yellow(`${percent}%`) : `${percent}%`;
 
     const status = [
-      `${green(complete)} ${grey('done')}`,
-      `${blue(inProgress)} ${grey('in-progress')}`,
-      `${magenta(pending)} ${grey('pending')}`,
-      `${blue(notes)} ${grey(notes === 1 ? 'note' : 'notes')}`
+      `${green(complete)} ${this.greyRender('done')}`,
+      `${blue(inProgress)} ${this.greyRender('in-progress')}`,
+      `${magenta(pending)} ${this.greyRender('pending')}`,
+      `${blue(notes)} ${this.greyRender(notes === 1 ? 'note' : 'notes')}`
     ];
 
     if (complete !== 0 && inProgress === 0 && pending === 0 && notes === 0) {
@@ -190,8 +196,8 @@ class Render {
       log({prefix: '\n ', message: 'Type `tb --help` to get started!', suffix: yellow('★')});
     }
 
-    log({prefix: '\n ', message: grey(`${percent} of all tasks complete.`)});
-    log({prefix: ' ', message: status.join(grey(' · ')), suffix: '\n'});
+    log({prefix: '\n ', message: this.greyRender(`${percent} of all tasks complete.`)});
+    log({prefix: ' ', message: status.join(this.greyRender(' · ')), suffix: '\n'});
   }
 
   invalidCustomAppDir(path) {
@@ -201,7 +207,7 @@ class Render {
   }
 
   invalidID(id) {
-    const [prefix, suffix] = ['\n', grey(id)];
+    const [prefix, suffix] = ['\n', this.greyRender(id)];
     const message = 'Unable to find item with id:';
     error({prefix, message, suffix});
   }
@@ -223,7 +229,7 @@ class Render {
       return;
     }
 
-    const [prefix, suffix] = ['\n', grey(ids.join(', '))];
+    const [prefix, suffix] = ['\n', this.greyRender(ids.join(', '))];
     const message = `Checked ${ids.length > 1 ? 'tasks' : 'task'}:`;
     success({prefix, message, suffix});
   }
@@ -233,7 +239,7 @@ class Render {
       return;
     }
 
-    const [prefix, suffix] = ['\n', grey(ids.join(', '))];
+    const [prefix, suffix] = ['\n', this.greyRender(ids.join(', '))];
     const message = `Unchecked ${ids.length > 1 ? 'tasks' : 'task'}:`;
     success({prefix, message, suffix});
   }
@@ -243,7 +249,7 @@ class Render {
       return;
     }
 
-    const [prefix, suffix] = ['\n', grey(ids.join(', '))];
+    const [prefix, suffix] = ['\n', this.greyRender(ids.join(', '))];
     const message = `Started ${ids.length > 1 ? 'tasks' : 'task'}:`;
     success({prefix, message, suffix});
   }
@@ -253,7 +259,7 @@ class Render {
       return;
     }
 
-    const [prefix, suffix] = ['\n', grey(ids.join(', '))];
+    const [prefix, suffix] = ['\n', this.greyRender(ids.join(', '))];
     const message = `Paused ${ids.length > 1 ? 'tasks' : 'task'}:`;
     success({prefix, message, suffix});
   }
@@ -263,7 +269,7 @@ class Render {
       return;
     }
 
-    const [prefix, suffix] = ['\n', grey(ids.join(', '))];
+    const [prefix, suffix] = ['\n', this.greyRender(ids.join(', '))];
     const message = `Starred ${ids.length > 1 ? 'items' : 'item'}:`;
     success({prefix, message, suffix});
   }
@@ -273,7 +279,7 @@ class Render {
       return;
     }
 
-    const [prefix, suffix] = ['\n', grey(ids.join(', '))];
+    const [prefix, suffix] = ['\n', this.greyRender(ids.join(', '))];
     const message = `Unstarred ${ids.length > 1 ? 'items' : 'item'}:`;
     success({prefix, message, suffix});
   }
@@ -297,44 +303,44 @@ class Render {
   }
 
   successCreate({_id, _isTask}) {
-    const [prefix, suffix] = ['\n', grey(_id)];
+    const [prefix, suffix] = ['\n', this.greyRender(_id)];
     const message = `Created ${_isTask ? 'task:' : 'note:'}`;
     success({prefix, message, suffix});
   }
 
   successEdit(id) {
-    const [prefix, suffix] = ['\n', grey(id)];
+    const [prefix, suffix] = ['\n', this.greyRender(id)];
     const message = 'Updated description of item:';
     success({prefix, message, suffix});
   }
 
   successDelete(ids) {
-    const [prefix, suffix] = ['\n', grey(ids.join(', '))];
+    const [prefix, suffix] = ['\n', this.greyRender(ids.join(', '))];
     const message = `Deleted ${ids.length > 1 ? 'items' : 'item'}:`;
     success({prefix, message, suffix});
   }
 
   successMove(id, boards) {
-    const [prefix, suffix] = ['\n', grey(boards.join(', '))];
-    const message = `Move item: ${grey(id)} to`;
+    const [prefix, suffix] = ['\n', this.greyRender(boards.join(', '))];
+    const message = `Move item: ${this.greyRender(id)} to`;
     success({prefix, message, suffix});
   }
 
   successPriority(id, level) {
     const prefix = '\n';
-    const message = `Updated priority of task: ${grey(id)} to`;
+    const message = `Updated priority of task: ${this.greyRender(id)} to`;
     const suffix = level === '3' ? red('high') : (level === '2' ? yellow('medium') : green('normal'));
     success({prefix, message, suffix});
   }
 
   successRestore(ids) {
-    const [prefix, suffix] = ['\n', grey(ids.join(', '))];
+    const [prefix, suffix] = ['\n', this.greyRender(ids.join(', '))];
     const message = `Restored ${ids.length > 1 ? 'items' : 'item'}:`;
     success({prefix, message, suffix});
   }
 
   successCopyToClipboard(ids) {
-    const [prefix, suffix] = ['\n', grey(ids.join(', '))];
+    const [prefix, suffix] = ['\n', this.greyRender(ids.join(', '))];
     const message = `Copied the ${ids.length > 1 ? 'descriptions of items' : 'description of item'}:`;
     success({prefix, message, suffix});
   }
