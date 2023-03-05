@@ -5,6 +5,7 @@ const Task = require('./task');
 const Note = require('./note');
 const Storage = require('./storage');
 const render = require('./render');
+const config = require('./config');
 
 class Taskbook {
   constructor() {
@@ -17,6 +18,10 @@ class Taskbook {
 
   get _data() {
     return this._storage.get();
+  }
+
+  get _configuration() {
+    return config.get();
   }
 
   _arrayify(x) {
@@ -108,7 +113,7 @@ class Taskbook {
 
     input.forEach(x => {
       if (!this._isPriorityOpt(x)) {
-        return x.startsWith('@') && x.length > 1 ? boards.push(x) : desc.push(x);
+        return x.startsWith(this._configuration.tagDelimiter) && x.length > 1 ? boards.push(x) : desc.push(x);
       }
     });
 
@@ -407,7 +412,7 @@ class Taskbook {
   }
 
   editDescription(input) {
-    const targets = input.filter(x => x.startsWith('@'));
+    const targets = input.filter(x => x.startsWith(this._configuration.tagDelimiter));
 
     if (targets.length === 0) {
       render.missingID();
@@ -420,7 +425,7 @@ class Taskbook {
     }
 
     const [target] = targets;
-    const id = this._validateIDs(target.replace('@', ''));
+    const id = this._validateIDs(target.replace(this._configuration.tagDelimiter, ''));
     const newDesc = input.filter(x => x !== target).join(' ');
 
     if (newDesc.length === 0) {
@@ -454,11 +459,11 @@ class Taskbook {
     const storedBoards = this._getBoards();
 
     terms.forEach(x => {
-      if (storedBoards.indexOf(`@${x}`) === -1) {
+      if (storedBoards.indexOf(`${this._configuration.tagDelimiter}${x}`) === -1) {
         return x === 'myboard' ? boards.push('My Board') : attributes.push(x);
       }
 
-      return boards.push(`@${x}`);
+      return boards.push(`${this._configuration.tagDelimiter}${x}`);
     });
 
     [boards, attributes] = [boards, attributes].map(x => this._removeDuplicates(x));
@@ -469,7 +474,7 @@ class Taskbook {
 
   moveBoards(input) {
     let boards = [];
-    const targets = input.filter(x => x.startsWith('@'));
+    const targets = input.filter(x => x.startsWith(this._configuration.tagDelimiter));
 
     if (targets.length === 0) {
       render.missingID();
@@ -482,10 +487,10 @@ class Taskbook {
     }
 
     const [target] = targets;
-    const id = this._validateIDs(target.replace('@', ''));
+    const id = this._validateIDs(target.replace(this._configuration.tagDelimiter, ''));
 
     input.filter(x => x !== target).forEach(x => {
-      boards.push(x === 'myboard' ? 'My Board' : `@${x}`);
+      boards.push(x === 'myboard' ? 'My Board' : `${this._configuration.tagDelimiter}${x}`);
     });
 
     if (boards.length === 0) {
@@ -537,7 +542,7 @@ class Taskbook {
       process.exit(1);
     }
 
-    const targets = input.filter(x => x.startsWith('@'));
+    const targets = input.filter(x => x.startsWith(this._configuration.tagDelimiter));
 
     if (targets.length === 0) {
       render.missingID();
@@ -550,7 +555,7 @@ class Taskbook {
     }
 
     const [target] = targets;
-    const id = this._validateIDs(target.replace('@', ''));
+    const id = this._validateIDs(target.replace(this._configuration.tagDelimiter, ''));
 
     const {_data} = this;
     _data[id].priority = level;
