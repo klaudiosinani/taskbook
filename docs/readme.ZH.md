@@ -4,7 +4,7 @@
 </h1>
 
 <h4 align="center">
-  📓 任务，板块和笔记都在命令行这个栖息地
+  📓 终端爱好者的任务、板块和便签管理器
 </h4>
 
 <div align="center">
@@ -19,7 +19,7 @@
 
 ## 描述
 
-本应用通过使用简单且最小化的语法，以及平坦的学习曲线，使您可以在终端内跨多个板块，有效地管理任务和笔记。所有数据都以原子方式写入存储，以防止损坏，并且永远不会与任何第三方共享。已删除的条目会自动存档，并且可以随时被检查或恢复。 
+您只需要稍加练习，便可以通过最简单的命令在终端内跨多个板块，有效地管理任务和便签。所有数据都将自动储存以避免数据丢失，并且永远不会与任何第三方共享。已删除的条目会自动存档，并且可以随时查看或恢复。 
 
 访问[贡献指南](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation)了解有关如何将此文档翻译成更多语言的更多信息. 
 
@@ -27,21 +27,21 @@
 
 ## 亮点
 
--   组织任务和笔记到板块
--   板块和时间表视图
--   优先和喜爱的机制
+-   方便地分配任务和便签到板块
+-   拥有板块和时间表视图
+-   优先级和星标机制
 -   搜索和过滤条目
 -   存档并恢复已删除的条目
--   轻巧快速
--   数据以原子方式写入存储
+-   精简，高效
+-   数据自动保存
 -   自定义存储位置
 -   进展概览
--   简单和最小的使用语法
+-   简单易用
 -   更新通知
--   可通过`~/.taskbook.json`实现配置化
--   数据存储在JSON文件中`~/.taskbook/storage`
+-   通过`~/.taskbook.json`进行配置
+-   数据以JSON格式存储于`~/.taskbook/storage`
 
-查看亮点[taskbook 黑板报](https://raw.githubusercontent.com/klaussinani/taskbook/master/media/highlights.png). 
+[在 taskbook 中查看亮点](https://raw.githubusercontent.com/klaussinani/taskbook/master/media/highlights.png). 
 
 ### 目录
 
@@ -52,10 +52,10 @@
 - [描述](#%E6%8F%8F%E8%BF%B0)
 - [亮点](#%E5%BC%BA%E8%B0%83)
 - [安装](#%E5%AE%89%E8%A3%85)
-- [用法](#%E7%94%A8%E6%B3%95)
+- [使用说明](#%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
 - [查看](#%E6%9F%A5%E7%9C%8B)
 - [配置](#%E9%85%8D%E7%BD%AE)
-- [飞行手册](#%E9%A3%9E%E8%A1%8C%E6%89%8B%E5%86%8C)
+- [使用示例](#%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B)
 - [开发](#%E5%8F%91%E5%B1%95)
 - [相关](#%E6%9C%89%E5%85%B3)
 - [团队](#%E5%9B%A2%E9%98%9F)
@@ -85,11 +85,11 @@ snap install taskbook
 snap alias taskbook tb # set alias
 ```
 
-## 用法
+## 使用说明
 
     $ tb --help
 
-      用法
+      使用说明
         $ tb [<options> ...]
 
         Options
@@ -105,7 +105,7 @@ snap alias taskbook tb # set alias
           --help, -h         显示帮助信息
           --list, -l         按属性列出条目
           --move, -m         在板块之间移动条目
-          --note, -n         创建笔记
+          --note, -n         创建便签
           --priority, -p     更新任务的优先级
           --restore, -r      从存档还原条目
           --star, -s         收藏/取消收藏 条目         
@@ -115,30 +115,30 @@ snap alias taskbook tb # set alias
 
         示例
           $ tb
-          $ tb --archive
-          $ tb --begin 2 3
-          $ tb --check 1 2
-          $ tb --clear
-          $ tb --copy 1 2 3
-          $ tb --delete 4
-          $ tb --edit @3 Merge PR #42
-          $ tb --find documentation
-          $ tb --list pending coding
-          $ tb --move @1 cooking
-          $ tb --note @coding Mergesort worse-case O(nlogn)
-          $ tb --priority @3 2
-          $ tb --restore 4
-          $ tb --star 2
-          $ tb --task @coding @reviews Review PR #42
-          $ tb --task @coding Improve documentation
-          $ tb --task Make some buttercream
-          $ tb --timeline
+          $ tb --archive                                        # 显示所有删除/归档的条目
+          $ tb --begin 2 3                                      # 切换任务ID为2、3的开始/暂停状态
+          $ tb --check 1 2                                      # 切换任务ID为1、3的完成状态
+          $ tb --clear                                          # 清除/归档所有已完成的任务
+          $ tb --copy 1 2 3                                     # 复制任务ID为1、2、3的任务描述到剪切板
+          $ tb --delete 4                                       # 删除/归档ID为4的条目
+          $ tb --edit @3 Merge PR #42                           # 修改ID为3的条目的描述为“Merge PR #42”
+          $ tb --find documentation                             # 查找描述中包含“documentation”的条目
+          $ tb --list pending coding                            # 列出“coding”板块中待进行的条目
+          $ tb --move @1 cooking                                # 将ID为1的条目移动至“cooking”板块
+          $ tb --note @coding Mergesort worse-case O(nlogn)     # 添加一条便签到“coding”板块，其内容为“Mergesort worse-case 0(nlogn)”
+          $ tb --priority @3 2                                  # 将ID为3的条目的优先级设置为2
+          $ tb --restore 4                                      # 从归档的条目中恢复ID为4的条目
+          $ tb --star 2                                         # 为ID为2的条目添加星标（收藏）
+          $ tb --task Make some buttercream                     # 添加一个新任务，任务内容（描述）为“Make some buttercream”
+          $ tb --task @coding Improve documentation             # 添加任务“Improve documentation”到“coding”板块
+          $ tb --task @coding @reviews Review PR #42            # 添加新任务“Review PR #42”到“coding”和“reviews”板块
+          $ tb --timeline                                       # 以时间线视图显示
 
 ## 查看
 
 ### 板块视图
 
-在没有任何选项的情况下调用 taskbook，将显示分组到各自板中的所有条目。
+在没有任何附加参数的情况下调用 taskbook，将按分组显示所有项目。
 
 <div align="center">
   <img alt="Boards" width="60%" src="../media/header-boards.png"/>
@@ -146,7 +146,7 @@ snap alias taskbook tb # set alias
 
 ### 时间线视图
 
-为了显示时间线视图中的所有条目，根据其创建日期，`--timeline`/`-i`选项可以使用。
+要在时间线视图中按日期显示所有项目，可以使用`--timeline`/`-i`。
 
 <div align="center">
   <img alt="Timeline View" width="62%" src="../media/timeline.png"/>
@@ -154,9 +154,9 @@ snap alias taskbook tb # set alias
 
 ## 配置
 
-要配置 taskbook ，可定位到`~/.taskbook.json`并根据您的个人喜好修改任何配置选项。如果要重置回默认值，只需从主目录中删除配置文件即可。
+要配置 taskbook ，请根据您的个人喜好修改`~/.taskbook.json`中的配置选项。如果要重置回默认值，只需从主目录中删除配置文件即可。
 
-以下说明了所有可用选项及其各自的默认值：
+下面的部分会详细介绍所有的可用选项及其默认值。
 
 ```json
 {
@@ -166,14 +166,14 @@ snap alias taskbook tb # set alias
 }
 ```
 
-### 配置细节
+### 配置文件
 
 ##### `taskbookDirectory`
 
 -   类型: `String`
 -   默认: `~`
 
-初始化存储完成文件的系统路径，比如：`/home/username/the-cloud`或者`~/the-cloud`。
+taskbook的存储路径，例如：`/home/username/the-cloud`或者`~/the-cloud`。
 
 如果未配置本选项，将默认设置为`~/.taskbook/`。
 
@@ -182,18 +182,18 @@ snap alias taskbook tb # set alias
 -   类型: `Boolean`
 -   默认: `true`
 
-显示标记为完成的任务. 
+是否显示标记为“已完成”的任务。
 
 ##### `displayProgressOverview`
 
 -   类型: `Boolean`
 -   默认: `true`
 
-在时间线和任务板视图下方显示进度概述。
+是否在时间线和任务板视图下方显示进度概述。
 
-## 飞行手册
+## 使用示例
 
-以下是一个小练习，其中包含一组有关如何使用 taskbook 的示例。如果您发现错误或认为某个示例不够清晰并且应该进一步改进，请随时打开[issue](https://github.com/klaussinani/taskbook/issues/new/choose)或[Pull 请求](https://github.com/klaussinani/taskbook/compare)。
+以下是一组小练习，其中包含 taskbook 的使用示例。如果您发现错误或认为某个示例不够清晰并且应该进一步改进，请[创建一个 issue](https://github.com/klaussinani/taskbook/issues/new/choose) 或[提交 pull request](https://github.com/klaussinani/taskbook/compare)。
 
 ### 创建任务
 
@@ -201,57 +201,64 @@ snap alias taskbook tb # set alias
 
     $ tb -t Improve documentation
 
-### 创建笔记
+### 创建便签
 
-要创建新笔记，请使用`--note`/`-n`并在后面加上笔记正文。
+要创建新便签，请使用`--note`/`-n`并在后面加上便签内容。
 
     $ tb -n Mergesort worse-case O(nlogn)
 
 ### 创建板块
 
-如果创建新任务或笔记时，指定的板块不存在，那么会自动新建并初始化板块。
-如果想要将新的任务条目指定给新的板块，那么可以在任务描述前，使用`@`作为前缀，并加上新的板块的名称（可以多个板块一并创建）。 此时，新创建的任务条目将属于所有给定的板块。
-如果任务条目描述中不包含任何板块名称，那么默认情况下，会自动添加到通用的：`My Board`。 
+如果创建新任务或便签时，指定的板块不存在，那么会自动新建并初始化板块。<br/>
+如果想要将新的任务条目指定给新的板块，那么可以在任务描述前，使用`@`作为前缀，并加上新的板块的名称（您可以同时创建多个板块）。 此时，新创建的任务条目将属于所有给定的板块。<br/>
+如果任务条目描述中不包含任何板块名称，那么任务会自动添加到默认板块`My Board`。 
 
     $ tb -t @coding @docs Update contributing guidelines
 
 ### 完成任务
 
-要将任务标记为『完成/待处理』，请使用`--check`/`-c`选项后跟目标任务的 ID。
-请注意，该选项将自动转换给定任务的`complete/pending`（完成/待处理）状态。因此，『完成状态条目』 -> `-c` -> 『待处理状态』；『待处理状态条目』 -> `-c` -> 『完成状态条目』。
-重复的ID会自动过滤掉。
+要将任务标记为『完成/待处理』，请使用`--check`/`-c`选项后跟目标任务的 ID。<br/>
+请注意，该选项将自动转换给定任务的`complete/pending`（完成/待处理）状态。
+
+例如：<br/>
+『完成状态条目』 -> `-c` -> 『待处理状态』<br/>
+『待处理状态条目』 -> `-c` -> 『完成状态条目』<br/>
+重复的ID会被忽略。
 
     $ tb -c 1 3
     
 ### 开始任务
 
-要将任务标记为『开始/暂停』，请使用`--begin`/`-b`选项后跟目标任务的 ID。该选项的功能对条目状态转换与`--check`选项功能相同。
+要将任务标记为『开始/暂停』，请使用`--begin`/`-b`选项后跟目标任务的 ID。<br/>
+该选项的功能对条目状态转换与`--check`选项功能相同。
 
 ### 收藏条目（Star）
 
-要将一个或多个条目标记为收藏，请使用`--star`/`-s`选项后加上目标项的 ID。该选项的功能对条目状态转换与`--check`选项功能相同。
+要将一个或多个条目标记为收藏，请使用`--star`/`-s`选项后加上目标项的 ID。<br/>
+该选项的功能对条目状态转换与`--check`选项功能相同。
 
     $ tb -s 1 2 3
 
 ### 复制条目描述
 
-要复制一个或多个条目描述到你的系统剪贴板，请使用`--copy`/`-y`选项后加上目标项的 ID。请注意，该选项会使用回车符作为每个描述的分隔符，从而在剪贴板生成清晰可读的格式。
+要复制一个或多个条目描述到你的系统剪贴板，请使用`--copy`/`-y`选项后加上目标项的 ID。<br/>
+请注意，该选项会使用回车符作为每个描述的分隔符，从而在剪贴板生成清晰可读的格式。
 
 ### 显示板块
 
-在没有任何选项的情况下调用 taskbook 将显示分组到各自板中的所有已保存条目。
+在没有任何附加参数的情况下调用 taskbook 将按照分组显示所有已保存条目。
 
     $ tb
 
-### 显示时间轴
+### 显示时间线视图
 
-想要根据其创建日期，来显示时间线视图中的所有条目，可以使用`--timeline`/`-i`选项。 
+想要根据其创建日期，在时间线视图中显示所有条目，可以使用`--timeline`/`-i` 。
 
     $ tb -i
 
 ### 设置优先级
 
-要在初始化任务时设置任务的优先级，请包括`p:x`任务描述中的语法。
+要在初始化任务时设置任务的优先级，请包括`p:x`任务描述中的语法。<br/>
 其中x可以是值的整数`1`、`2`或`3`。请注意，默认情况下，所有任务都以正常优先级`1`创建。
 
 -   `1`- 正常优先
@@ -261,46 +268,49 @@ snap alias taskbook tb # set alias
 
     $ tb -t @coding Fix issue `#42` p:3
 
-要在创建特定任务后更新特定任务的优先级，请使用`--priority`/`-p`选项，紧接着是`@id`（任务条目的`id`），最后是优先等级。
-目标ID和优先级的放置顺序 并不重要. 
+要在创建任务后更新特定任务的优先级，请使用`--priority`/`-p`选项，紧接着是`@id`（任务条目的`id`），最后是优先等级。<br/>
+目标ID和优先级的放置顺序并不重要。
 
     $ tb -p @1 2
 
 ### 移动条目
 
-要将条目移动到一个或多个板块，请使用`--move`/`-m`选项，后跟`@id`（任务条目的`id`），最后是目标板块的名称。
+要将条目移动到一个或多个板块，请使用`--move`/`-m`选项，并加上`@id`（任务条目的`id`），最后是目标板块的名称。<br/>
 默认板块`My Board`可以通过`myboard`关键词来访问。目标 ID 和任务版块名称的放置顺序并不重要。
 
     $ tb -m @1 myboard reviews
 
 ### 删除条目
 
-要删除一个或多个条目，请使用`--delete`/`-d`选项后跟目标条目的 ID。
-已删除的条目会自动存档，并且可以随时完成或还原。重复的 ID 会被自动过滤掉。
+要删除一个或多个条目，请使用`--delete`/`-d`选项，并加上目标条目的 ID。<br/>
+已删除的条目会自动存档，并且可以随时完成或还原。重复的 ID 会被忽略。
 
     $ tb -d 1 2
     
 ### 删除已完成任务
 
-要删除所有已完成任务，请使用`--clear`选项。请注意，所有被删除的任务会被自动保存，并且可以在任意时间点查看或还原。为了防止任何可能的意外情况，`--clear`选项没有别名。
+要删除所有已完成任务，请使用`--clear`选项。请注意，所有被删除的任务会被自动归档，并且可以随时查看或还原。<br/>
+为了防止任何可能的意外情况，`--clear`选项没有别名。
   
 
-### 显示存档
+### 显示归档的条目
 
-要显示所有已存档条目，请使用`--archive`/`-a`选项。请注意，所有已存档条目都会根据其创建日期顺序显示在时间轴视图。
+要显示所有已归档条目，请使用`--archive`/`-a`选项。<br/>
+请注意，所有已归档条目都会根据其创建日期顺序在时间线视图中显示。
 
     $ tb -a
 
 ### 还原条目
 
-要恢复一个或多个条目，请使用`--restore`/`-r`选项后跟目标条目的 ID。请注意，该选项调用时可以看到所有已存档条目的 ID。重复的ID会自动过滤掉。
+要恢复一个或多个条目，请使用`--restore`/`-r`选项后跟目标条目的 ID。<br/>
+请注意，该选项调用时可以看到所有已存档条目的 ID。重复的ID会被忽略。
 
     $ tb -r 1 2
 
 ### 列出条目
 
-要列出一组条目，其中每个条目符合特定数量的属性，请使用`--list`/`-l`选项后跟所需的属性。板块名称和条目特征可以被视为有效的列表属性。
-例如，列出属于默认值的所有条目`myboard`并且是待定任务，可以使用以下内容：
+要列出一组条目，其中每个条目符合特定数量的属性，请使用`--list`/`-l`选项后跟所需的属性。板块名称和条目特征可以被视为有效的列表属性。<br/>
+例如，列出属于`myboard`中的所有待处理任务，可以使用以下内容：
 
     $ tb -l myboard pending
 
@@ -308,7 +318,7 @@ snap alias taskbook tb # set alias
 
 -   `myboard` - 属于`My Board`的条目
 -   `task`, `tasks`, `todo` - 作为任务的条目
--   `note`, `notes` - 作为笔记的条目
+-   `note`, `notes` - 作为便签的条目
 -   `pending`, `unchecked`, `incomplete` - 待处理的任务条目
 -   `progress`, `started`, `begun` - 已开始的任务条目
 -   `done`, `checked`, `complete` - 已完成的任务条目
@@ -316,7 +326,7 @@ snap alias taskbook tb # set alias
 
 ### 搜索条目
 
-要搜索其中一个条目，请使用`--find`/`-f`选项，后跟您的搜索字词。
+要搜索其中一个条目，请使用`--find`/`-f`选项，并加上您的搜索关键字。
 
     $ tb -f documentation
 
