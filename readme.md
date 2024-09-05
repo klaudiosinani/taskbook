@@ -118,6 +118,7 @@ $ tb --help
       --priority, -p     Update priority of task
       --restore, -r      Restore items from archive
       --star, -s         Star/unstar item
+      --swap, -w         Swap items
       --task, -t         Create task
       --timeline, -i     Display timeline view
       --version, -v      Display installed version
@@ -138,6 +139,7 @@ $ tb --help
       $ tb --priority @3 2
       $ tb --restore 4
       $ tb --star 2
+      $ tb --swap 2 1
       $ tb --task @coding @reviews Review PR #42
       $ tb --task @coding Improve documentation
       $ tb --task Make some buttercream
@@ -252,6 +254,14 @@ To mark one or more items as favorite, use the `--star`/`-s` option followed by 
 
 ```
 $ tb -s 1 2 3
+```
+
+### Swap items
+
+To swap items positions, use the `--swap`/`-s` option followed by the ids of the 2 items which will be swapped.
+
+```
+$ tb -w 2 1
 ```
 
 ### Copy Item Description
