@@ -7,14 +7,22 @@
 </h4>
 
 <div align="center">
-  <img alt="Boards" width="60%" src="media/header-boards.png"/>
+  <img alt="Boards" width="70%" src="media/header-boards.png"/>
 </div>
 
-<p align="center">
-  <a href="https://travis-ci.com/klaussinani/taskbook">
-    <img alt="Build Status" src="https://travis-ci.com/klaussinani/taskbook.svg?branch=master">
+<div align="center">
+  <br>
+  <sup><b>Sponsored by:</b></sup>
+  <br>
+  <a href="https://betterstack.com">
+    <div>
+      <img src="https://github.com/Seldaek/monolog/assets/183678/7de58ce0-2fa2-45c0-b3e8-e60cebb3c4cf" width="200" alt="Better Stack">
+    </div>
+    <sup>
+      Spot, Resolve, and Prevent Downtime.
+    </sup>
   </a>
-</p>
+</div>
 
 ## Description
 
@@ -59,6 +67,7 @@ View highlights in a [taskbook board](https://raw.githubusercontent.com/klaussin
 - [Development](#development)
 - [Related](#related)
 - [Team](#team)
+- [Sponsors](#sponsors)
 - [License](#license)
 
 ## Install
@@ -380,8 +389,14 @@ For more info on how to contribute to the project, please read the [contributing
 
 ## Team
 
-- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
+- Klaus Sinani [(@klaudiosinani)](https://github.com/klaudiosinani)
 - Mario Sinani [(@mariosinani)](https://github.com/mariosinani)
+
+## Sponsors
+
+A big thank you to all the people and companies supporting our Open Source work:
+
+- [Better Stack: Spot, Resolve, and Prevent Downtime.](https://betterstack.com/)
 
 ## License
 
