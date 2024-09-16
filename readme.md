@@ -172,7 +172,8 @@ The following illustrates all the available options with their respective defaul
 {
   "taskbookDirectory": "~",
   "displayCompleteTasks": true,
-  "displayProgressOverview": true
+  "displayProgressOverview": true,
+  "greyColorOverride": "grey"
 }
 ```
 
@@ -200,6 +201,14 @@ Display tasks that are marked as complete.
 - Default: `true`
 
 Display progress overview below the timeline and board views.
+
+
+##### `greyColorOverride`
+
+- Type: `String`
+- Default: `grey`
+
+Use [Chalk Colors](https://github.com/chalk/chalk#colors) to override grey text color. Use it in case you want to customize grey text render or we can not see it in terminal. 
 
 ## Flight Manual
 
