@@ -13,6 +13,7 @@ module.exports = `
       --copy, -y         Copy item description
       --delete, -d       Delete item
       --edit, -e         Edit item description
+      --comment, -z      Comment on a task
       --find, -f         Search for items
       --help, -h         Display help message
       --list, -l         List items by attributes
@@ -34,6 +35,7 @@ module.exports = `
       $ tb --copy 1 2 3
       $ tb --delete 4
       $ tb --edit @3 Merge PR #42
+      $ tb --comment 4
       $ tb --find documentation
       $ tb --list pending coding
       $ tb --move @1 cooking

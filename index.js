@@ -19,6 +19,10 @@ const taskbookCLI = (input, flags) => {
     return taskbook.createNote(input);
   }
 
+  if (flags.comment) {
+    return taskbook.commentOnItem(input);
+  }
+
   if (flags.delete) {
     return taskbook.deleteItems(input);
   }
