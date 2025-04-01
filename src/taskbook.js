@@ -574,6 +574,33 @@ class Taskbook {
 
     this.deleteItems(ids);
   }
+
+  purge() {
+    const {_archive} = this;
+    const ids_archive = Object.keys(_archive)
+    const {_data} = this;
+
+    // Remove ids in Archive
+    this._saveArchive({});
+
+    // Update ids in storage
+    const ids = Object.keys(_data)
+
+    const new_data = {}
+
+    for (let i = 0; i < ids.length; i++){
+      const item = _data[ids[i]];
+      delete _data[ids[i]];
+
+      item._id = i
+      new_data[i] = item;
+    }
+
+    // Save Data
+    this._save(new_data);
+
+    render.successPurged(ids_archive.length);
+  }
 }
 
 module.exports = new Taskbook();
