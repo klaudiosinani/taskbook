@@ -18,6 +18,8 @@
 
 - [Bulgarian](https://github.com/klaussinani/taskbook/blob/master/docs/readme.BG.md) by [@librafrog](https://github.com/librafrog)
 
+- [Türkçe](https://github.com/klaussinani/taskbook/blob/master/docs/readme.TR.md) by [@mehmetsalihyaldiz](https://github.com/mehmetsalihyaldiz)
+
 ## Contributing
 
 Visit the [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) to learn more on how to get involved in the translating process.
