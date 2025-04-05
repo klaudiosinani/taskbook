@@ -22,7 +22,7 @@ class Storage {
 
   get _mainAppDir() {
     const {taskbookDirectory} = config.get();
-    const defaultAppDirectory = join(os.homedir(), '.taskbook');
+    const defaultAppDirectory = join(os.homedir(), 'taskbook');
 
     if (!taskbookDirectory) {
       return defaultAppDirectory;
@@ -33,7 +33,7 @@ class Storage {
       process.exit(1);
     }
 
-    return join(taskbookDirectory, '.taskbook');
+    return join(taskbookDirectory, 'taskbook');
   }
 
   _ensureMainAppDir() {
