@@ -1,0 +1,4 @@
+remote_theme: klaudiosinani/re@v0.2.0
+plugins:
+  - jekyll-github-metadata
+  - jekyll-remote-theme
