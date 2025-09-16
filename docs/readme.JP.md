@@ -11,8 +11,8 @@
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.com/klaussinani/taskbook">
-    <img alt="Build Status" src="https://travis-ci.com/klaussinani/taskbook.svg?branch=master">
+  <a href="https://travis-ci.com/klaudiosinani/taskbook">
+    <img alt="Build Status" src="https://travis-ci.com/klaudiosinani/taskbook.svg?branch=master">
   </a>
 </p>
 
@@ -20,11 +20,9 @@
 
 Taskbookはシンプルで最小限の使い方で、簡単・効率的にターミナル内でタスクやノートを複数のボードで管理することができます。全てのデータは削除されず、自動で保存され、どこでも共有可能です。削除したアイテムは自動的にアーカイブされ、検索・リストアすることが可能です。
 
-[GitHub Sponsors](https://github.com/sponsors/klaussinani)から開発へのサポートも可能です。  
+[GitHub Sponsors](https://github.com/sponsors/klaudiosinani)から開発へのサポートも可能です。  
 
-翻訳について知りたい場合は[コントリビュートガイダンス](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation)をご確認ください。  
-
-[Gitter](https://gitter.im/klaussinani/taskbook) や [Twitter](https://twitter.com/klaussinani) で当プロジェクトをシェアしてください。  
+翻訳について知りたい場合は[コントリビュートガイダンス](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md#translating-documentation)をご確認ください。  
 
 ## 特徴
 
@@ -42,7 +40,7 @@ Taskbookはシンプルで最小限の使い方で、簡単・効率的にター
 - `~/.taskbook.json`によるこんフィギュレーション
 - `~/.taskbook/storage`のJsonでデータの保存
 
-特徴は[taskbook ボード](https://raw.githubusercontent.com/klaussinani/taskbook/master/media/highlights.png)で確認することができます。  
+特徴は[taskbook ボード](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png)で確認することができます。  
 
 ## 内容
 
@@ -192,7 +190,7 @@ $ tb --help
 ## 操作方法
 
 以下は最小限の利用例になります。  
-エラーやサンプルが不十分で改善が必要な場合は、[イシュー](https://github.com/klaussinani/taskbook/issues/new/choose) や [プルリクエスト](https://github.com/klaussinani/taskbook/compare) を作成してください。  
+エラーやサンプルが不十分で改善が必要な場合は、[イシュー](https://github.com/klaudiosinani/taskbook/issues/new/choose) や [プルリクエスト](https://github.com/klaudiosinani/taskbook/compare) を作成してください。  
 
 ### タスクの作成
 
@@ -355,7 +353,7 @@ $ tb -f documentation
 
 ## 開発
 
-よりプロジェクトへ貢献したい場合は、[contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md)を読んでください。  
+よりプロジェクトへ貢献したい場合は、[contributing guidelines](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md)を読んでください。  
 
 - リポジトリのフォーク、もしくはクローンをする
 - ローカルにリポジトリをインストールし、 `cd taskbook` で移動
@@ -364,15 +362,15 @@ $ tb -f documentation
 
 ## 関連プロジェクト
 
-- [signale](https://github.com/klaussinani/signale) - 高度に設定可能なロギングツール
-- [qoa](https://github.com/klaussinani/qoa) - ミニマルでインタラクティブなコマンドラインプロンプト
-- [hyperocean](https://github.com/klaussinani/hyperocean) - オーシャンブルーなテーマ
+- [signale](https://github.com/klaudiosinani/signale) - 高度に設定可能なロギングツール
+- [qoa](https://github.com/klaudiosinani/qoa) - ミニマルでインタラクティブなコマンドラインプロンプト
+- [hyperocean](https://github.com/klaudiosinani/hyperocean) - オーシャンブルーなテーマ
 
 ## 開発チーム
 
-- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
+- Klaudio Sinani [(@klaudiosinani)](https://github.com/klaudiosinani)
 - Mario Sinani [(@mariosinani)](https://github.com/mariosinani)
 
 ## ライセンス
 
-[MIT](https://github.com/klaussinani/taskbook/blob/master/license.md)
+[MIT](https://github.com/klaudiosinani/taskbook/blob/master/license.md)

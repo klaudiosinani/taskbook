@@ -12,8 +12,8 @@
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.com/klaussinani/taskbook">
-    <img alt="Build Status" src="https://travis-ci.com/klaussinani/taskbook.svg?branch=master">
+  <a href="https://travis-ci.com/klaudiosinani/taskbook">
+    <img alt="Build Status" src="https://travis-ci.com/klaudiosinani/taskbook.svg?branch=master">
   </a>
 </p>
 
@@ -21,9 +21,7 @@
 
 本应用通过使用简单且最小化的语法，以及平坦的学习曲线，使您可以在终端内跨多个板块，有效地管理任务和笔记。所有数据都以原子方式写入存储，以防止损坏，并且永远不会与任何第三方共享。已删除的条目会自动存档，并且可以随时被检查或恢复。 
 
-访问[贡献指南](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation)了解有关如何将此文档翻译成更多语言的更多信息. 
-
-来[Gitter](https://gitter.im/klaussinani/taskbook)或[推特](https://twitter.com/klaussinani)分享您对条目的看法. 
+访问[贡献指南](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md#translating-documentation)了解有关如何将此文档翻译成更多语言的更多信息.
 
 ## 亮点
 
@@ -41,7 +39,7 @@
 -   可通过`~/.taskbook.json`实现配置化
 -   数据存储在JSON文件中`~/.taskbook/storage`
 
-查看亮点[taskbook 黑板报](https://raw.githubusercontent.com/klaussinani/taskbook/master/media/highlights.png). 
+查看亮点[taskbook 黑板报](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png). 
 
 ### 目录
 
@@ -193,7 +191,7 @@ snap alias taskbook tb # set alias
 
 ## 飞行手册
 
-以下是一个小练习，其中包含一组有关如何使用 taskbook 的示例。如果您发现错误或认为某个示例不够清晰并且应该进一步改进，请随时打开[issue](https://github.com/klaussinani/taskbook/issues/new/choose)或[Pull 请求](https://github.com/klaussinani/taskbook/compare)。
+以下是一个小练习，其中包含一组有关如何使用 taskbook 的示例。如果您发现错误或认为某个示例不够清晰并且应该进一步改进，请随时打开[issue](https://github.com/klaudiosinani/taskbook/issues/new/choose)或[Pull 请求](https://github.com/klaudiosinani/taskbook/compare)。
 
 ### 创建任务
 
@@ -322,7 +320,7 @@ snap alias taskbook tb # set alias
 
 ## 开发
 
-有关如何为此项目做出贡献的更多信息，请阅读[贡献指南](https://github.com/klaussinani/taskbook/blob/master/contributing.md)。
+有关如何为此项目做出贡献的更多信息，请阅读[贡献指南](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md)。
 
 -   Fork 此仓库库并将其克隆到您的计算机
 -   定位到您的本地 Fork: `cd taskbook`
@@ -331,15 +329,15 @@ snap alias taskbook tb # set alias
 
 ## 相关
 
-- [signale](https://github.com/klaussinani/signale) - Hackable console logger
-- [qoa](https://github.com/klaussinani/qoa) - Minimal interactive command-line prompts
-- [hyperocean](https://github.com/klaussinani/hyperocean) - Deep oceanic blue Hyper terminal theme
+- [signale](https://github.com/klaudiosinani/signale) - Hackable console logger
+- [qoa](https://github.com/klaudiosinani/qoa) - Minimal interactive command-line prompts
+- [hyperocean](https://github.com/klaudiosinani/hyperocean) - Deep oceanic blue Hyper terminal theme
 
 ## 团队
 
-- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
+- Klaudio Sinani [(@klaudiosinani)](https://github.com/klaudiosinani)
 - Mario Sinani [(@mario-sinani)](https://github.com/mario-sinani)
 
 ## 授权协议
 
-[MIT](https://github.com/klaussinani/taskbook/blob/master/license.md)
+[MIT](https://github.com/klaudiosinani/taskbook/blob/master/license.md)

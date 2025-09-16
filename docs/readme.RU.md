@@ -11,8 +11,8 @@
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.com/klaussinani/taskbook">
-    <img alt="Build Status" src="https://travis-ci.com/klaussinani/taskbook.svg?branch=master">
+  <a href="https://travis-ci.com/klaudiosinani/taskbook">
+    <img alt="Build Status" src="https://travis-ci.com/klaudiosinani/taskbook.svg?branch=master">
   </a>
 </p>
 
@@ -20,12 +20,10 @@
 
 Используя простой и минимальный синтаксис, taskbook позволяет эффективно управлять задачами и заметками из разных разделов в терминале. Все данные атомарно записываются в хранилище для предотвращения повреждений и никому и никуда не передаются. Удаленные записи автоматически сохраняются в архиве и могут быть просмотрены, либо восстановлены в любой момент. 
 
-Можете прочитать этот документ на [简体中文](https://github.com/klaussinani/taskbook/blob/master/docs/readme.ZH.md), [English](https://github.com/klaussinani/taskbook/blob/master/readme.md), [Français](https://github.com/klaussinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaussinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaussinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaussinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaussinani/taskbook/blob/master/docs/readme.KR.md).
+Можете прочитать этот документ на [简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [English](https://github.com/klaudiosinani/taskbook/blob/master/readme.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.KR.md).
 
 
-Зайдите на [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) для того, чтобы больше узнать о том, как перевести этот документ на другие языки.
-
-Присоединяйтесь к [Gitter](https://gitter.im/klaussinani/taskbook), или [Twitter](https://twitter.com/klaussinani), чтобы поделиться своим мнением об этом проекте.
+Зайдите на [contributing guidelines](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md#translating-documentation) для того, чтобы больше узнать о том, как перевести этот документ на другие языки.
 
 ## Особенности
 
@@ -43,7 +41,7 @@
 - Конфигурируемый через `~/.taskbook.json`
 - Данные хранятся в формате JSON в `~/.taskbook/storage`
 
-Просморите особенности в [разделе taskbook](https://raw.githubusercontent.com/klaussinani/taskbook/master/media/highlights.png).
+Просморите особенности в [разделе taskbook](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png).
 
 ## Содержание
 
@@ -170,7 +168,7 @@ $ tb --help
 ## Руководство по полетам
 
 Ниже приведено небольшое руководство с примерами по использованию taskbook.
-В случае, если вы обнаружили ошибку или считаете, что пример недостаточно понятен и может быть объяснен лучше, не стесняйтесь заводить [issue](https://github.com/klaussinani/taskbook/issues/new/choose), либо [pull request](https://github.com/klaussinani/taskbook/compare).
+В случае, если вы обнаружили ошибку или считаете, что пример недостаточно понятен и может быть объяснен лучше, не стесняйтесь заводить [issue](https://github.com/klaudiosinani/taskbook/issues/new/choose), либо [pull request](https://github.com/klaudiosinani/taskbook/compare).
 
 ### Создать задачу
 
@@ -305,7 +303,7 @@ $ tb -f документация
 
 ## Разработка
 
-Для большей информации о том, как можно способствовать этому проекту, пожалуйста, прочитайте [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md).
+Для большей информации о том, как можно способствовать этому проекту, пожалуйста, прочитайте [contributing guidelines](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md).
 
 - Форкните данный репозиторий и склонируйте на вашу машину
 - Перейдите в ваш склонированный проект: `cd taskbook`
@@ -315,12 +313,12 @@ $ tb -f документация
 ## Относится
 
 - [chalk](https://github.com/chalk/chalk) - Стилизация строк в терминале
-- [signale](https://github.com/klaussinani/signale) - Автономный консольный логгер
+- [signale](https://github.com/klaudiosinani/signale) - Автономный консольный логгер
 
 ## Команда
 
-- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
+- Klaudio Sinani [(@klaudiosinani)](https://github.com/klaudiosinani)
 
 ## Лицензия
 
-[MIT](https://github.com/klaussinani/taskbook/blob/master/license.md)
+[MIT](https://github.com/klaudiosinani/taskbook/blob/master/license.md)

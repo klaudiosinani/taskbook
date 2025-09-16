@@ -11,8 +11,8 @@
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.com/klaussinani/taskbook">
-    <img alt="Build Status" src="https://travis-ci.com/klaussinani/taskbook.svg?branch=master">
+  <a href="https://travis-ci.com/klaudiosinani/taskbook">
+    <img alt="Build Status" src="https://travis-ci.com/klaudiosinani/taskbook.svg?branch=master">
   </a>
 </p>
 
@@ -21,13 +21,12 @@
 taskbook은 효율적으로 터미널 내에서 여러 board들을 넘나들며 task와 노트를 관리할 수 있게 해줍니다. 간결한 사용법으로 플랫한 러닝커브를 자랑합니다. 모든 데이터는 변형을 막기위해서 개별적으로 저장되고, 누구와도 공유하지 않습니다. 삭제된 아이템들은 자동으로 아카이빙되고, 언제나 복구 혹은 열람할 수 있습니다. 
 
 이 문서를 다음 언어로 읽으실 수 있습니다: 
-[简体中文](https://github.com/klaussinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaussinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaussinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaussinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaussinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaussinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaussinani/taskbook/blob/master/docs/readme.KR.md)).
+[简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.KR.md)).
 
-[GitHub Sponsors](https://github.com/sponsors/klaussinani) 로 개발을 후원해주세요.
+[GitHub Sponsors](https://github.com/sponsors/klaudiosinani) 로 개발을 후원해주세요.
 
-[contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) 를 보시고 다른 언어로 이 문서에 기여해주세요.
+[contributing guidelines](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md#translating-documentation) 를 보시고 다른 언어로 이 문서에 기여해주세요.
 
-[Gitter](https://gitter.im/klaussinani/taskbook) 나 [Twitter](https://twitter.com/klaussinani) 에 와서 이 프로젝트에 대한 생각을 공유해주세요.
 ## 핵심 기능
 
 - task와 노트를 board에 정리
@@ -44,7 +43,7 @@ taskbook은 효율적으로 터미널 내에서 여러 board들을 넘나들며 
 - `~/.taskbook.json` 을 사용해서 설정 가능
 - `~/.taskbook/storage` 에 json 형식으로 데이터 저장
 
-[taskbook board](https://raw.githubusercontent.com/klaussinani/taskbook/master/media/highlights.png) 에서 핵심 기능을 살펴보세요.
+[taskbook board](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png) 에서 핵심 기능을 살펴보세요.
 
 
 ## Contents
@@ -196,7 +195,7 @@ complete으로 마킹한 task들을 보여줄지 여부를 결정합니다.
 
 
 다음은 taskbook 사용법 예제를 포함한 기초 매뉴얼입니다. 
-오류를 발견하시거나 예제가 명확하지 않아서 개선되어야한다고 생각하시면, 자유롭게  [이슈](https://github.com/klaussinani/taskbook/issues/new/choose)나 [풀리퀘스트](https://github.com/klaussinani/taskbook/compare)를 부탁드립니다.
+오류를 발견하시거나 예제가 명확하지 않아서 개선되어야한다고 생각하시면, 자유롭게  [이슈](https://github.com/klaudiosinani/taskbook/issues/new/choose)나 [풀리퀘스트](https://github.com/klaudiosinani/taskbook/compare)를 부탁드립니다.
 
 ### task 만들기
 
@@ -357,7 +356,7 @@ $ tb -f documentation
 
 ## 개발
 
-프로젝트에 기여하는 방법에 대해서는 [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md)를 읽어주세요.
+프로젝트에 기여하는 방법에 대해서는 [contributing guidelines](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md)를 읽어주세요.
 
 - 레포지토리를 포크해서 개인 머신에 복사합니다. 
 - 로컬 환경 폴더로 이동합니다. `cd taskbook`
@@ -366,15 +365,15 @@ $ tb -f documentation
 
 ## 관련 작업 
 
-- [signale](https://github.com/klaussinani/signale) - Highly configurable logging utility
-- [qoa](https://github.com/klaussinani/qoa) - Minimal interactive command-line prompts
-- [hyperocean](https://github.com/klaussinani/hyperocean) - Deep oceanic blue Hyper terminal theme
+- [signale](https://github.com/klaudiosinani/signale) - Highly configurable logging utility
+- [qoa](https://github.com/klaudiosinani/qoa) - Minimal interactive command-line prompts
+- [hyperocean](https://github.com/klaudiosinani/hyperocean) - Deep oceanic blue Hyper terminal theme
 
 ## 팀소개
 
-- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
+- Klaudio Sinani [(@klaudiosinani)](https://github.com/klaudiosinani)
 - Mario Sinani [(@mariosinani)](https://github.com/mariosinani)
 
 ## 라이센스
 
-[MIT](https://github.com/klaussinani/taskbook/blob/master/license.md)
+[MIT](https://github.com/klaudiosinani/taskbook/blob/master/license.md)

@@ -11,8 +11,8 @@
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.com/klaussinani/taskbook">
-    <img alt="Build Status" src="https://travis-ci.com/klaussinani/taskbook.svg?branch=master">
+  <a href="https://travis-ci.com/klaudiosinani/taskbook">
+    <img alt="Build Status" src="https://travis-ci.com/klaudiosinani/taskbook.svg?branch=master">
   </a>
 </p>
 
@@ -21,13 +21,11 @@
 Чрез използване на прост и минимален синтаксис на употреба, който изисква линеен път на обучение, taskbook Ви позволява ефективно да управлявате вашите задачи и бележки сред множество табла, в терминалната среда. Цялата информация бива автоматично записана в хранилището, с цел да предотврати повреди, и никога не бива споделено с никого или други. Изтритите елементи биват автоматично архивирани и могат да бъдат инспектирани или възстановени във всеки един момент.
 
 Прочетете този документ на:
-[简体中文](https://github.com/klaussinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaussinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaussinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaussinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaussinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaussinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaussinani/taskbook/blob/master/docs/readme.KR.md), [Spanish](https://github.com/klaussinani/taskbook/blob/master/docs/readme.ES.md).
+[简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.KR.md), [Spanish](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ES.md).
 
-Вие вече можете да подкрепите етапа на разработка чрез [GitHub Sponsors](https://github.com/sponsors/klaussinani).
+Вие вече можете да подкрепите етапа на разработка чрез [GitHub Sponsors](https://github.com/sponsors/klaudiosinani).
 
-Посетете [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) за да узнаете повече как да преведете този документ на повече езици.
-
-Посетете [Gitter](https://gitter.im/klaussinani/taskbook) или [Twitter](https://twitter.com/klaussinani) за да споделите вашите идеи за този проект.
+Посетете [contributing guidelines](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md#translating-documentation) за да узнаете повече как да преведете този документ на повече езици.
 
 ## Акценти
 
@@ -45,7 +43,7 @@
 - Конфигуриране чрез `~/.taskbook.json`
 - Данните се съхраняват в JSON файл на адрес `~/.taskbook/storage`
 
-Вижте акценти в [taskbook board](https://raw.githubusercontent.com/klaussinani/taskbook/master/media/highlights.png).
+Вижте акценти в [taskbook board](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png).
 
 ## Съдържание
 
@@ -195,7 +193,7 @@ $ tb --help
 ## Изглед за полети
 
 Следното е малко въведение, съдържащо редица примери как да използвате програмата.
-Ако откриете грешка или мислите че определен пример не е достатъчно ясен можете за подадете сигнал за проблем на [issue](https://github.com/klaussinani/taskbook/issues/new/choose) или [pull request](https://github.com/klaussinani/taskbook/compare).
+Ако откриете грешка или мислите че определен пример не е достатъчно ясен можете за подадете сигнал за проблем на [issue](https://github.com/klaudiosinani/taskbook/issues/new/choose) или [pull request](https://github.com/klaudiosinani/taskbook/compare).
 
 ### Създай задача
 
@@ -355,7 +353,7 @@ $ tb -f documentation
 
 ## Разработка
 
-За детайли как да помогнете на този проект, моля прочетете [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md).
+За детайли как да помогнете на този проект, моля прочетете [contributing guidelines](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md).
 
 - Изберете "Форк" за това хранилище и клонирайте към своята машина.
 - Навигирайте към локалното място на съхранение за проекта: `cd taskbook`
@@ -364,15 +362,15 @@ $ tb -f documentation
 
 ## Свързани
 
-- [signale](https://github.com/klaussinani/signale) - Силно конфигурируема помощна програма за регистриране
-- [qoa](https://github.com/klaussinani/qoa) - Минимални интерактивни подкани тип команден прозорец
-- [hyperocean](https://github.com/klaussinani/hyperocean) - Дълбочинно синьо-океанска тема с терминал Хипер
+- [signale](https://github.com/klaudiosinani/signale) - Силно конфигурируема помощна програма за регистриране
+- [qoa](https://github.com/klaudiosinani/qoa) - Минимални интерактивни подкани тип команден прозорец
+- [hyperocean](https://github.com/klaudiosinani/hyperocean) - Дълбочинно синьо-океанска тема с терминал Хипер
 
 ## Отбор
 
-- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
+- Klaudio Sinani [(@klaudiosinani)](https://github.com/klaudiosinani)
 - Mario Sinani [(@mariosinani)](https://github.com/mariosinani)
 
 ## Лиценз
 
-[MIT](https://github.com/klaussinani/taskbook/blob/master/license.md)
+[MIT](https://github.com/klaudiosinani/taskbook/blob/master/license.md)
