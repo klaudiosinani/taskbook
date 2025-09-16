@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2018 - present Klaus Sinani <klaussinani@gmail.com> (klaussinani.github.io) Mario Sinani <mariosinani@protonmail.ch> (mario-sinani.github.io)
+Copyright (c) 2018 - present Klaudio Sinani <klaudiosinani@protonmail.ch> (klaudiosinani.com) Mario Sinani <mariosinani@protonmail.ch> (mario-sinani.github.io)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

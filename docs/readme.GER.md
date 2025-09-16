@@ -11,8 +11,8 @@
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.com/klauscfhq/taskbook">
-    <img alt="Build Status" src="https://travis-ci.com/klauscfhq/taskbook.svg?branch=master">
+  <a href="https://travis-ci.com/klaudiosinani/taskbook">
+    <img alt="Build Status" src="https://travis-ci.com/klaudiosinani/taskbook.svg?branch=master">
   </a>
 </p>
 
@@ -21,16 +21,14 @@
 Durch die Verwendung einer einfachen, leicht zu verwendenden Syntax, die sich schnell erlernen lässt, ermöglicht es Taskbook Aufgaben und Notizen effizient über mehrere "Boards" hinweg zu verwalten - und das alles aus der Kommandozeile. Alle Daten werden automatisch im Speicher gesichert um Korrumpierung zu vermeiden, allerdings werden sie nie mit irgendjemandem/etwas geteilt.
 
 
-Dieses Dokument in [简体中文](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.ZH.md) lesen.
-Dieses Dokument in  [Deutsch - German](https://github.com/klauscfhq/taskbook/blob/master/docs/readme.GER.md) lesen.
-Dieses Dokument in  [Français - French](https://github.com/klaussinani/taskbook/blob/master/docs/readme.FR.md) lesen.
-Dieses Dokument in [Русский - Russian](https://github.com/klaussinani/taskbook/blob/master/docs/readme.RU.md) lesen.
+Dieses Dokument in [简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md) lesen.
+Dieses Dokument in  [Deutsch - German](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md) lesen.
+Dieses Dokument in  [Français - French](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md) lesen.
+Dieses Dokument in [Русский - Russian](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md) lesen.
 
-Lies die [contributing guidelines](https://github.com/klauscfhq/taskbook/blob/master/contributing.md#translating-documentation) um zu lernen, wie du dieses Dokument in mehr Sprachen übersetzen kannst.
+Lies die [contributing guidelines](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md#translating-documentation) um zu lernen, wie du dieses Dokument in mehr Sprachen übersetzen kannst.
 
-Du kannst die Entwicklung dieses Projekts unterstützen und an [Open Collective](https://opencollective.com/klaussinani) spenden.
-
-Besuch doch [Gitter](https://gitter.im/klauscfhq/taskbook) oder [Twitter](https://twitter.com/klauscfhq) um deine Anmerkungen zu diesem Projekt zu teilen.
+Du kannst die Entwicklung dieses Projekts unterstützen und an [GitHub Sponsors](https://github.com/sponsors/klaudiosinani) spenden.
 
 ## Höhepunkte
 
@@ -48,7 +46,7 @@ Besuch doch [Gitter](https://gitter.im/klauscfhq/taskbook) oder [Twitter](https:
 - Konfiguration über `~/.taskbook.json`
 - Daten werden in JSON-File gesichert `~/.taskbook/storage`
 
-Die Höhepunkte in einem [taskbook board](https://raw.githubusercontent.com/klaussinani/taskbook/master/media/highlights.png) ansehen.
+Die Höhepunkte in einem [taskbook board](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png) ansehen.
 
 ## Inhalt
 
@@ -199,7 +197,7 @@ Aufgaben anzeigen, die schon vervollständigt sind.
 
 Es folgt eine oberflächliche Schritt-für-Schritt Beschreibung für taskbook inklusive einiger Beispiele.
 Wenn ein Fehler gefunden wird oder ein Beispiel nicht klar genug ist, kann jederzeit ein 
-[issue](https://github.com/klauscfhq/taskbook/issues/new/choose) oder [pull request](https://github.com/klauscfhq/taskbook/compare) gemacht werden.
+[issue](https://github.com/klaudiosinani/taskbook/issues/new/choose) oder [pull request](https://github.com/klaudiosinani/taskbook/compare) gemacht werden.
 
 ### Task anlegen
 
@@ -358,7 +356,7 @@ $ tb -f documentation
 
 ## Development
 
-Mehr Informationen im Bezug auf Beiträge zum Projekt finden sich in den [contributing guidelines](https://github.com/klauscfhq/taskbook/blob/master/contributing.md).
+Mehr Informationen im Bezug auf Beiträge zum Projekt finden sich in den [contributing guidelines](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md).
 
 - Das Repository forken und auf deine Maschine klonen
 - Zum lokalen Fork navigieren: `cd taskbook`
@@ -367,16 +365,16 @@ Mehr Informationen im Bezug auf Beiträge zum Projekt finden sich in den [contri
 
 ## Related
 
-- [signale](https://github.com/klaussinani/signale) - Highly configurable logging utility
-- [qoa](https://github.com/klaussinani/qoa) - Minimal interactive command-line prompts
-- [hyperocean](https://github.com/klaussinani/hyperocean) - Deep oceanic blue Hyper terminal theme
+- [signale](https://github.com/klaudiosinani/signale) - Highly configurable logging utility
+- [qoa](https://github.com/klaudiosinani/qoa) - Minimal interactive command-line prompts
+- [hyperocean](https://github.com/klaudiosinani/hyperocean) - Deep oceanic blue Hyper terminal theme
 
 ## Team
 
-- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
+- Klaudio Sinani [(@klaudiosinani)](https://github.com/klaudiosinani)
 - Mario Sinani [(@mariosinani)](https://github.com/mariosinani)
 
 
 ## License
 
-[MIT](https://github.com/klauscfhq/taskbook/blob/master/license.md)
+[MIT](https://github.com/klaudiosinani/taskbook/blob/master/license.md)

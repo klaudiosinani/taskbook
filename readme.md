@@ -29,13 +29,11 @@
 By utilizing a simple and minimal usage syntax, that requires a flat learning curve, taskbook enables you to effectively manage your tasks and notes across multiple boards from within your terminal. All data are written atomically to the storage in order to prevent corruptions, and are never shared with anyone or anything. Deleted items are automatically archived and can be inspected or restored at any moment.
 
 Read this document in:
-[简体中文](https://github.com/klaussinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaussinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaussinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaussinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaussinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaussinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaussinani/taskbook/blob/master/docs/readme.KR.md), [Spanish](https://github.com/klaussinani/taskbook/blob/master/docs/readme.ES.md), [Bulgarian](https://github.com/klaussinani/taskbook/blob/master/docs/readme.BG.md).
+[简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.KR.md), [Spanish](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ES.md), [Bulgarian](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.BG.md).
 
-You can now support the development process through [GitHub Sponsors](https://github.com/sponsors/klaussinani).
+You can now support the development process through [GitHub Sponsors](https://github.com/sponsors/klaudiosinani).
 
-Visit the [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
-
-Come over to [Gitter](https://gitter.im/klaussinani/taskbook) or [Twitter](https://twitter.com/klaussinani) to share your thoughts on the project.
+Visit the [contributing guidelines](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md#translating-documentation) to learn more on how to translate this document into more languages.
 
 ## Highlights
 
@@ -53,7 +51,7 @@ Come over to [Gitter](https://gitter.im/klaussinani/taskbook) or [Twitter](https
 - Configurable through `~/.taskbook.json`
 - Data stored in JSON file at `~/.taskbook/storage`
 
-View highlights in a [taskbook board](https://raw.githubusercontent.com/klaussinani/taskbook/master/media/highlights.png).
+View highlights in a [taskbook board](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png).
 
 ## Contents
 
@@ -204,7 +202,7 @@ Display progress overview below the timeline and board views.
 ## Flight Manual
 
 The following is a minor walkthrough containing a set of examples on how to use taskbook.
-In case you spotted an error or think that an example is not to clear enough and should be further improved, please feel free to open an [issue](https://github.com/klaussinani/taskbook/issues/new/choose) or [pull request](https://github.com/klaussinani/taskbook/compare).
+In case you spotted an error or think that an example is not to clear enough and should be further improved, please feel free to open an [issue](https://github.com/klaudiosinani/taskbook/issues/new/choose) or [pull request](https://github.com/klaudiosinani/taskbook/compare).
 
 ### Create Task
 
@@ -364,7 +362,7 @@ $ tb -f documentation
 
 ## Development
 
-For more info on how to contribute to the project, please read the [contributing guidelines](https://github.com/klaussinani/taskbook/blob/master/contributing.md).
+For more info on how to contribute to the project, please read the [contributing guidelines](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md).
 
 - Fork the repository and clone it to your machine
 - Navigate to your local fork: `cd taskbook`
@@ -373,13 +371,13 @@ For more info on how to contribute to the project, please read the [contributing
 
 ## Related
 
-- [signale](https://github.com/klaussinani/signale) - Highly configurable logging utility
-- [qoa](https://github.com/klaussinani/qoa) - Minimal interactive command-line prompts
-- [hyperocean](https://github.com/klaussinani/hyperocean) - Deep oceanic blue Hyper terminal theme
+- [signale](https://github.com/klaudiosinani/signale) - Highly configurable logging utility
+- [qoa](https://github.com/klaudiosinani/qoa) - Minimal interactive command-line prompts
+- [hyperocean](https://github.com/klaudiosinani/hyperocean) - Deep oceanic blue Hyper terminal theme
 
 ## Team
 
-- Klaus Sinani [(@klaudiosinani)](https://github.com/klaudiosinani)
+- Klaudio Sinani [(@klaudiosinani)](https://github.com/klaudiosinani)
 - Mario Sinani [(@mariosinani)](https://github.com/mariosinani)
 
 ## Sponsors
@@ -390,4 +388,4 @@ A big thank you to all the people and companies supporting our Open Source work:
 
 ## License
 
-[MIT](https://github.com/klaussinani/taskbook/blob/master/license.md)
+[MIT](https://github.com/klaudiosinani/taskbook/blob/master/license.md)

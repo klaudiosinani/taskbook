@@ -11,8 +11,8 @@
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.com/klaussinani/taskbook">
-    <img alt="Build Status" src="https://travis-ci.com/klaussinani/taskbook.svg?branch=master">
+  <a href="https://travis-ci.com/klaudiosinani/taskbook">
+    <img alt="Build Status" src="https://travis-ci.com/klaudiosinani/taskbook.svg?branch=master">
   </a>
 </p>
 
@@ -20,11 +20,9 @@
 
 En utilisant une syntaxe simple et minimaliste, rendant son apprentissage plus efficace, taskbook vous permet de gérer efficacement vos tâches et vos notes via plusieurs tableaux dans le terminal. Toutes les données sont automatiquement écrites dans un fichier de stockage afin d'éviter toutes corruptions de celles-ci. Elles ne sont jamais partagées à qui que ce soit. Toutes les tâches et notes sont automatiquement archivées et peuvent être consultées ou restaurées à tout moment.
 
-Lire la documentation en : [简体中文](https://github.com/klaussinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaussinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaussinani/taskbook/blob/master/docs/readme.FR.md).
+Lire la documentation en : [简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md).
 
-Vous pouvez visiter le [guide de contribution](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) pour en savoir plus sur la traduction de ce document dans d'autres langages.
-
-Venez sur [Gitter](https://gitter.im/klaussinani/taskbook) ou [Twitter](https://twitter.com/klaussinani) pour partager vos idées sur le projet.
+Vous pouvez visiter le [guide de contribution](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md#translating-documentation) pour en savoir plus sur la traduction de ce document dans d'autres langages.
 
 ## Points forts
 
@@ -42,7 +40,7 @@ Venez sur [Gitter](https://gitter.im/klaussinani/taskbook) ou [Twitter](https://
 - Configurable via `~/.taskbook.json`
 - Données stockées dans le fichier JSON `~/.taskbook/storage`
 
-Image des points forts dans [tableau taskbook](https://raw.githubusercontent.com/klaussinani/taskbook/master/media/highlights.png) en anglais.
+Image des points forts dans [tableau taskbook](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png) en anglais.
 
 ## Sommaire
 
@@ -184,7 +182,7 @@ Affiche la vue d'ensemble sur la progression en dessous des vues de frise chrono
 ## Manuel de vol
 
 Ce qui va suivre est un guide d'exemple permettant de mieux comprendre comment utiliser taskbook.
-Dans le cas où vous auriez remarqué une erreur ou que vous pensez que les exemples ne sont pas assez clair, qu'ils devraient être améliorés, alors n'hésitez pas à ouvrir une [issue](https://github.com/klaussinani/taskbook/issues/new/choose) ou une [pull request](https://github.com/klaussinani/taskbook/compare).
+Dans le cas où vous auriez remarqué une erreur ou que vous pensez que les exemples ne sont pas assez clair, qu'ils devraient être améliorés, alors n'hésitez pas à ouvrir une [issue](https://github.com/klaudiosinani/taskbook/issues/new/choose) ou une [pull request](https://github.com/klaudiosinani/taskbook/compare).
 
 ### Créer une tâche
 
@@ -335,7 +333,7 @@ $ tb -f documentation
 
 ## Développement
 
-Pour avoir plus d'informations sur la méthode à respecter pour contribuer au projet, merci de lire le [guide de contribution](https://github.com/klaussinani/taskbook/blob/master/contributing.md).
+Pour avoir plus d'informations sur la méthode à respecter pour contribuer au projet, merci de lire le [guide de contribution](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md).
 
 - Fork le répertoire et clone le sur ta machine.
 - Déplacez vous dans votre fork local: `cd taskbook`
@@ -345,12 +343,12 @@ Pour avoir plus d'informations sur la méthode à respecter pour contribuer au p
 ## Applications associées
 
 - [chalk](https://github.com/chalk/chalk) - Coloration des chaînes de caractères dans le terminal
-- [signale](https://github.com/klaussinani/signale) - Affichage console hackable
+- [signale](https://github.com/klaudiosinani/signale) - Affichage console hackable
 
 ## Equipe
 
-- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
+- Klaudio Sinani [(@klaudiosinani)](https://github.com/klaudiosinani)
 
 ## License
 
-[MIT](https://github.com/klaussinani/taskbook/blob/master/license.md)
+[MIT](https://github.com/klaudiosinani/taskbook/blob/master/license.md)

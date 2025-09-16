@@ -11,8 +11,8 @@
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.com/klaussinani/taskbook">
-    <img alt="Build Status" src="https://travis-ci.com/klaussinani/taskbook.svg?branch=master">
+  <a href="https://travis-ci.com/klaudiosinani/taskbook">
+    <img alt="Build Status" src="https://travis-ci.com/klaudiosinani/taskbook.svg?branch=master">
   </a>
 </p>
 
@@ -21,13 +21,11 @@
 Düz bir öğrenme eğrisi gerektiren basit ve minimum kullanım sözdizimini kullanan görev kitabı, terminalinizin içinden birden fazla panodaki görevlerinizi ve notlarınızı etkili bir şekilde yönetmenize olanak tanır. Bozulmaların önlenmesi amacıyla tüm veriler atomik olarak depoya yazılır ve hiçbir kimseyle veya hiçbir şeyle paylaşılmaz. Silinen öğeler otomatik olarak arşivlenir ve her an incelenebilir veya geri yüklenebilir.
 
 Bu belgeyi şurada okuyun:
-[简体中文](https://github.com/klaussinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaussinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaussinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaussinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaussinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaussinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaussinani/taskbook/blob/master/docs/readme.KR.md), [Spanish](https://github.com/klaussinani/taskbook/blob/master/docs/readme.ES.md), [Bulgarian](https://github.com/klaussinani/taskbook/blob/master/docs/readme.BG.md), [Türkçe](https://github.com/klaussinani/taskbook/blob/master/docs/readme.TR.md).
+[简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.KR.md), [Spanish](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ES.md), [Bulgarian](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.BG.md), [Türkçe](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.TR.md).
 
-Artık geliştirme sürecini şu şekilde destekleyebilirsiniz: [GitHub Sponsors](https://github.com/sponsors/klaussinani).
+Artık geliştirme sürecini şu şekilde destekleyebilirsiniz: [GitHub Sponsors](https://github.com/sponsors/klaudiosinani).
 
-Bu belgenin daha fazla dile nasıl çevrileceği hakkında daha fazla bilgi edinmek için [Katkıda bulunma yönergelerini](https://github.com/klaussinani/taskbook/blob/master/contributing.md#translating-documentation) ziyaret edin.
-
-Proje hakkındaki düşüncelerinizi paylaşmak için [Gitter](https://gitter.im/klaussinani/taskbook) veya [Twitter](https://twitter.com/klaussinani)'a takip edin.
+Bu belgenin daha fazla dile nasıl çevrileceği hakkında daha fazla bilgi edinmek için [Katkıda bulunma yönergelerini](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md#translating-documentation) ziyaret edin.
 
 ## Öne Çıkanlar
 
@@ -45,7 +43,7 @@ Proje hakkındaki düşüncelerinizi paylaşmak için [Gitter](https://gitter.im
 - Şununla yapılandırılabilir: `~/.taskbook.json`
 - JSON dosyasında saklanan veriler `~/.taskbook/storage`
 
-[Görev defteri panosundaki](https://raw.githubusercontent.com/klaussinani/taskbook/master/media/highlights.png) öne çıkanları görüntüleyin.
+[Görev defteri panosundaki](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png) öne çıkanları görüntüleyin.
 
 ## İçindekiler
 
@@ -197,8 +195,8 @@ Zaman çizelgesi ve pano görünümlerinin altında ilerlemeye genel bakışı g
 Aşağıda, görev kitabının nasıl kullanılacağına ilişkin bir dizi örnek içeren küçük bir kılavuz bulunmaktadır.
 Bir hata fark ettiyseniz veya örneğin yeterince açık olmadığını ve daha da geliştirilmesi gerektiğini düşünüyorsanız lütfen bir e-posta adresi açmaktan çekinmeyin.
 
-- [Issue](https://github.com/klaussinani/taskbook/issues/new/choose) 
-- [Pull Request](https://github.com/klaussinani/taskbook/compare)
+- [Issue](https://github.com/klaudiosinani/taskbook/issues/new/choose) 
+- [Pull Request](https://github.com/klaudiosinani/taskbook/compare)
 
 ### Görev Oluştur
 
@@ -359,7 +357,7 @@ $ tb -f documentation
 
 ## Geliştirme
 
-Projeye nasıl katkıda bulunacağınız hakkında daha fazla bilgi için lütfen [katkıda bulunma yönergelerini](https://github.com/klaussinani/taskbook/blob/master/contributing.md) okuyun.
+Projeye nasıl katkıda bulunacağınız hakkında daha fazla bilgi için lütfen [katkıda bulunma yönergelerini](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md) okuyun.
 
 - Depoyu klonlayın ve makinenize kopyalayın
 - Yerel klasörünüze gidin: `cd taskbook`
@@ -368,15 +366,15 @@ Projeye nasıl katkıda bulunacağınız hakkında daha fazla bilgi için lütfe
 
 ## İlgili
 
-- [signale](https://github.com/klaussinani/signale) - Son derece yapılandırılabilir günlük kaydı yardımcı programı
-- [qoa](https://github.com/klaussinani/qoa) - Minimal etkileşimli komut satırı istemleri
-- [hyperocean](https://github.com/klaussinani/hyperocean) - Derin okyanus mavisi Hiper terminal teması
+- [signale](https://github.com/klaudiosinani/signale) - Son derece yapılandırılabilir günlük kaydı yardımcı programı
+- [qoa](https://github.com/klaudiosinani/qoa) - Minimal etkileşimli komut satırı istemleri
+- [hyperocean](https://github.com/klaudiosinani/hyperocean) - Derin okyanus mavisi Hiper terminal teması
 
 ## Takım
 
-- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
+- Klaudio Sinani [(@klaudiosinani)](https://github.com/klaudiosinani)
 - Mario Sinani [(@mariosinani)](https://github.com/mariosinani)
 
 ## Lisans
 
-[MIT](https://github.com/klaussinani/taskbook/blob/master/license.md)
+[MIT](https://github.com/klaudiosinani/taskbook/blob/master/license.md)

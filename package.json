@@ -3,12 +3,12 @@
   "productName": "Taskbook",
   "version": "0.3.0",
   "description": "Tasks, boards & notes for the command-line habitat",
-  "repository": "klaussinani/taskbook",
+  "repository": "klaudiosinani/taskbook",
   "license": "MIT",
   "author": {
-    "name": "Klaus Sinani",
-    "email": "klaussinani@gmail.com",
-    "url": "https://klaussinani.github.io"
+    "name": "Klaudio Sinani",
+    "email": "klaudiosinani@protonmail.ch",
+    "url": "https://klaudiosinani.com"
   },
   "bin": {
     "tb": "cli.js"
