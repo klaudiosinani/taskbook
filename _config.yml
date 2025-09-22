@@ -1,4 +1,8 @@
-remote_theme: klaudiosinani/re@v0.2.0
+remote_theme: klaudiosinani/re@v0.3.0
 plugins:
   - jekyll-github-metadata
   - jekyll-remote-theme
+  - jekyll-sitemap
+
+re:
+  favicon: https://raw.githubusercontent.com/klaudiosinani/klaudiosinani.github.io/refs/heads/master/public/favicon.png
