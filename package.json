@@ -48,6 +48,7 @@
     "clipboardy": "^1.2.3",
     "meow": "^5.0.0",
     "signale": "1.4.0",
+    "temp": "^0.9.0",
     "update-notifier": "^2.5.0"
   },
   "devDependencies": {
