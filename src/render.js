@@ -314,6 +314,13 @@ class Render {
     success({prefix, message, suffix});
   }
 
+  successPurged(count) {
+    const prefix = '\n';
+    const suffix = count > 1 ? 'items' : 'item';
+    const message = `Purged ${count}`;
+    success({prefix, message, suffix});
+  }
+
   successMove(id, boards) {
     const [prefix, suffix] = ['\n', grey(boards.join(', '))];
     const message = `Move item: ${grey(id)} to`;
