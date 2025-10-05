@@ -21,7 +21,7 @@
 Utilizando uma sintaxe mínima e simples, que requere uma curva de aprendizado plana, taskbook permite à você gerenciar suas tarefas e notas através de múltiplos quadros de dentro do seu terminal. Todos os dados são salvos automaticamente no armazenamento com o intuito de prevenir corrupções, e não são compartilhados com ninguém. Items deletados são automaticamente arquivados e podem ser inspecionados ou restorados a qualquer momento.
 
 Leia este documento em:
-[简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md).
+[Polski](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PL.md), [简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md).
 
 Agora você pode ajudar o processo de desenvolvimento via [GitHub Sponsors](https://github.com/sponsors/klaudiosinani).
 

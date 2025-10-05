@@ -21,7 +21,7 @@
 taskbook은 효율적으로 터미널 내에서 여러 board들을 넘나들며 task와 노트를 관리할 수 있게 해줍니다. 간결한 사용법으로 플랫한 러닝커브를 자랑합니다. 모든 데이터는 변형을 막기위해서 개별적으로 저장되고, 누구와도 공유하지 않습니다. 삭제된 아이템들은 자동으로 아카이빙되고, 언제나 복구 혹은 열람할 수 있습니다. 
 
 이 문서를 다음 언어로 읽으실 수 있습니다: 
-[简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.KR.md)).
+[Polski](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PL.md), [简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.KR.md)).
 
 [GitHub Sponsors](https://github.com/sponsors/klaudiosinani) 로 개발을 후원해주세요.
 

@@ -20,7 +20,7 @@
 
 Durch die Verwendung einer einfachen, leicht zu verwendenden Syntax, die sich schnell erlernen lässt, ermöglicht es Taskbook Aufgaben und Notizen effizient über mehrere "Boards" hinweg zu verwalten - und das alles aus der Kommandozeile. Alle Daten werden automatisch im Speicher gesichert um Korrumpierung zu vermeiden, allerdings werden sie nie mit irgendjemandem/etwas geteilt.
 
-
+Dieses Dokument in [Polski](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PL.md) lesen.
 Dieses Dokument in [简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md) lesen.
 Dieses Dokument in  [Deutsch - German](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md) lesen.
 Dieses Dokument in  [Français - French](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md) lesen.
