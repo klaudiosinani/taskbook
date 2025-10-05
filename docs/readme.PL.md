@@ -20,8 +20,8 @@
 
 Dzięki prostej i minimalistycznej składni, która wymaga szybkiej nauki, TaskBook umożliwia efektywne zarządzanie zadaniami i notatkami na wielu tablicach z poziomu terminala. Wszystkie dane są zapisywane atomowo w pamięci masowej, aby zapobiec ich uszkodzeniu i nigdy nie są udostępniane nikomu ani niczemu. Usunięte elementy są automatycznie archiwizowane i można je przeglądać lub przywracać w dowolnym momencie.
 
-Przeczytaj ten dokument w:
-[Polski](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PL.md), [简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.KR.md), [Spanish](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ES.md).
+Przeczytaj ten dokument również w innych językach:
+[简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.KR.md), [Spanish](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ES.md), [Bulgarian](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.BG.md).
 
 Możesz wspierać proces rozwoju poprzez [GitHub Sponsors](https://github.com/sponsors/klaudiosinani).
 
@@ -43,7 +43,7 @@ Odwiedź [contributing guidelines](https://github.com/klaudiosinani/taskbook/blo
 - Konfiguracja przez `~/.taskbook.json`
 - Dane przechowywane w pliku `~/.taskbook/storage`
 
-Вижте акценти в [taskbook board](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png).
+Sprawdź funkcje [taskbook board](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png).
 
 ## Zawartość
 
