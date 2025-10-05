@@ -20,7 +20,7 @@
 
 En utilisant une syntaxe simple et minimaliste, rendant son apprentissage plus efficace, taskbook vous permet de gérer efficacement vos tâches et vos notes via plusieurs tableaux dans le terminal. Toutes les données sont automatiquement écrites dans un fichier de stockage afin d'éviter toutes corruptions de celles-ci. Elles ne sont jamais partagées à qui que ce soit. Toutes les tâches et notes sont automatiquement archivées et peuvent être consultées ou restaurées à tout moment.
 
-Lire la documentation en : [Polski](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PL.md), [简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md).
+Lire la documentation en : [Albanian - Shqip](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.AL.md), [Polski](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PL.md), [简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md).
 
 Vous pouvez visiter le [guide de contribution](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md#translating-documentation) pour en savoir plus sur la traduction de ce document dans d'autres langages.
 

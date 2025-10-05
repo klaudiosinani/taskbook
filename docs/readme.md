@@ -1,5 +1,7 @@
 ## Taskbook Translated Documentation
 
+- [Albanian - Shqip](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.AL.md) by [@klaudiosinani](https://github.com/klaudiosinani)
+
 - [Polski](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PL.md) by [@luknij-lab](https://github.com/luknij-lab)
 
 - [简体中文 - Simplified Chinese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md) by [@chinanf-boy](https://github.com/chinanf-boy), [@rosuH](https://github.com/rosuH), [@metauro](https://github.com/metauro)
