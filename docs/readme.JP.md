@@ -20,6 +20,9 @@
 
 Taskbookはシンプルで最小限の使い方で、簡単・効率的にターミナル内でタスクやノートを複数のボードで管理することができます。全てのデータは削除されず、自動で保存され、どこでも共有可能です。削除したアイテムは自動的にアーカイブされ、検索・リストアすることが可能です。
 
+この文書は次の言語で読むことができます:
+[Albanian - Shqip](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.AL.md), [English](https://github.com/klaudiosinani/taskbook/blob/master/readme.md), [Polski](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PL.md), [简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.KR.md), [Spanish](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ES.md), [Bulgarian](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.BG.md).
+
 [GitHub Sponsors](https://github.com/sponsors/klaudiosinani)から開発へのサポートも可能です。  
 
 翻訳について知りたい場合は[コントリビュートガイダンス](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md#translating-documentation)をご確認ください。  
