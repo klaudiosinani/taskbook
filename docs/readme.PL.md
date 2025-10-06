@@ -43,11 +43,7 @@ Odwiedź [contributing guidelines](https://github.com/klaudiosinani/taskbook/blo
 - Konfiguracja przez `~/.taskbook.json`
 - Dane przechowywane w pliku `~/.taskbook/storage`
 
-<<<<<<< HEAD
 Sprawdź funkcje [taskbook board](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png).
-=======
-Вижте акценти в [taskbook board](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png).
->>>>>>> master
 
 ## Zawartość
 
