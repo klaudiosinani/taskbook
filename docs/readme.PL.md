@@ -20,8 +20,8 @@
 
 Dzięki prostej i minimalistycznej składni, która wymaga szybkiej nauki, TaskBook umożliwia efektywne zarządzanie zadaniami i notatkami na wielu tablicach z poziomu terminala. Wszystkie dane są zapisywane atomowo w pamięci masowej, aby zapobiec ich uszkodzeniu i nigdy nie są udostępniane nikomu ani niczemu. Usunięte elementy są automatycznie archiwizowane i można je przeglądać lub przywracać w dowolnym momencie.
 
-Przeczytaj ten dokument w:
-[Albanian - Shqip](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.AL.md), [Polski](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PL.md), [简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.KR.md), [Spanish](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ES.md).
+Przeczytaj ten dokument również w:
+[Albanian - Shqip](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.AL.md), [English](https://github.com/klaudiosinani/taskbook/blob/master/readme.md), [简体中文](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ZH.md), [Русский](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.RU.md), [Français](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.FR.md), [Deutsch](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.GER.md), [Portuguese](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.PT-BR.md), [日本語](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.JP.md), [한국어](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.KR.md), [Spanish](https://github.com/klaudiosinani/taskbook/blob/master/docs/readme.ES.md).
 
 Możesz wspierać proces rozwoju poprzez [GitHub Sponsors](https://github.com/sponsors/klaudiosinani).
 
@@ -43,7 +43,7 @@ Odwiedź [contributing guidelines](https://github.com/klaudiosinani/taskbook/blo
 - Konfiguracja przez `~/.taskbook.json`
 - Dane przechowywane w pliku `~/.taskbook/storage`
 
-Вижте акценти в [taskbook board](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png).
+Sprawdź funkcje [taskbook board](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png).
 
 ## Zawartość
 
@@ -91,7 +91,7 @@ $ tb --help
   Stosowanie
     $ tb [<options> ...]
 
-    Опции
+    Opcje
         none             Wyświetl widok tablicy
       --archive, -a      Wyświetl zarchiwizowane zadania
       --begin, -b        Uruchom/wstrzymaj zadanie
@@ -112,7 +112,7 @@ $ tb --help
       --timeline, -i     Wyświetl widok osi czasu
       --version, -v      Wyświetl zainstalowaną wersję
 
-    Примери
+    Przykłady
       $ tb
       $ tb --archive
       $ tb --begin 2 3
@@ -120,17 +120,17 @@ $ tb --help
       $ tb --clear
       $ tb --copy 1 2 3
       $ tb --delete 4
-      $ tb --edit @3 Edytowana notatka w zadaniu nr. 3
-      $ tb --find documentation
-      $ tb --list pending coding
-      $ tb --move @1 cooking
-      $ tb --note @coding Mergesort worse-case O(nlogn)
+      $ tb --edit @3 nowa_notatka_zadania_nr_3
+      $ tb --find szukana_nazwa lub id
+      $ tb --list nazwa_tablicy
+      $ tb --move @1 nazwa_tablicy
+      $ tb --note @nazwa_tablicy tresc_mojej_notatki
       $ tb --priority @3 2
       $ tb --restore 4
       $ tb --star 2
-      $ tb --task @tablica_01 @tablica_02 Zadanie utworzy sie w tablicy 01 i 02
+      $ tb --task @tablica_01 @tablica_02 Zadanie utworzy sie w tablica_01 i tablica_02
       $ tb --task @tablica_03 Nowe zadanie w tablicy 03 
-      $ tb --task Zadanie bez tablicy
+      $ tb --task zadanie_z_domyślną_nazwą_tablicy
       $ tb --timeline
 ```
 
@@ -349,9 +349,9 @@ $ tb -f documentation
 Aby uzyskać więcej informacji na temat tego, jak przyczynić się do projektu, zapoznaj się ze [contributing guidelines](https://github.com/klaudiosinani/taskbook/blob/master/contributing.md).
 
 - Rozwidl repozytorium i sklonuj je na swój komputer.
-- Navigate to your local fork: `cd taskbook`
-- Install the project dependencies: `npm install` lub `yarn install`
-- Lint the code for errors: `npm test` lub `yarn test`
+- Przejdź do swojego lokalnego forka: `cd taskbook`
+- Zainstaluj zależności projektu: `npm install` lub `yarn install`
+- Sprawdź kod pod kątem błędów: `npm test` lub `yarn test`
 
 ## Powiązany
 
