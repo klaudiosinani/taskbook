@@ -69,6 +69,10 @@ const taskbookCLI = (input, flags) => {
     return taskbook.clear();
   }
 
+  if (flags.purge) {
+    return taskbook.purge();
+  }
+
   taskbook.displayByBoard();
   return taskbook.displayStats();
 };
