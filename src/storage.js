@@ -7,10 +7,11 @@ const path = require('path');
 const config = require('./config');
 const render = require('./render');
 
-const {basename, join} = path;
+const {basename, dirname, join, resolve} = path;
 
 class Storage {
-  constructor() {
+  constructor(options = {}) {
+    this._mainAppDir = this._resolveMainAppDir(options.storageDir);
     this._storageDir = join(this._mainAppDir, 'storage');
     this._archiveDir = join(this._mainAppDir, 'archive');
     this._tempDir = join(this._mainAppDir, '.temp');
@@ -20,20 +21,63 @@ class Storage {
     this._ensureDirectories();
   }
 
-  get _mainAppDir() {
+  _resolveMainAppDir(overrideDir) {
+    const sources = [
+      {value: overrideDir, enforce: true},
+      {value: process.env.TASKBOOK_DIR, enforce: true},
+      {value: this._getConfiguredDir(), enforce: true},
+      {value: os.homedir(), enforce: true}
+    ];
+
+    for (const {value, enforce} of sources) {
+      const formatted = this._formatDir(value);
+
+      if (!formatted) {
+        continue;
+      }
+
+      const {baseDir, mainDir} = this._deriveDirs(formatted);
+
+      if (!fs.existsSync(baseDir)) {
+        if (enforce) {
+          render.invalidCustomAppDir(baseDir);
+          process.exit(1);
+        }
+
+        continue;
+      }
+
+      return mainDir;
+    }
+
+    return join(os.homedir(), '.taskbook');
+  }
+
+  _getConfiguredDir() {
     const {taskbookDirectory} = config.get();
-    const defaultAppDirectory = join(os.homedir(), '.taskbook');
+    return (typeof taskbookDirectory === 'string' && taskbookDirectory.trim().length > 0) ? taskbookDirectory : null;
+  }
 
-    if (!taskbookDirectory) {
-      return defaultAppDirectory;
+  _formatDir(dir) {
+    if (typeof dir !== 'string') {
+      return null;
     }
 
-    if (!fs.existsSync(taskbookDirectory)) {
-      render.invalidCustomAppDir(taskbookDirectory);
-      process.exit(1);
+    const trimmed = dir.trim();
+
+    if (trimmed.length === 0) {
+      return null;
     }
 
-    return join(taskbookDirectory, '.taskbook');
+    const expanded = trimmed.replace(/^~(?=$|[\\/])/, os.homedir());
+    return resolve(expanded);
+  }
+
+  _deriveDirs(dir) {
+    const isTaskbookDir = basename(dir) === '.taskbook';
+    const baseDir = isTaskbookDir ? dirname(dir) : dir;
+    const mainDir = isTaskbookDir ? dir : join(dir, '.taskbook');
+    return {baseDir, mainDir};
   }
 
   _ensureMainAppDir() {

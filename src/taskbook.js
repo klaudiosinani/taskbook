@@ -7,8 +7,8 @@ const Storage = require('./storage');
 const render = require('./render');
 
 class Taskbook {
-  constructor() {
-    this._storage = new Storage();
+  constructor(options = {}) {
+    this._storage = new Storage(options);
   }
 
   get _archive() {
@@ -576,4 +576,4 @@ class Taskbook {
   }
 }
 
-module.exports = new Taskbook();
+module.exports = Taskbook;

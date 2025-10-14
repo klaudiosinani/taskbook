@@ -21,6 +21,7 @@ module.exports = `
       --priority, -p     Update priority of task
       --restore, -r      Restore items from archive
       --star, -s         Star/unstar item
+      --storage-dir      Use custom storage directory
       --task, -t         Create task
       --timeline, -i     Display timeline view
       --version, -v      Display installed version
