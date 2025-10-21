@@ -79,7 +79,7 @@ const cli = meow(help, {
     clear: {
       type: 'boolean'
     },
-    storageDir: {
+    taskbookDir: {
       type: 'string'
     }
   }
