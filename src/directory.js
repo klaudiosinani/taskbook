@@ -129,4 +129,4 @@ class Directory {
   }
 }
 
-module.exports = Directory;
+module.exports = new Directory();

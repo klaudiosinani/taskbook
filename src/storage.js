@@ -3,13 +3,12 @@
 const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
-const Directory = require('./directory');
+const directory = require('./directory');
 
 const {basename, join} = path;
 
 class Storage {
   constructor(options = {}) {
-    const directory = new Directory();
     this._mainAppDir = directory.retrieveTaskbookDirectory(options);
     this._storageDir = join(this._mainAppDir, 'storage');
     this._archiveDir = join(this._mainAppDir, 'archive');
