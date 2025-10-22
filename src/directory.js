@@ -64,7 +64,7 @@ class Directory {
   }
 
   _getTaskbookDirFlagCandidate(options) {
-    if (!Object.prototype.hasOwnProperty.call(options, 'taskbookDir')) {
+    if (!Object.hasOwn(options, 'taskbookDir')) {
       return undefined;
     }
 
