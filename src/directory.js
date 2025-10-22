@@ -5,7 +5,7 @@ const path = require('node:path');
 const config = require('./config');
 const render = require('./render');
 
-const {join, resolve} = path;
+const { join, resolve } = path;
 
 class Directory {
   _taskbookDirectoryName = '.taskbook';
@@ -16,12 +16,12 @@ class Directory {
   }
 
   get userConfigTaskbookParentDirectory() {
-    const {taskbookDirectory} = config.get();
+    const { taskbookDirectory } = config.get();
     return taskbookDirectory;
   }
 
   get environmentVariableTaskbookParentDirectory() {
-    return process.env.TASKBOOK_DIRECTORY;
+    return process.env.TASKBOOK_DIR;
   }
 
   retrieveTaskbookDirectory(options) {
@@ -48,18 +48,12 @@ class Directory {
   _retrieveTaskbookCustomParentDirectoryOrExit(candidates) {
     const selectedCandidate = this._selectHighestPriorityTaskbookParentDirectory(candidates);
 
-    if (!this._isDefined(selectedCandidate)) {
-      return null;
+    if (!this._isExistingDirectory(selectedCandidate)) {
+      render.invalidCustomAppDir(selectedCandidate);
+      process.exit(1);
     }
 
-    const isValidCandidate = this._isValidTaskbookCustomParentDirectory(selectedCandidate);
-
-    if (isValidCandidate) {
-      return this._parseDirectory(selectedCandidate);
-    }
-
-    render.invalidCustomAppDir(selectedCandidate);
-    process.exit(1);
+    return this._parseDirectory(selectedCandidate);
   }
 
   _retrieveTaskbookParentDirectoryCandidates(options) {
@@ -75,7 +69,7 @@ class Directory {
   }
 
   _filterPresentTaskbookParentDirectoryCandidates(candidates) {
-    return candidates.filter(candidate => this._isDefined(candidate) && this._isStringType(candidate));
+    return candidates.filter(candidate => this._isStringType(candidate));
   }
 
   _selectHighestPriorityTaskbookParentDirectory(candidates) {
@@ -99,10 +93,6 @@ class Directory {
     return fs.existsSync(parsedDirectory);
   }
 
-  _isValidDirectoryFormat(directory) {
-    return this._isStringType(directory);
-  }
-
   _parseDirectory(directory) {
     const expandedDirectory = this._expandDirectory(directory);
     return resolve(expandedDirectory);
@@ -114,14 +104,6 @@ class Directory {
 
   _isStringType(input) {
     return typeof input === 'string';
-  }
-
-  _isEmptyString(directory) {
-    return this._trim(directory).length === 0;
-  }
-
-  _trim(directory) {
-    return directory.trim();
   }
 
   _expandDirectory(directory) {
