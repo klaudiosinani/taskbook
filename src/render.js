@@ -200,6 +200,12 @@ class Render {
     error({prefix, message, suffix});
   }
 
+  missingTaskbookDirFlagValue() {
+    const message =
+      'Please provide a value for --taskbook-dir or remove the flag.';
+    error({prefix: '\n ', message});
+  }
+
   invalidID(id) {
     const [prefix, suffix] = ['\n', grey(id)];
     const message = 'Unable to find item with id:';

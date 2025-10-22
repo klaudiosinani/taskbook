@@ -25,76 +25,93 @@ class Directory {
   }
 
   retrieveTaskbookDirectory(options) {
-    const parent = this._retrieveTaskbookParentDirectory(options);
-    return this._composeTaskbookDirectory(parent);
-  }
+    const customDirectory = this._resolveCustomTaskbookDirectory(options);
 
-  _retrieveTaskbookParentDirectory(options) {
-    const customTaskbookParentDirectory = this._retrieveTaskbookCustomParentDirectory(options);
-
-    if (customTaskbookParentDirectory) {
-      return customTaskbookParentDirectory;
+    if (customDirectory) {
+      return customDirectory;
     }
 
-    return this._retrieveDefaultTaskbookParentDirectory();
+    return this._composeTaskbookDirectory(this._userHomeDirectory);
   }
 
-  _retrieveTaskbookCustomParentDirectory(options) {
-    const candidates = this._retrieveTaskbookParentDirectoryCandidates(options);
-    const presentCandidates = this._filterPresentTaskbookParentDirectoryCandidates(candidates);
-    return this._retrieveTaskbookCustomParentDirectoryOrExit(presentCandidates);
-  }
+  _resolveCustomTaskbookDirectory(options) {
+    const candidate = this._selectCustomDirectoryCandidate(options);
 
-  _retrieveTaskbookCustomParentDirectoryOrExit(candidates) {
-    const selectedCandidate = this._selectHighestPriorityTaskbookParentDirectory(candidates);
-
-    if (!this._isExistingDirectory(selectedCandidate)) {
-      render.invalidCustomAppDir(selectedCandidate);
-      process.exit(1);
+    if (!candidate) {
+      return undefined;
     }
 
-    return this._parseDirectory(selectedCandidate);
+    const resolvedCandidate = this._parseDirectory(candidate);
+
+    if (this._isTaskbookDirectoryPath(resolvedCandidate)) {
+      const parentDirectory = path.dirname(resolvedCandidate);
+      this._assertDirectoryExists(parentDirectory, candidate);
+      return resolvedCandidate;
+    }
+
+    this._assertDirectoryExists(resolvedCandidate, candidate);
+    return this._composeTaskbookDirectory(resolvedCandidate);
   }
 
-  _retrieveTaskbookParentDirectoryCandidates(options) {
-    return [
-      this._getTaskbookParentDirectoryFlagParameter(options),
+  _selectCustomDirectoryCandidate(options) {
+    const candidates = [
+      this._getTaskbookDirFlagCandidate(options),
       this.environmentVariableTaskbookParentDirectory,
       this.userConfigTaskbookParentDirectory,
     ];
+
+    return candidates.find(candidate => this._isPresentString(candidate));
   }
 
-  _getTaskbookParentDirectoryFlagParameter(options) {
-    return options.taskbookDir;
+  _getTaskbookDirFlagCandidate(options) {
+    if (!Object.prototype.hasOwnProperty.call(options, 'taskbookDir')) {
+      return undefined;
+    }
+
+    const { taskbookDir } = options;
+
+    if (!this._isStringType(taskbookDir) || this._isEmptyString(taskbookDir)) {
+      render.missingTaskbookDirFlagValue();
+      process.exit(1);
+    }
+
+    return taskbookDir;
   }
 
-  _filterPresentTaskbookParentDirectoryCandidates(candidates) {
-    return candidates.filter(candidate => this._isStringType(candidate));
+  _isPresentString(value) {
+    return this._isStringType(value) && !this._isEmptyString(value);
   }
 
-  _selectHighestPriorityTaskbookParentDirectory(candidates) {
-    return candidates[0];
-  }
+  _assertDirectoryExists(directory, displayPath = directory) {
+    if (this._isExistingDirectory(directory)) {
+      return;
+    }
 
-  _retrieveDefaultTaskbookParentDirectory() {
-    return this._userHomeDirectory;
+    render.invalidCustomAppDir(
+      this._formatInvalidTaskbookDirectoryCandidate(displayPath),
+    );
+    process.exit(1);
   }
 
   _composeTaskbookDirectory(parentDirectory) {
     return join(parentDirectory, this.taskbookDirectoryName);
   }
 
-  _isValidTaskbookCustomParentDirectory(directory) {
-    return (
-      this._isDefined(directory) &&
-      !this._isEmptyString(directory) &&
-      this._isExistingDirectory(directory)
-    );
+  _isTaskbookDirectoryPath(directory) {
+    return path.basename(directory) === this.taskbookDirectoryName;
   }
 
   _isExistingDirectory(directory) {
     const parsedDirectory = this._parseDirectory(directory);
     return fs.existsSync(parsedDirectory);
+  }
+
+  _formatInvalidTaskbookDirectoryCandidate(candidate) {
+    if (!this._isDefined(candidate) || this._isEmptyString(candidate)) {
+      return '""';
+    }
+
+    return candidate;
   }
 
   _parseDirectory(directory) {
@@ -113,7 +130,7 @@ class Directory {
   _isEmptyString(input) {
     return typeof input === 'string' && input.trim().length === 0;
   }
-  
+
   _expandDirectory(directory) {
     return directory.replace(/^~(?=$|[\\/])/, os.homedir());
   }
