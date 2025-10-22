@@ -182,12 +182,8 @@ class Render {
       `${blue(notes)} ${grey(notes === 1 ? 'note' : 'notes')}`
     ];
 
-    if (complete !== 0 && inProgress === 0 && pending === 0 && notes === 0) {
-      log({prefix: '\n ', message: 'All done!', suffix: yellow('★')});
-    }
-
     if (pending + inProgress + complete + notes === 0) {
-      log({prefix: '\n ', message: 'Type `tb --help` to get started!', suffix: yellow('★')});
+      log({prefix: '\n ', message: 'Type `tb --help` to get started'});
     }
 
     log({prefix: '\n ', message: grey(`${percent} of all tasks complete.`)});
