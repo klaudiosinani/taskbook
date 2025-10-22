@@ -85,7 +85,11 @@ class Directory {
   }
 
   _isValidTaskbookCustomParentDirectory(directory) {
-    return !this._isEmptyString(directory) && this._isExistingDirectory(directory);
+    return (
+      this._isDefined(directory) &&
+      !this._isEmptyString(directory) &&
+      this._isExistingDirectory(directory)
+    );
   }
 
   _isExistingDirectory(directory) {
@@ -106,6 +110,10 @@ class Directory {
     return typeof input === 'string';
   }
 
+  _isEmptyString(input) {
+    return typeof input === 'string' && input.trim().length === 0;
+  }
+  
   _expandDirectory(directory) {
     return directory.replace(/^~(?=$|[\\/])/, os.homedir());
   }
