@@ -70,7 +70,7 @@ class Directory {
 
     const { taskbookDir } = options;
 
-    if (!this._isStringType(taskbookDir) || this._isEmptyString(taskbookDir)) {
+    if (!this._isPresentString(taskbookDir)) {
       render.missingTaskbookDirFlagValue();
       process.exit(1);
     }
@@ -129,6 +129,10 @@ class Directory {
 
   _isEmptyString(input) {
     return typeof input === 'string' && input.trim().length === 0;
+  }
+
+  _isPresentString(input) {
+    return this._isStringType(input) && !this._isEmptyString(input);
   }
 
   _expandDirectory(directory) {
