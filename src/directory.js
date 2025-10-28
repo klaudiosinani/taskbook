@@ -131,10 +131,6 @@ class Directory {
     return typeof input === 'string' && input.trim().length === 0;
   }
 
-  _isPresentString(input) {
-    return this._isStringType(input) && !this._isEmptyString(input);
-  }
-
   _expandDirectory(directory) {
     return directory.replace(/^~(?=$|[\\/])/, os.homedir());
   }
