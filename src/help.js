@@ -21,6 +21,7 @@ module.exports = `
       --priority, -p     Update priority of task
       --restore, -r      Restore items from archive
       --star, -s         Star/unstar item
+      --taskbook-dir     Define a custom taskbook directory
       --task, -t         Create task
       --timeline, -i     Display timeline view
       --version, -v      Display installed version

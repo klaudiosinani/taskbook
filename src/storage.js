@@ -2,15 +2,14 @@
 'use strict';
 const crypto = require('crypto');
 const fs = require('fs');
-const os = require('os');
 const path = require('path');
-const config = require('./config');
-const render = require('./render');
+const directory = require('./directory');
 
 const {basename, join} = path;
 
 class Storage {
-  constructor() {
+  constructor(options = {}) {
+    this._mainAppDir = directory.retrieveTaskbookDirectory(options);
     this._storageDir = join(this._mainAppDir, 'storage');
     this._archiveDir = join(this._mainAppDir, 'archive');
     this._tempDir = join(this._mainAppDir, '.temp');
@@ -18,22 +17,6 @@ class Storage {
     this._mainStorageFile = join(this._storageDir, 'storage.json');
 
     this._ensureDirectories();
-  }
-
-  get _mainAppDir() {
-    const {taskbookDirectory} = config.get();
-    const defaultAppDirectory = join(os.homedir(), '.taskbook');
-
-    if (!taskbookDirectory) {
-      return defaultAppDirectory;
-    }
-
-    if (!fs.existsSync(taskbookDirectory)) {
-      render.invalidCustomAppDir(taskbookDirectory);
-      process.exit(1);
-    }
-
-    return join(taskbookDirectory, '.taskbook');
   }
 
   _ensureMainAppDir() {

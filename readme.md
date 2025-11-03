@@ -50,6 +50,7 @@ Visit the [contributing guidelines](https://github.com/klaudiosinani/taskbook/bl
 - Update notifications
 - Configurable through `~/.taskbook.json`
 - Data stored in JSON file at `~/.taskbook/storage`
+- Data location can be overwritten at runtime
 
 View highlights in a [taskbook board](https://raw.githubusercontent.com/klaudiosinani/taskbook/master/media/highlights.png).
 
@@ -116,6 +117,7 @@ $ tb --help
       --priority, -p     Update priority of task
       --restore, -r      Restore items from archive
       --star, -s         Star/unstar item
+      --taskbook-dir     Define a custom taskbook directory
       --task, -t         Create task
       --timeline, -i     Display timeline view
       --version, -v      Display installed version
@@ -136,6 +138,7 @@ $ tb --help
       $ tb --priority @3 2
       $ tb --restore 4
       $ tb --star 2
+      $ tb --taskbook-dir .custom-taskbook-dir
       $ tb --task @coding @reviews Review PR #42
       $ tb --task @coding Improve documentation
       $ tb --task Make some buttercream
@@ -358,6 +361,20 @@ To search for one of more items, use the `--find`/`-f` option, followed by your 
 
 ```
 $ tb -f documentation
+```
+
+### Runtime taskbook directory override
+
+To override the configured storage location, use the `--taskbook-dir` flag or TASKBOOK_DIR environment variable. While Taskbook is designed to provide a multiple board approach for all of your projects, these options enable alternative use cases. Setup per project storage or run multiple global boards like home and work.
+
+Note, if both the flag and environment variable are present Taskbook will use the flag value.
+
+```
+$ tb --taskbook-dir .custom-taskbook-dir
+```
+
+```
+$ TASKBOOK_DIR=~/hometasks tb
 ```
 
 ## Development
