@@ -8,6 +8,7 @@ class Item {
     this._date = now.toDateString();
     this._timestamp = now.getTime();
     this.description = options.description;
+    this.comments = options.comments;
     this.isStarred = options.isStarred || false;
     this.boards = options.boards || [];
   }

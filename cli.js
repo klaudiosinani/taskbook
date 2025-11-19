@@ -32,6 +32,10 @@ const cli = meow(help, {
       type: 'boolean',
       alias: 'n'
     },
+    comment: {
+      type: 'boolean',
+      alias: 'z'
+    },
     delete: {
       type: 'boolean',
       alias: 'd'
