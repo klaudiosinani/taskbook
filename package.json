@@ -37,7 +37,8 @@
     "default": {
       "taskbookDirectory": "~",
       "displayCompleteTasks": true,
-      "displayProgressOverview": true
+      "displayProgressOverview": true,
+      "greyRendererMethod": "grey"
     }
   },
   "scripts": {
