@@ -114,7 +114,7 @@ $ tb --help
       --list, -l         List items by attributes
       --move, -m         Move item between boards
       --note, -n         Create note
-      --priority, -p     Update priority of task
+      --priority, -p     Update priority of tasks
       --restore, -r      Restore items from archive
       --star, -s         Star/unstar item
       --taskbook-dir     Define a custom taskbook directory
@@ -136,6 +136,7 @@ $ tb --help
       $ tb --move @1 cooking
       $ tb --note @coding Mergesort worse-case O(nlogn)
       $ tb --priority @3 2
+      $ tb --priority 2 @1 @3
       $ tb --restore 4
       $ tb --star 2
       $ tb --taskbook-dir .custom-taskbook-dir
@@ -291,10 +292,16 @@ To set a priority level for a task while initializing it, include the `p:x` synt
 $ tb -t @coding Fix issue `#42` p:3
 ```
 
-To update the priority level of a specific task after its creation, use the `--priority`/`-p` option along with the id the target task, prefixed by the `@` symbol, and an integer of value `1`, `2` or `3`. Note that the order in which the target id and priority level are placed is not significant.
+To update the priority level of one or more tasks after their creation, use the `--priority`/`-p` option along with the target task ids, each prefixed by the `@` symbol, and an integer of value `1`, `2` or `3`. All target tasks receive the same priority. The order in which the target ids and priority level are placed is not significant. Duplicate ids are automatically filtered out, and all ids are validated before any tasks are updated.
 
 ```
 $ tb -p @1 2
+```
+
+To update multiple tasks at once, separate their ids with spaces:
+
+```console
+$ tb -p 2 @1 @3
 ```
 
 ### Move Item
@@ -385,6 +392,7 @@ For more info on how to contribute to the project, please read the [contributing
 - Navigate to your local fork: `cd taskbook`
 - Install the project dependencies: `npm install` or `yarn install`
 - Lint the code for errors: `npm test` or `yarn test`
+- Run the priority-update regression checks: `node test/priority.mjs`
 
 ## Related
 

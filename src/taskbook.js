@@ -544,18 +544,18 @@ class Taskbook {
       process.exit(1);
     }
 
-    if (targets.length > 1) {
-      render.invalidIDsNumber();
-      process.exit(1);
-    }
-
-    const [target] = targets;
-    const id = this._validateIDs(target.replace('@', ''));
+    const ids = this._validateIDs(targets.map(target => target.replace('@', '')));
 
     const {_data} = this;
-    _data[id].priority = level;
+    for (const id of ids) {
+      _data[id].priority = level;
+    }
+
     this._save(_data);
-    render.successPriority(id, level);
+
+    for (const id of ids) {
+      render.successPriority(id, level);
+    }
   }
 
   clear() {

@@ -18,7 +18,7 @@ module.exports = `
       --list, -l         List items by attributes
       --move, -m         Move item between boards
       --note, -n         Create note
-      --priority, -p     Update priority of task
+      --priority, -p     Update priority of tasks
       --restore, -r      Restore items from archive
       --star, -s         Star/unstar item
       --taskbook-dir     Define a custom taskbook directory
@@ -40,6 +40,7 @@ module.exports = `
       $ tb --move @1 cooking
       $ tb --note @coding Mergesort worse-case O(nlogn)
       $ tb --priority @3 2
+      $ tb --priority 2 @1 @3
       $ tb --restore 4
       $ tb --star 2
       $ tb --task @coding @reviews Review PR #42
